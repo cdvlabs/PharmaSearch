@@ -1,3 +1,7 @@
+# Credentials - KHÔNG BAO GIỜ commit file này lên GitHub
+.git/.credentials
+*.credentials
+
 # Cache dịch tự động (dung lượng lớn, không cần thiết khi deploy)
 data/translation_cache.json
 
