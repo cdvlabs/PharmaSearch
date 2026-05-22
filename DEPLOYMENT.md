@@ -1,108 +1,139 @@
 # Hướng dẫn Triển khai PharmaSearch (Miễn phí 100% & Vĩnh viễn)
 
-Tài liệu này hướng dẫn chi tiết từng bước từ cách tải mã nguồn lên **GitHub** cho đến triển khai trang web hoạt động trực tuyến qua hai nền tảng hosting tĩnh miễn phí hàng đầu: **GitHub Pages** và **Vercel**. 
+Tài liệu này hướng dẫn chi tiết từng bước từ cách đẩy mã nguồn lên **GitHub** cho đến triển khai trang web hoạt động trực tuyến qua hai nền tảng hosting tĩnh miễn phí hàng đầu: **GitHub Pages** và **Vercel**. 
 
-Mã nguồn của chúng ta đã được cấu hình đường dẫn tương đối, bảo đảm chạy hoàn hảo PWA (Progressive Web App) ngay cả trong thư mục con của GitHub Pages.
+Mã nguồn đã được cấu hình đường dẫn tương đối, đảm bảo chạy hoàn hảo PWA (Progressive Web App) ngay cả trong thư mục con của GitHub Pages.
 
 ---
 
 ## 📦 Bước 1: Đẩy (Push) mã nguồn lên GitHub
 
-Để triển khai được lên GitHub Pages hay Vercel, mã nguồn của bạn cần phải nằm trên một kho lưu trữ (Repository) của GitHub. Hãy làm theo các bước chi tiết sau:
+### Repository đích
+```
+https://github.com/cdvlabs/PharmaSearch
+```
 
-### 1. Tạo Repository mới trên GitHub:
-1. Truy cập vào [GitHub.com](https://github.com/) và đăng nhập tài khoản của bạn.
-2. Tại góc trên cùng bên phải, nhấn vào dấu **`+`** và chọn **New repository** (hoặc truy cập trực tiếp [github.com/new](https://github.com/new)).
-3. Cấu hình các thông số sau:
-   - **Repository owner**: Tài khoản của bạn.
-   - **Repository name**: Nhập chính xác `PharmaSearch`.
-   - **Description**: (Không bắt buộc) Ví dụ: *Ứng dụng tra cứu y khoa và thuốc song ngữ Anh-Việt chạy ngoại tuyến.*
-   - **Choose visibility**: Chọn **Public** (Công khai - Bắt buộc nếu muốn dùng GitHub Pages miễn phí).
-   - **Mục Initialize this repository with**:
-     - ⚠️ **QUAN TRỌNG**: **KHÔNG** tích chọn vào ô *Add a README file*, *Add .gitignore*, hoặc *Choose a license*. Do thư mục dự án cục bộ của chúng ta đã có đầy đủ các file này rồi (bao gồm một file `README.md` chất lượng cao đã soạn sẵn). Nếu bạn tích chọn ở đây sẽ gây ra xung đột lịch sử git khi đẩy code.
-4. Nhấn nút **Create repository** ở dưới cùng.
+### Cách lấy Personal Access Token (PAT)
 
-### 2. Thực hiện đẩy mã nguồn từ máy tính lên GitHub:
-Mở Terminal hoặc PowerShell tại thư mục dự án cục bộ (`science_skills_drug_lookup`) và chạy tuần tự các lệnh sau:
+Để push lên repository của organization `cdvlabs`, bạn cần tạo **Personal Access Token**:
 
-1. **Khởi tạo môi trường git cục bộ (nếu chưa có)**:
-   ```bash
-   git init
-   ```
-2. **Thêm toàn bộ các file dự án vào danh sách theo dõi**:
-   ```bash
-   git add .
-   ```
-3. **Commit mã nguồn lần đầu**:
-   ```bash
-   git commit -m "Khởi tạo mã nguồn PharmaSearch song ngữ"
-   ```
-4. **Đổi tên nhánh mặc định thành `main`**:
-   ```bash
-   git branch -M main
-   ```
-5. **Liên kết thư mục cục bộ với repository trên GitHub**:
-   *(Hãy thay thế `<ten-tai-khoan-github>` bằng tên đăng nhập GitHub thực tế của bạn)*
-   ```bash
-   git remote add origin https://github.com/<ten-tai-khoan-github>/PharmaSearch.git
-   ```
-6. **Đẩy mã nguồn lên GitHub**:
-   ```bash
-   git push -u origin main
-   ```
+1. Truy cập: https://github.com/settings/tokens
+2. Click **"Generate new token (classic)"**
+3. Đặt tên token (ví dụ: `PharmaSearch Deploy`)
+4. Chọn thời hạn token
+5. Tick chọn quyền: **`repo`** (Full control of private repositories)
+6. Click **"Generate token"** → copy token (chỉ hiển thị 1 lần duy nhất)
 
-Sau khi chạy xong, hãy tải lại trang GitHub để thấy toàn bộ các file cùng tệp `README.md` hiển thị đẹp mắt ngay tại trang chủ repo của bạn.
+> [!IMPORTANT]
+> Token phải được tạo từ tài khoản là **thành viên (member)** của organization `cdvlabs` và có quyền `write` trên repository.
+
+### Các lệnh push (chạy trong PowerShell tại thư mục dự án)
+
+```bash
+# 1. Thêm remote (nếu chưa có)
+git remote add origin https://github.com/cdvlabs/PharmaSearch.git
+
+# 2. Push với token xác thực
+# Thay <TOKEN> bằng token thực tế bạn vừa tạo
+git push https://cdvlabs:<TOKEN>@github.com/cdvlabs/PharmaSearch.git main
+
+# Hoặc push lại nếu đã add remote
+git push -u origin main
+# (Khi hỏi username/password: nhập tên user GitHub và token làm password)
+```
+
+### Cập nhật sau khi sửa code
+
+```bash
+git add -A
+git commit -m "Mô tả thay đổi"
+git push
+```
 
 ---
 
 ## ⚡ Bước 2: Triển khai trực tuyến lên các dịch vụ hosting
 
-Sau khi code đã nằm trên GitHub, bạn chọn một trong hai phương án sau để đưa trang web lên internet.
+Sau khi code đã nằm trên GitHub, chọn một trong hai phương án sau:
 
 ### 🟢 Phương án A: Triển khai lên Vercel (Tối ưu & Khuyên dùng)
-Vercel là nền tảng hosting Frontend tốt nhất hiện nay, tự động deploy lại mỗi khi bạn thực hiện cập nhật code trên GitHub.
 
-1. Truy cập [Vercel](https://vercel.com/) và đăng nhập bằng tài khoản GitHub của bạn.
-2. Tại màn hình Dashboard, click vào **Add New** > **Project**.
-3. Tại danh sách các repository của bạn hiện ra, tìm `PharmaSearch` và bấm **Import**.
-4. Cấu hình dự án (để mặc định):
-   - **Framework Preset**: Chọn `Other` (vì đây là ứng dụng HTML/JS tĩnh thuần).
-   - **Root Directory**: Để mặc định `./`.
-   - **Build and Output Settings**: Giữ nguyên không thay đổi.
-5. Nhấn nút **Deploy**.
-6. Chờ khoảng 30 giây, dự án sẽ hoàn tất. Vercel sẽ cấp cho bạn một tên miền miễn phí có định dạng: `https://pharmasearch-xxxx.vercel.app`.
+Vercel tự động deploy lại mỗi khi bạn push code lên GitHub.
+
+1. Truy cập [Vercel](https://vercel.com/) → Đăng nhập bằng tài khoản GitHub
+2. Click **Add New** > **Project**
+3. Trong danh sách repository, tìm `cdvlabs/PharmaSearch` → **Import**
+4. Cấu hình:
+   - **Framework Preset**: Chọn `Other`
+   - **Root Directory**: `./`
+   - **Build Command**: để trống
+   - **Output Directory**: `src`
+5. Click **Deploy**
+6. Chờ ~30 giây → nhận URL miễn phí: `https://pharmasearch-xxxx.vercel.app`
 
 > [!TIP]
-> Do Vercel chạy ở cấp Root Domain, Service Worker của ứng dụng sẽ kích hoạt ngay lập tức mà không gặp bất kỳ trở ngại nào.
+> Vercel chạy ở root domain nên Service Worker và PWA hoạt động hoàn hảo ngay lập tức.
 
 ---
 
-### 🔵 Phương án B: Triển khai lên GitHub Pages (Đơn giản, đi kèm repo)
-GitHub Pages cho phép bạn phát hành trang web trực tiếp từ chính repository chứa code của bạn.
+### 🔵 Phương án B: Triển khai lên GitHub Pages
 
-1. Truy cập vào trang repository `PharmaSearch` của bạn trên GitHub.
-2. Click vào thẻ **Settings** (Cài đặt) ở thanh menu trên cùng.
-3. Ở menu điều hướng bên trái, cuộn xuống phần *Code and automation* và chọn **Pages**.
-4. Tại mục **Build and deployment**:
-   - **Source**: Chọn `Deploy from a branch`.
-   - **Branch**: Chọn nhánh `main` và thư mục `/ (root)`.
-   - Nhấn **Save**.
-5. Chờ khoảng 1-2 phút, tải lại trang Cài đặt Pages này. Bạn sẽ thấy một banner màu xanh lá chứa đường dẫn trang web trực tuyến có định dạng:
-   `https://<ten-tai-khoan-github>.github.io/PharmaSearch/`
+1. Vào tab **Settings** của repo `cdvlabs/PharmaSearch`
+2. Menu trái → **Pages** (mục *Code and automation*)
+3. Tại **Build and deployment**:
+   - **Source**: `Deploy from a branch`
+   - **Branch**: `main` | Thư mục: `/ (root)`
+   - Click **Save**
+4. Chờ 1-2 phút → URL: `https://cdvlabs.github.io/PharmaSearch/`
+
+> [!NOTE]
+> Với GitHub Pages, truy cập đúng đường dẫn: `https://cdvlabs.github.io/PharmaSearch/src/index.html` để vào ứng dụng. Hoặc thêm trang redirect `index.html` ở root.
 
 ---
 
-## 🛠️ Những lưu ý quan trọng để chạy PWA ổn định
+## 🔄 Bước 3: Cập nhật dữ liệu thuốc từ OpenFDA
 
-### 1. Cơ chế hoạt động của Service Worker trên GitHub Pages
-Do GitHub Pages triển khai ứng dụng của bạn dưới dạng một thư mục con (`/PharmaSearch/`), cấu trúc mã nguồn của PharmaSearch đã được tôi tối ưu hóa bằng cách:
-- Sử dụng liên kết tương đối `../public/manifest.json` trong file `src/index.html`.
-- Gọi file service worker tương đối `../sw.js` từ `src/app.js` để trình duyệt tự nhận dạng scope `/PharmaSearch/`.
-- Mảng tài nguyên lưu trữ cache tĩnh trong `sw.js` đã loại bỏ dấu gạch chéo đầu dòng (`/`) để không truy vấn sai về thư mục gốc của máy chủ GitHub Pages.
+Để tải lại dữ liệu mới nhất từ FDA (khi có thuốc mới hoặc cập nhật nhãn thuốc):
 
-### 2. Kích hoạt cập nhật dữ liệu và giao diện mới
-Trình duyệt cài đặt PWA sẽ lưu cache rất chặt theo cấu hình trong `sw.js`. Khi bạn sửa đổi bất kỳ tệp tin HTML, CSS, JS hoặc JSON dữ liệu nào, hãy nhớ:
-1. Mở file [sw.js](file:///d:/python/science_skills_drug_lookup/sw.js) cục bộ.
-2. Thay đổi giá trị biến `CACHE_NAME` ở dòng 1 (ví dụ: đổi từ `'pharmasearch-v4'` thành `'pharmasearch-v5'`).
-3. Commit và push thay đổi lên GitHub.
-Trình duyệt của người dùng sẽ nhận biết sự thay đổi này, tải lại các file mới trong nền và áp dụng giao diện/dữ liệu mới ở lần mở ứng dụng tiếp theo.
+```bash
+# Chạy ETL pipeline (cần Python + kết nối internet)
+$env:PYTHONIOENCODING="utf-8"
+python data/process_data.py
+```
+
+Sau khi chạy xong, commit và push file `src/data/drugs_db.json` và `src/data/diseases_index.json` mới lên GitHub. Vercel/GitHub Pages sẽ tự động cập nhật.
+
+---
+
+## 🛠️ Lưu ý quan trọng để PWA hoạt động ổn định
+
+### Service Worker và Cache
+
+Khi bạn sửa đổi bất kỳ file nào (HTML, CSS, JS, JSON), **bắt buộc** phải tăng phiên bản cache:
+
+1. Mở file [sw.js](sw.js)
+2. Tìm biến `CACHE_NAME` ở dòng đầu
+3. Đổi ví dụ từ `'pharmasearch-v4'` thành `'pharmasearch-v5'`
+4. Commit và push lên GitHub
+
+Người dùng sẽ tự động nhận phiên bản mới trong lần mở app tiếp theo.
+
+### Cấu trúc đường dẫn tương đối
+
+PharmaSearch sử dụng đường dẫn tương đối thay vì tuyệt đối để tương thích với mọi subdirectory:
+- `../public/manifest.json` trong `src/index.html`
+- `../sw.js` từ `src/app.js`
+- Không dùng `/` ở đầu đường dẫn trong `sw.js`
+
+---
+
+## ✅ Kiểm tra sau triển khai
+
+Sau khi deploy thành công, hãy kiểm tra:
+
+- [ ] Trang web mở được và hiển thị giao diện đúng
+- [ ] Tìm kiếm offline hoạt động (thử tìm "GERD", "hypertension", "diabetes")
+- [ ] Chuyển đổi ngôn ngữ Anh/Việt hoạt động
+- [ ] Selector Chips hiển thị khi có nhiều thuốc
+- [ ] Accordion mở/đóng đúng (Mô tả, Cách dùng, Cảnh báo)
+- [ ] PWA có thể cài đặt về điện thoại (nút "📲 Cài đặt")
