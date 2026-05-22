@@ -1,4 +1,4 @@
-# PharmaSearch - Ứng dụng Tra cứu Y khoa & Thuốc Song ngữ (Bilingual & PWA)
+# PharmaSearch - Ứng dụng Tra cứu Y khoa & Thuốc
 
 PharmaSearch là một ứng dụng web dạng Progressive Web App (PWA) được thiết kế hiện đại nhằm hỗ trợ người dùng và các chuyên gia y tế tra cứu thông tin hoạt chất, biệt dược, triệu chứng và bệnh lý điều trị một cách nhanh chóng, chính xác. Ứng dụng hỗ trợ song ngữ Anh - Việt hoàn chỉnh, hoạt động mượt mà ngay cả khi không có kết nối internet nhờ cơ sở dữ liệu tích hợp sẵn.
 
@@ -32,8 +32,7 @@ PharmaSearch/
 │   └── manifest.json           # File cấu hình PWA (chủ đề, start URL, biểu tượng)
 ├── src/                        # Mã nguồn ứng dụng Frontend
 │   ├── data/                   # Cơ sở dữ liệu JSON ngoại tuyến
-│   │   ├── drugs_db.json       # Cơ sở dữ liệu thuốc song ngữ đã chuẩn hóa
-│   │   └── diseases_index.json # Chỉ mục tìm kiếm bệnh lý song ngữ
+│   │   └── disease_dictionary.json # Từ điển bệnh lý song ngữ tĩnh Anh-Việt
 │   ├── app.js                  # Logic tìm kiếm, tương tác API, chuyển ngữ & Service Worker
 │   ├── index.html              # Giao diện HTML5 cấu trúc Semantic
 │   └── style.css               # Thiết kế CSS Material Design 3 & hiệu ứng Neural Glow
@@ -66,8 +65,8 @@ Khi cơ sở dữ liệu y khoa từ OpenFDA được cập nhật mới hoặc 
    ```bash
    python data/process_data.py
    ```
-3. Đẩy (push) các tệp tin `src/data/drugs_db.json` và `src/data/diseases_index.json` vừa được tạo lại lên GitHub.
-4. Mở file [sw.js](file:///d:/python/science_skills_drug_lookup/sw.js) và tăng số phiên bản `CACHE_NAME` (ví dụ từ `pharmasearch-v4` lên `pharmasearch-v5`) để kích hoạt quá trình cập nhật bộ nhớ cache trên trình duyệt người dùng.
+3. Đẩy (push) tệp tin `src/data/disease_dictionary.json` vừa được tạo lại lên GitHub.
+4. Mở file [sw.js](file:///d:/python/science_skills_drug_lookup/sw.js) và tăng số phiên bản `CACHE_NAME` (ví dụ từ `pharmasearch-v5` lên `pharmasearch-v6`) để kích hoạt quá trình cập nhật bộ nhớ cache trên trình duyệt người dùng.
 
 ---
 

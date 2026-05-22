@@ -6,8 +6,6 @@ import sys
 def test_json_files():
     """Kiem tra tinh hop le cu phap cua tat ca cac tep JSON trong du an."""
     json_files = [
-        "src/data/drugs_db.json",
-        "src/data/diseases_index.json",
         "src/data/disease_dictionary.json",
         "public/manifest.json"
     ]

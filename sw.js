@@ -1,10 +1,9 @@
-const CACHE_NAME = 'pharmasearch-v4';
+const CACHE_NAME = 'pharmasearch-v6';
 const ASSETS_TO_CACHE = [
   'src/index.html',
   'src/style.css',
   'src/app.js',
-  'src/data/drugs_db.json',
-  'src/data/diseases_index.json',
+  'src/data/disease_dictionary.json',
   'public/manifest.json',
   'public/icon.png'
 ];

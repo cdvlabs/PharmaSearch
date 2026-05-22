@@ -2,8 +2,7 @@
 .git/.credentials
 *.credentials
 
-# Cache dịch tự động (dung lượng lớn, không cần thiết khi deploy)
-data/translation_cache.json
+
 
 # Python cache
 __pycache__/
@@ -29,3 +28,6 @@ desktop.ini
 *.swp
 *.swo
 *~
+
+# Deployment
+DEPLOYMENT.md

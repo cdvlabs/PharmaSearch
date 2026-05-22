@@ -1,5 +1,5 @@
 {
-  "name": "PharmaSearch - Tra Cứu Thuốc Ngoại Tuyến",
+  "name": "PharmaSearch - Tra Cứu Thuốc",
   "short_name": "PharmaSearch",
   "description": "Ứng dụng tra cứu hoạt chất, biệt dược và bệnh lý y khoa ngoại tuyến miễn phí.",
   "start_url": "../src/index.html",

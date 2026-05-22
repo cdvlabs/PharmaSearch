@@ -1,31 +1,47 @@
 /**
- * PharmaSearch - Ứng dụng tra cứu y khoa song ngữ ngoại tuyến & trực tuyến
+ * PharmaSearch - Ứng dụng tra cứu y khoa
  */
 
+// Danh sách 83 hoạt chất thiết yếu thông dụng làm gợi ý tự động cho Tên Thuốc
+const ESSENTIAL_DRUGS = [
+  "paracetamol", "ibuprofen", "colchicine", "allopurinol", "febuxostat",
+  "meloxicam", "aspirin", "celecoxib", "etoricoxib", "diclofenac", "naproxen",
+  "amoxicillin", "ciprofloxacin", "cefuroxime", "cefixime", "cephalexin",
+  "azithromycin", "clarithromycin", "metronidazole", "acyclovir", "oseltamivir",
+  "fluconazole", "ketoconazole", "itraconazole", "tenofovir", "entecavir",
+  "omeprazole", "pantoprazole", "esomeprazole", "rabeprazole", "lansoprazole",
+  "ranitidine", "famotidine", "loperamide", "bisacodyl", "domperidone",
+  "metoclopramide", "simethicone", "salbutamol", "acetylcysteine", "loratadine",
+  "cetirizine", "fexofenadine", "montelukast", "fluticasone", "budesonide",
+  "chlorpheniramine", "ambroxol", "amlodipine", "captopril", "losartan",
+  "valsartan", "enalapril", "nifedipine", "bisoprolol", "metoprolol",
+  "atorvastatin", "rosuvastatin", "simvastatin", "fenofibrate", "clopidogrel",
+  "metformin", "gliclazide", "glimepiride", "sitagliptin", "dapagliflozin",
+  "diazepam", "zolpidem", "gabapentin", "pregabalin", "sertraline", "fluoxetine",
+  "amitriptyline", "carbamazepine", "valproate", "prednisolone", "methylprednisolone",
+  "prednisone", "dexamethasone", "levothyroxine", "glucosamine", "alendronate"
+];
+
 // Trạng thái ứng dụng
-let drugsDb = {};
-let diseasesIndex = {};
 let diseaseDict = {}; // Từ điển bệnh lý tĩnh Anh-Việt
 let currentTab = 'disease'; // 'disease' hoặc 'drug'
 let currentLang = localStorage.getItem('pharma_lang') || 'vi'; // 'vi' hoặc 'en'
-let onlineMode = false; // Mặc định tìm offline
 let deferredPrompt = null;
 const searchCache = new Map(); // Cache tìm kiếm online để tăng tốc và tiết kiệm băng thông
 
 // Bộ dịch văn bản giao diện (UI)
 const UI_TRANSLATIONS = {
   vi: {
-    subtitle: "Tra cứu Thuốc & Bệnh lý ngoại tuyến",
+    subtitle: "Tra cứu Thuốc & Bệnh lý trực tuyến FDA",
     tabDisease: "Tìm theo Bệnh lý",
     tabDrug: "Tìm theo Tên Thuốc",
     placeholderDisease: "Nhập tên bệnh hoặc triệu chứng...",
     placeholderDrug: "Nhập tên thuốc hoặc hoạt chất...",
-    onlineLabel: "Tìm trực tuyến (OpenFDA)",
     placeholderMsg: "Bắt đầu nhập từ khóa tìm kiếm để tra cứu thông tin y khoa.",
     loadingText: "Đang tải và dịch dữ liệu từ FDA...",
-    noResults: "Không tìm thấy kết quả phù hợp với từ khóa \"{query}\". Bạn hãy thử bật chế độ Tìm trực tuyến phía trên.",
+    noResults: "Không tìm thấy kết quả phù hợp với từ khóa \"{query}\" trên FDA.",
     installBtn: "📲 Cài đặt ứng dụng về điện thoại",
-    copyright: "© 2026 PharmaSearch. Hoạt động ngoại tuyến & Miễn phí hoàn toàn.",
+    copyright: "© 2026 PharmaSearch. Đồng bộ trực tuyến & Miễn phí hoàn toàn.",
     source: "Dữ liệu chuẩn hóa từ DeepMind Science Skills",
     descTitle: "Mô tả tác dụng",
     usageTitle: "Cách dùng & Liều lượng",
@@ -38,17 +54,16 @@ const UI_TRANSLATIONS = {
     defaultWarning: "Ngưng thuốc nếu có dấu hiệu dị ứng."
   },
   en: {
-    subtitle: "Offline Medical & Drug Search",
+    subtitle: "Online Medical & FDA Drug Search",
     tabDisease: "Search by Disease",
     tabDrug: "Search by Drug Name",
     placeholderDisease: "Enter disease name or symptoms...",
     placeholderDrug: "Enter drug or active ingredient...",
-    onlineLabel: "Search Online (OpenFDA)",
     placeholderMsg: "Start entering keywords to search for medical information.",
     loadingText: "Loading and retrieving data from FDA...",
-    noResults: "No matching results found for \"{query}\". Try enabling Search Online above.",
+    noResults: "No matching results found for \"{query}\" on FDA.",
     installBtn: "📲 Install application to phone",
-    copyright: "© 2026 PharmaSearch. Works Offline & 100% Free.",
+    copyright: "© 2026 PharmaSearch. Works Online & 100% Free.",
     source: "Data standardized from DeepMind Science Skills",
     descTitle: "Description & Indications",
     usageTitle: "Dosage & Administration",
@@ -74,8 +89,6 @@ const installBtn = document.getElementById('install-btn');
 const langSwitchBtn = document.getElementById('lang-switch-btn');
 const langText = document.getElementById('lang-text');
 const appSubtitle = document.getElementById('app-subtitle');
-const onlineModeCheck = document.getElementById('online-mode-check');
-const onlineModeLabel = document.getElementById('online-mode-label');
 const loadingSpinner = document.getElementById('loading-spinner');
 const loadingText = document.getElementById('loading-text');
 const footerCopyright = document.getElementById('footer-copyright');
@@ -103,9 +116,6 @@ function updateUILanguage() {
   } else {
     searchInput.placeholder = t.placeholderDrug;
   }
-  
-  // Cập nhật nhãn tìm trực tuyến
-  onlineModeLabel.textContent = t.onlineLabel;
   
   // Cập nhật hộp placeholder
   placeholderMsg.textContent = t.placeholderMsg;
@@ -136,18 +146,6 @@ function toggleLanguage() {
   currentLang = currentLang === 'vi' ? 'en' : 'vi';
   localStorage.setItem('pharma_lang', currentLang);
   updateUILanguage();
-}
-
-/**
- * Bật/tắt chế độ tìm kiếm trực tuyến
- */
-function toggleOnlineMode() {
-  onlineMode = onlineModeCheck.checked;
-  hideSuggestions();
-  const query = searchInput.value.trim();
-  if (query) {
-    executeSearch(query);
-  }
 }
 
 /**
@@ -182,26 +180,31 @@ async function translateClientSide(text, targetLang = 'vi') {
 }
 
 /**
+ * Giới hạn độ dài chuỗi văn bản
+ * @param {string} text - Văn bản cần rút gọn
+ * @param {number} limit - Độ dài tối đa
+ * @returns {string} - Văn bản đã rút gọn
+ */
+function limitText(text, limit = 550) {
+  if (!text) return "";
+  return text.length > limit ? text.substring(0, limit) + "..." : text;
+}
+
+/**
  * Tải cơ sở dữ liệu từ các tệp JSON tĩnh ngoại tuyến
  */
 async function loadDatabase() {
   try {
-    const [drugsResponse, diseasesResponse, dictResponse] = await Promise.all([
-      fetch('data/drugs_db.json'),
-      fetch('data/diseases_index.json'),
-      fetch('data/disease_dictionary.json')
-    ]);
+    const dictResponse = await fetch('data/disease_dictionary.json');
 
-    if (!drugsResponse.ok || !diseasesResponse.ok || !dictResponse.ok) {
+    if (!dictResponse.ok) {
       throw new Error('Không thể đọc dữ liệu offline từ máy chủ.');
     }
 
-    drugsDb = await drugsResponse.json();
-    diseasesIndex = await diseasesResponse.json();
     diseaseDict = await dictResponse.json();
-    console.log('Đã nạp cơ sở dữ liệu song ngữ thành công.');
+    console.log('Đã nạp từ điển bệnh lý song ngữ thành công.');
   } catch (error) {
-    console.error('Lỗi khi tải dữ liệu y khoa:', error);
+    console.error('Lỗi khi tải từ điển:', error);
     placeholderMsg.textContent = currentLang === 'vi' 
       ? 'Không thể tải cơ sở dữ liệu offline. Vui lòng tải lại trang.' 
       : 'Failed to load offline database. Please reload page.';
@@ -286,16 +289,10 @@ searchInput.addEventListener('input', () => {
     // Lọc các từ khóa bệnh lý khớp với truy vấn trong từ điển tĩnh diseaseDict
     matches = Object.keys(diseaseDict).filter(key => key.includes(query));
   } else {
-    // Lọc tên thuốc khớp với truy vấn dựa trên cả EN và VI
-    matches = Object.values(drugsDb)
-      .filter(drug => {
-        const nameEn = (drug.name_en || '').toLowerCase();
-        const nameVi = (drug.name_vi || '').toLowerCase();
-        const typeEn = (drug.type_en || '').toLowerCase();
-        const typeVi = (drug.type_vi || '').toLowerCase();
-        return nameEn.includes(query) || nameVi.includes(query) || typeEn.includes(query) || typeVi.includes(query);
-      })
-      .map(drug => currentLang === 'vi' ? drug.name_vi : drug.name_en);
+    // Lọc từ danh sách hoạt chất thiết yếu tĩnh
+    matches = ESSENTIAL_DRUGS
+      .filter(name => name.toLowerCase().includes(query))
+      .map(name => name.toUpperCase());
   }
 
   // Giới hạn gợi ý tối đa 5 kết quả
@@ -373,10 +370,12 @@ async function searchOpenFDAOnline(query, tab) {
   }
 
   let searchUrl = "";
-  const cleanQuery = query.trim().toLowerCase();
+  // Rút gọn cụm từ chính trước dấu ngoặc đơn và loại bỏ ký tự lạ để tránh lỗi Lucene của FDA
+  let cleanQuery = query.split('(')[0].trim().toLowerCase();
+  cleanQuery = cleanQuery.replace(/[^a-z0-9\s-]/g, '').trim();
   
   // Tab drug tìm trực tuyến
-  searchUrl = `https://api.fda.gov/drug/label.json?search=openfda.generic_name:"${encodeURIComponent(cleanQuery)}"+OR+openfda.brand_name:"${encodeURIComponent(cleanQuery)}"+OR+openfda.generic_name:${encodeURIComponent(cleanQuery)}&limit=4`;
+  searchUrl = `https://api.fda.gov/drug/label.json?search=openfda.generic_name:"${encodeURIComponent(cleanQuery)}"+OR+openfda.brand_name:"${encodeURIComponent(cleanQuery)}"+OR+openfda.generic_name:${encodeURIComponent(cleanQuery)}&limit=10`;
   
   const response = await fetch(searchUrl);
   if (!response.ok) {
@@ -478,8 +477,8 @@ async function searchDiseaseFDAOnline(query) {
   // Bước 1: Ánh xạ từ khóa sang tiếng Anh chuẩn từ từ điển tĩnh
   let enKeyword = diseaseDict[normQuery] || normQuery;
   
-  // Bước 2: Gọi OpenFDA Count API để tìm các hoạt chất liên quan nhất
-  const countUrl = `https://api.fda.gov/drug/label.json?search=indications_and_usage:"${encodeURIComponent(enKeyword)}"&count=openfda.generic_name.exact&limit=10`;
+  // Bước 2: Gọi OpenFDA Count API để tìm các hoạt chất liên quan nhất (tăng giới hạn lên để lấy nhiều thuốc hơn)
+  const countUrl = `https://api.fda.gov/drug/label.json?search=indications_and_usage:"${encodeURIComponent(enKeyword)}"&count=openfda.generic_name.exact&limit=25`;
   
   const countResponse = await fetch(countUrl);
   if (!countResponse.ok) {
@@ -490,12 +489,33 @@ async function searchDiseaseFDAOnline(query) {
   const countData = await countResponse.json();
   const rawTerms = countData.results || [];
   
-  // Lọc các hoạt chất rác hoặc quá chung chung
+  // Lọc các hoạt chất rác hoặc quá chung chung và chuẩn hóa lọc trùng dạng muối hoạt chất
   const blacklist = ["WATER", "OXYGEN", "ALCOHOL", "SODIUM CHLORIDE"];
-  const activeIngredients = rawTerms
-    .map(t => t.term)
-    .filter(term => term && !blacklist.includes(term.toUpperCase()))
-    .slice(0, 5); // Lấy top 5 thuốc phổ biến nhất
+  const seenBases = new Set();
+  const activeIngredients = [];
+  
+  for (const termObj of rawTerms) {
+    const term = termObj.term;
+    if (!term) continue;
+    const termUpper = term.toUpperCase();
+    if (blacklist.includes(termUpper)) continue;
+    
+    // Chuẩn hóa cơ bản để tránh trùng lặp hoạt chất dưới các dạng muối khác nhau (ví dụ Naproxen và Naproxen Sodium)
+    let baseName = termUpper
+      .replace(/\b(SODIUM|POTASSIUM|CALCIUM|HYDROCHLORIDE|MALEATE|TARTRATE|SULFATE|PHOSPHATE|ACETATE|MESYLATE)\b/g, '')
+      .trim();
+    
+    if (seenBases.has(baseName)) {
+      continue;
+    }
+    seenBases.add(baseName);
+    activeIngredients.push(term);
+    
+    // Hiển thị tối đa 10 thuốc điều trị cho bệnh lý
+    if (activeIngredients.length >= 10) {
+      break;
+    }
+  }
 
   if (activeIngredients.length === 0) {
     return [];
