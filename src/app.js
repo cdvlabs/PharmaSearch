@@ -195,7 +195,7 @@ function limitText(text, limit = 550) {
  */
 async function loadDatabase() {
   try {
-    const dictResponse = await fetch('data/disease_dictionary.json');
+    const dictResponse = await fetch('data/disease_dictionary.json?v=12');
 
     if (!dictResponse.ok) {
       throw new Error('Không thể đọc dữ liệu offline từ máy chủ.');
@@ -217,10 +217,8 @@ async function loadDatabase() {
 function updateControlsVisibility() {
   const searchOptions = document.querySelector('.search-options');
   if (currentTab === 'disease') {
-    if (langSwitchBtn) langSwitchBtn.style.display = 'none';
     if (searchOptions) searchOptions.style.display = 'none';
   } else {
-    if (langSwitchBtn) langSwitchBtn.style.display = 'flex';
     if (searchOptions) searchOptions.style.display = 'flex';
   }
 }
@@ -490,7 +488,11 @@ async function searchDiseaseFDAOnline(query) {
   const rawTerms = countData.results || [];
   
   // Lọc các hoạt chất rác hoặc quá chung chung và chuẩn hóa lọc trùng dạng muối hoạt chất
-  const blacklist = ["WATER", "OXYGEN", "ALCOHOL", "SODIUM CHLORIDE"];
+  const blacklist = [
+    "WATER", "OXYGEN", "ALCOHOL", "SODIUM CHLORIDE", 
+    "ZIPRASIDONE", "ZIPRASIDONE HYDROCHLORIDE", "ZIPRASIDONE MESYLATE", "ZIPRASIDONE HCL",
+    "HALOPERIDOL", "THIORIDAZINE"
+  ];
   const seenBases = new Set();
   const activeIngredients = [];
   
@@ -504,6 +506,11 @@ async function searchDiseaseFDAOnline(query) {
     let baseName = termUpper
       .replace(/\b(SODIUM|POTASSIUM|CALCIUM|HYDROCHLORIDE|MALEATE|TARTRATE|SULFATE|PHOSPHATE|ACETATE|MESYLATE)\b/g, '')
       .trim();
+    
+    // Nếu hoạt chất chứa quá nhiều thành phần phối hợp (nhiều hơn 3 dấu phẩy) thường là thuốc vi lượng đồng căn/thảo dược dài dòng
+    if (term.split(',').length > 3) {
+      continue;
+    }
     
     if (seenBases.has(baseName)) {
       continue;
@@ -644,43 +651,47 @@ async function executeSearch(query) {
     }
   } else {
     // ------------------------------------
-    // Tab TÊN THUỐC: Có thể tìm Online hoặc Offline
+    // Tab TÊN THUỐC: Luôn tìm trực tuyến qua OpenFDA
     // ------------------------------------
-    if (onlineMode) {
-      loadingSpinner.style.display = 'flex';
-      try {
-        matchedDrugs = await searchOpenFDAOnline(query, currentTab);
-        loadingSpinner.style.display = 'none';
-      } catch (error) {
-        loadingSpinner.style.display = 'none';
-        const t = UI_TRANSLATIONS[currentLang];
-        if (error.message === "OFFLINE") {
-          resultsList.innerHTML = `
-            <div class="placeholder-text">
-              <div class="placeholder-icon">⚠️</div>
-              <p>${t.noConnection}</p>
-            </div>
-          `;
-        } else {
-          resultsList.innerHTML = `
-            <div class="placeholder-text">
-              <div class="placeholder-icon">❌</div>
-              <p>${currentLang === 'vi' ? 'Không thể kết nối tới máy chủ FDA hoặc giới hạn truy cập.' : 'Failed to connect to FDA server or rate limited.'}</p>
-            </div>
-          `;
-        }
-        return;
+    loadingSpinner.style.display = 'flex';
+    try {
+      matchedDrugs = await searchOpenFDAOnline(query, currentTab);
+      loadingSpinner.style.display = 'none';
+    } catch (error) {
+      loadingSpinner.style.display = 'none';
+      const t = UI_TRANSLATIONS[currentLang];
+      if (error.message === "OFFLINE") {
+        resultsList.innerHTML = `
+          <div class="placeholder-text">
+            <div class="placeholder-icon">⚠️</div>
+            <p>${t.noConnection}</p>
+          </div>
+        `;
+      } else {
+        resultsList.innerHTML = `
+          <div class="placeholder-text">
+            <div class="placeholder-icon">❌</div>
+            <p>${currentLang === 'vi' ? 'Không thể kết nối tới máy chủ FDA hoặc giới hạn truy cập.' : 'Failed to connect to FDA server or rate limited.'}</p>
+          </div>
+        `;
       }
-    } else {
-      // Chế độ ngoại tuyến từ local DB
-      matchedDrugs = Object.values(drugsDb).filter(drug => {
-        const nameEn = (drug.name_en || '').toLowerCase();
-        const nameVi = (drug.name_vi || '').toLowerCase();
-        const typeEn = (drug.type_en || '').toLowerCase();
-        const typeVi = (drug.type_vi || '').toLowerCase();
-        return nameEn.includes(normQuery) || nameVi.includes(normQuery) || typeEn.includes(normQuery) || typeVi.includes(normQuery);
-      });
+      return;
     }
+  }
+
+  // Lọc trùng các kết quả hoạt chất dựa trên tên rút gọn (shortName) để tránh trùng lặp cùng một hoạt chất từ các hãng khác nhau
+  if (matchedDrugs.length > 0) {
+    const uniqueDrugs = [];
+    const seenNames = new Set();
+    matchedDrugs.forEach(drug => {
+      const drugName = currentLang === 'vi' ? (drug.name_vi || drug.name_en) : (drug.name_en || drug.name_vi);
+      const shortName = drugName.split('(')[0].trim().toUpperCase();
+      if (!seenNames.has(shortName)) {
+        seenNames.add(shortName);
+        uniqueDrugs.push(drug);
+      }
+    });
+    matchedDrugs = uniqueDrugs;
   }
 
   // Nếu không tìm thấy kết quả nào
@@ -733,13 +744,6 @@ async function executeSearch(query) {
   });
 }
 
-/**
- * Hỗ trợ kích hoạt nhanh tìm kiếm trực tuyến
- */
-function enableOnlineAndSearch(query) {
-  onlineModeCheck.checked = true;
-  toggleOnlineMode();
-}
 
 /**
  * Tạo Card hiển thị thông tin thuốc song ngữ
@@ -827,29 +831,6 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-/**
- * Cài đặt PWA
- */
-window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-  deferredPrompt = e;
-  installBtn.style.display = 'block';
-});
-
-installBtn.addEventListener('click', async () => {
-  if (!deferredPrompt) return;
-  deferredPrompt.prompt();
-  const { outcome } = await deferredPrompt.userChoice;
-  console.log(`Người dùng chọn cài đặt PWA: ${outcome}`);
-  deferredPrompt = null;
-  installBtn.style.display = 'none';
-});
-
-window.addEventListener('appinstalled', () => {
-  console.log('Ứng dụng PharmaSearch đã cài đặt thành công!');
-  installBtn.style.display = 'none';
-});
-
 // Khởi chạy ứng dụng
 async function initApp() {
   updateUILanguage();
@@ -858,18 +839,21 @@ async function initApp() {
   
   // Gán các hàm sự kiện chính vào window scope để các thuộc tính inline onclick/onchange trong HTML hoạt động chính xác
   window.toggleLanguage = toggleLanguage;
-  window.toggleOnlineMode = toggleOnlineMode;
   window.switchTab = switchTab;
-  window.enableOnlineAndSearch = enableOnlineAndSearch;
   window.triggerTagSearch = triggerTagSearch;
 
-  // Gán thêm Event Listeners trực tiếp bằng JS để đảm bảo tính ổn định tối đa
-  if (langSwitchBtn) {
-    langSwitchBtn.addEventListener('click', toggleLanguage);
-  }
-  if (onlineModeCheck) {
-    onlineModeCheck.addEventListener('change', toggleOnlineMode);
+  // Gán sự kiện click cho nút Tìm kiếm mới
+  const searchBtn = document.getElementById('search-btn');
+  if (searchBtn) {
+    searchBtn.addEventListener('click', () => {
+      const query = searchInput.value.trim();
+      if (query) {
+        hideSuggestions();
+        executeSearch(query);
+      }
+    });
   }
 }
 
 initApp();
+

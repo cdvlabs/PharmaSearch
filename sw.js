@@ -1,9 +1,9 @@
-const CACHE_NAME = 'pharmasearch-v6';
+const CACHE_NAME = 'pharmasearch-v12';
 const ASSETS_TO_CACHE = [
-  'src/index.html',
-  'src/style.css',
-  'src/app.js',
-  'src/data/disease_dictionary.json',
+  'src/index.html?v=12',
+  'src/style.css?v=12',
+  'src/app.js?v=12',
+  'src/data/disease_dictionary.json?v=12',
   'public/manifest.json',
   'public/icon.png'
 ];
@@ -37,7 +37,7 @@ self.addEventListener('activate', (e) => {
 // Chiến lược Cache-First: Ưu tiên lấy từ Cache trước để tối ưu tốc độ và chạy offline
 self.addEventListener('fetch', (e) => {
   e.respondWith(
-    caches.match(e.request).then((cachedResponse) => {
+    caches.match(e.request, { ignoreSearch: true }).then((cachedResponse) => {
       if (cachedResponse) {
         return cachedResponse;
       }
@@ -59,7 +59,7 @@ self.addEventListener('fetch', (e) => {
       }).catch(() => {
         // Trả về trang ngoại tuyến nếu không thể kết nối mạng (dành riêng cho các yêu cầu điều hướng trang)
         if (e.request.mode === 'navigate') {
-          return caches.match('src/index.html');
+          return caches.match('src/index.html', { ignoreSearch: true });
         }
       });
     })
