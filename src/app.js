@@ -5,6 +5,7 @@
 // Trạng thái ứng dụng
 let drugsDb = {};
 let diseasesIndex = {};
+let diseaseDict = {}; // Từ điển bệnh lý tĩnh Anh-Việt
 let currentTab = 'disease'; // 'disease' hoặc 'drug'
 let currentLang = localStorage.getItem('pharma_lang') || 'vi'; // 'vi' hoặc 'en'
 let onlineMode = false; // Mặc định tìm offline
@@ -185,23 +186,39 @@ async function translateClientSide(text, targetLang = 'vi') {
  */
 async function loadDatabase() {
   try {
-    const [drugsResponse, diseasesResponse] = await Promise.all([
+    const [drugsResponse, diseasesResponse, dictResponse] = await Promise.all([
       fetch('data/drugs_db.json'),
-      fetch('data/diseases_index.json')
+      fetch('data/diseases_index.json'),
+      fetch('data/disease_dictionary.json')
     ]);
 
-    if (!drugsResponse.ok || !diseasesResponse.ok) {
+    if (!drugsResponse.ok || !diseasesResponse.ok || !dictResponse.ok) {
       throw new Error('Không thể đọc dữ liệu offline từ máy chủ.');
     }
 
     drugsDb = await drugsResponse.json();
     diseasesIndex = await diseasesResponse.json();
+    diseaseDict = await dictResponse.json();
     console.log('Đã nạp cơ sở dữ liệu song ngữ thành công.');
   } catch (error) {
     console.error('Lỗi khi tải dữ liệu y khoa:', error);
     placeholderMsg.textContent = currentLang === 'vi' 
       ? 'Không thể tải cơ sở dữ liệu offline. Vui lòng tải lại trang.' 
       : 'Failed to load offline database. Please reload page.';
+  }
+}
+
+/**
+ * Cập nhật hiển thị các nút điều khiển dựa trên tab hiện tại
+ */
+function updateControlsVisibility() {
+  const searchOptions = document.querySelector('.search-options');
+  if (currentTab === 'disease') {
+    if (langSwitchBtn) langSwitchBtn.style.display = 'none';
+    if (searchOptions) searchOptions.style.display = 'none';
+  } else {
+    if (langSwitchBtn) langSwitchBtn.style.display = 'flex';
+    if (searchOptions) searchOptions.style.display = 'flex';
   }
 }
 
@@ -214,6 +231,7 @@ function switchTab(tab) {
   currentTab = tab;
 
   const t = UI_TRANSLATIONS[currentLang];
+  updateControlsVisibility();
 
   if (currentTab === 'disease') {
     tabDisease.classList.add('active');
@@ -265,8 +283,8 @@ searchInput.addEventListener('input', () => {
   let matches = [];
 
   if (currentTab === 'disease') {
-    // Lọc các từ khóa bệnh lý khớp với truy vấn (trong diseasesIndex)
-    matches = Object.keys(diseasesIndex).filter(key => key.includes(query));
+    // Lọc các từ khóa bệnh lý khớp với truy vấn trong từ điển tĩnh diseaseDict
+    matches = Object.keys(diseaseDict).filter(key => key.includes(query));
   } else {
     // Lọc tên thuốc khớp với truy vấn dựa trên cả EN và VI
     matches = Object.values(drugsDb)
@@ -357,11 +375,8 @@ async function searchOpenFDAOnline(query, tab) {
   let searchUrl = "";
   const cleanQuery = query.trim().toLowerCase();
   
-  if (tab === 'disease') {
-    searchUrl = `https://api.fda.gov/drug/label.json?search=indications_and_usage:"${encodeURIComponent(cleanQuery)}"+OR+indications_and_usage:${encodeURIComponent(cleanQuery)}&limit=4`;
-  } else {
-    searchUrl = `https://api.fda.gov/drug/label.json?search=openfda.generic_name:"${encodeURIComponent(cleanQuery)}"+OR+openfda.brand_name:"${encodeURIComponent(cleanQuery)}"+OR+openfda.generic_name:${encodeURIComponent(cleanQuery)}&limit=4`;
-  }
+  // Tab drug tìm trực tuyến
+  searchUrl = `https://api.fda.gov/drug/label.json?search=openfda.generic_name:"${encodeURIComponent(cleanQuery)}"+OR+openfda.brand_name:"${encodeURIComponent(cleanQuery)}"+OR+openfda.generic_name:${encodeURIComponent(cleanQuery)}&limit=4`;
   
   const response = await fetch(searchUrl);
   if (!response.ok) {
@@ -409,8 +424,8 @@ async function searchOpenFDAOnline(query, tab) {
       usage_vi: "",
       warnings_en: warningsEn || "Stop use if allergy symptoms occur.",
       warnings_vi: "",
-      diseases_en: tab === 'disease' ? [query.toUpperCase()] : [typeEn],
-      diseases_vi: tab === 'disease' ? [query.toUpperCase()] : [],
+      diseases_en: [typeEn],
+      diseases_vi: [],
       isOnline: true
     };
     
@@ -427,7 +442,7 @@ async function searchOpenFDAOnline(query, tab) {
       drugObj.usage_vi = usageVi;
       drugObj.warnings_vi = warningsVi;
       
-      if (tab !== 'disease' && typeEn) {
+      if (typeEn) {
         const typeViPill = await translateClientSide(typeEn, 'vi');
         drugObj.diseases_vi = [typeViPill];
       } else {
@@ -444,6 +459,130 @@ async function searchOpenFDAOnline(query, tab) {
 }
 
 /**
+ * Tìm kiếm y khoa theo Bệnh lý online trên OpenFDA sử dụng cơ chế đếm tần suất hoạt chất
+ * @param {string} query - Từ khóa bệnh lý của người dùng (Anh hoặc Việt)
+ * @returns {Promise<Array>} - Danh sách thuốc điều trị đặc trị hàng đầu
+ */
+async function searchDiseaseFDAOnline(query) {
+  if (!navigator.onLine) {
+    throw new Error("OFFLINE");
+  }
+
+  const cacheKey = `disease_fda_${query}`;
+  if (searchCache.has(cacheKey)) {
+    return searchCache.get(cacheKey);
+  }
+
+  const normQuery = query.toLowerCase().trim();
+  
+  // Bước 1: Ánh xạ từ khóa sang tiếng Anh chuẩn từ từ điển tĩnh
+  let enKeyword = diseaseDict[normQuery] || normQuery;
+  
+  // Bước 2: Gọi OpenFDA Count API để tìm các hoạt chất liên quan nhất
+  const countUrl = `https://api.fda.gov/drug/label.json?search=indications_and_usage:"${encodeURIComponent(enKeyword)}"&count=openfda.generic_name.exact&limit=10`;
+  
+  const countResponse = await fetch(countUrl);
+  if (!countResponse.ok) {
+    if (countResponse.status === 404) return [];
+    throw new Error("FDA API Error");
+  }
+  
+  const countData = await countResponse.json();
+  const rawTerms = countData.results || [];
+  
+  // Lọc các hoạt chất rác hoặc quá chung chung
+  const blacklist = ["WATER", "OXYGEN", "ALCOHOL", "SODIUM CHLORIDE"];
+  const activeIngredients = rawTerms
+    .map(t => t.term)
+    .filter(term => term && !blacklist.includes(term.toUpperCase()))
+    .slice(0, 5); // Lấy top 5 thuốc phổ biến nhất
+
+  if (activeIngredients.length === 0) {
+    return [];
+  }
+
+  // Bước 3: Với mỗi hoạt chất, gọi FDA Detail API để lấy thông tin nhãn chi tiết
+  const formattedResults = [];
+  
+  await Promise.all(activeIngredients.map(async (ingredient) => {
+    try {
+      const detailUrl = `https://api.fda.gov/drug/label.json?search=openfda.generic_name.exact:"${encodeURIComponent(ingredient)}"&limit=1`;
+      const detailResponse = await fetch(detailUrl);
+      if (!detailResponse.ok) return;
+      
+      const detailData = await detailResponse.json();
+      const item = detailData.results ? detailData.results[0] : null;
+      if (!item) return;
+
+      const openfda = item.openfda || {};
+      const genericName = openfda.generic_name ? openfda.generic_name[0] : ingredient;
+      const brandName = openfda.brand_name ? openfda.brand_name[0] : "";
+      
+      const nameEn = genericName ? `${genericName.toUpperCase()}${brandName ? ` (${brandName})` : ''}` : brandName;
+      const id = ingredient.toLowerCase().replace(/[^a-z0-9]/g, "-");
+      
+      const pharmClass = openfda.pharm_class_epc || openfda.pharm_class_cs || [];
+      const typeEn = pharmClass[0] || "Drug Information";
+      
+      // Lấy 4 trường quan trọng
+      const rawIndications = item.indications_and_usage ? item.indications_and_usage[0] : "";
+      const rawDesc = item.description ? item.description[0] : "";
+      const rawUsage = item.dosage_and_administration ? item.dosage_and_administration[0] : "";
+      const rawWarnings = item.warnings_and_cautions ? item.warnings_and_cautions[0] : (item.warnings ? item.warnings[0] : "");
+      
+      const descText = limitText(rawDesc) || "No detailed description available in FDA database.";
+      const usageText = limitText(rawUsage) || "Take as directed by your doctor.";
+      const warningsText = limitText(rawWarnings) || "Please consult warnings on the product label.";
+      const indicationsText = limitText(rawIndications) || "Refer to doctor indications.";
+
+      // Dịch sang tiếng Việt
+      const [typeVi, descVi, usageVi, warningsVi, indicationsVi] = await Promise.all([
+        translateClientSide(typeEn, 'vi'),
+        translateClientSide(descText, 'vi'),
+        translateClientSide(usageText, 'vi'),
+        translateClientSide(warningsText, 'vi'),
+        translateClientSide(indicationsText, 'vi')
+      ]);
+
+      const drugObj = {
+        id: id,
+        name_en: nameEn,
+        name_vi: nameEn, // Giữ nguyên tên gốc Latin
+        type_en: typeEn,
+        type_vi: typeVi || typeEn,
+        description_en: descText,
+        description_vi: descVi || descText,
+        usage_en: usageText,
+        usage_vi: usageVi || usageText,
+        warnings_en: warningsText,
+        warnings_vi: warningsVi || warningsText,
+        diseases_en: [enKeyword.toUpperCase()],
+        diseases_vi: [query.toUpperCase()],
+        isOnline: true,
+        indications_en: indicationsText,
+        indications_vi: indicationsVi || indicationsText
+      };
+      
+      formattedResults.push(drugObj);
+    } catch (err) {
+      console.error(`Lỗi lấy thông tin chi tiết cho ${ingredient}:`, err);
+    }
+  }));
+
+  // Đảm bảo thứ tự hiển thị trùng khớp với thứ tự count từ cao xuống thấp của activeIngredients ban đầu
+  const sortedResults = [];
+  activeIngredients.forEach(ingredient => {
+    const matched = formattedResults.find(r => r.id === ingredient.toLowerCase().replace(/[^a-z0-9]/g, "-"));
+    if (matched) {
+      sortedResults.push(matched);
+    }
+  });
+
+  searchCache.set(cacheKey, sortedResults);
+  return sortedResults;
+}
+
+/**
  * Thực hiện tìm kiếm chính thức
  * @param {string} query - Chuỗi tìm kiếm
  */
@@ -455,13 +594,13 @@ async function executeSearch(query) {
   placeholderBox.style.display = 'none';
   resultsList.innerHTML = '';
   
-  if (onlineMode) {
+  if (currentTab === 'disease') {
     // ------------------------------------
-    // Chế độ Tìm kiếm Trực tuyến (OpenFDA)
+    // Tab BỆNH LÝ: Luôn gọi FDA Online đếm tần suất thuốc
     // ------------------------------------
     loadingSpinner.style.display = 'flex';
     try {
-      matchedDrugs = await searchOpenFDAOnline(query, currentTab);
+      matchedDrugs = await searchDiseaseFDAOnline(query);
       loadingSpinner.style.display = 'none';
     } catch (error) {
       loadingSpinner.style.display = 'none';
@@ -477,7 +616,7 @@ async function executeSearch(query) {
         resultsList.innerHTML = `
           <div class="placeholder-text">
             <div class="placeholder-icon">❌</div>
-            <p>${currentLang === 'vi' ? 'Không thể kết nối tới máy chủ FDA hoặc giới hạn truy cập.' : 'Failed to connect to FDA server or rate limited.'}</p>
+            <p>Không tìm thấy kết quả phù hợp trên FDA hoặc vượt quá giới hạn lượt gọi y khoa.</p>
           </div>
         `;
       }
@@ -485,23 +624,35 @@ async function executeSearch(query) {
     }
   } else {
     // ------------------------------------
-    // Chế độ Tìm kiếm Ngoại tuyến (Offline Local DB)
+    // Tab TÊN THUỐC: Có thể tìm Online hoặc Offline
     // ------------------------------------
-    if (currentTab === 'disease') {
-      // 1. Tìm theo bệnh lý
-      const matchedDiseases = Object.keys(diseasesIndex).filter(key => key.includes(normQuery));
-      const drugIds = new Set();
-      matchedDiseases.forEach(dis => {
-        diseasesIndex[dis].forEach(d => drugIds.add(d.id));
-      });
-
-      drugIds.forEach(id => {
-        if (drugsDb[id]) {
-          matchedDrugs.push(drugsDb[id]);
+    if (onlineMode) {
+      loadingSpinner.style.display = 'flex';
+      try {
+        matchedDrugs = await searchOpenFDAOnline(query, currentTab);
+        loadingSpinner.style.display = 'none';
+      } catch (error) {
+        loadingSpinner.style.display = 'none';
+        const t = UI_TRANSLATIONS[currentLang];
+        if (error.message === "OFFLINE") {
+          resultsList.innerHTML = `
+            <div class="placeholder-text">
+              <div class="placeholder-icon">⚠️</div>
+              <p>${t.noConnection}</p>
+            </div>
+          `;
+        } else {
+          resultsList.innerHTML = `
+            <div class="placeholder-text">
+              <div class="placeholder-icon">❌</div>
+              <p>${currentLang === 'vi' ? 'Không thể kết nối tới máy chủ FDA hoặc giới hạn truy cập.' : 'Failed to connect to FDA server or rate limited.'}</p>
+            </div>
+          `;
         }
-      });
+        return;
+      }
     } else {
-      // 2. Tìm theo tên thuốc hoặc loại thuốc
+      // Chế độ ngoại tuyến từ local DB
       matchedDrugs = Object.values(drugsDb).filter(drug => {
         const nameEn = (drug.name_en || '').toLowerCase();
         const nameVi = (drug.name_vi || '').toLowerCase();
@@ -512,7 +663,19 @@ async function executeSearch(query) {
     }
   }
 
-  // Neu co nhieu thuoc, hien thi Bo chon nhanh (Quick Selector)
+  // Nếu không tìm thấy kết quả nào
+  if (matchedDrugs.length === 0) {
+    const t = UI_TRANSLATIONS[currentLang];
+    resultsList.innerHTML = `
+      <div class="placeholder-text">
+        <div class="placeholder-icon">🩺</div>
+        <p>${t.noResults.replace('{query}', query)}</p>
+      </div>
+    `;
+    return;
+  }
+
+  // Nếu có nhiều thuốc, hiển thị Bộ chọn nhanh (Quick Selector)
   if (matchedDrugs.length > 1) {
     const selectorContainer = document.createElement('div');
     selectorContainer.className = 'drug-selector-container';
@@ -569,7 +732,7 @@ function createDrugCard(drug) {
   
   const t = UI_TRANSLATIONS[currentLang];
 
-  // Lấy các giá trị hiển thị theo ngôn ngữ hiện tại
+  // Lấy các giá trị hiển thị theo ngôn ngữ hiện tại, tự động fallback nếu tiếng Việt trống
   const name = currentLang === 'vi' ? (drug.name_vi || drug.name_en) : (drug.name_en || drug.name_vi);
   const type = currentLang === 'vi' ? (drug.type_vi || drug.type_en) : (drug.type_en || drug.type_vi);
   const desc = currentLang === 'vi' ? (drug.description_vi || drug.description_en) : (drug.description_en || drug.description_vi);
@@ -584,6 +747,9 @@ function createDrugCard(drug) {
   const tagsHTML = diseases
     .map(dis => `<span class="tag-item" onclick="triggerTagSearch('${dis}')">${dis}</span>`)
     .join('');
+
+  // Lấy chi tiết chỉ định y khoa (FDA indications)
+  const indicationsContent = currentLang === 'vi' ? (drug.indications_vi || drug.indications_en || "") : (drug.indications_en || drug.indications_vi || "");
 
   card.innerHTML = `
     <div class="card-title-container">
@@ -607,11 +773,12 @@ function createDrugCard(drug) {
       <div class="card-section-accordion-content">${warnings}</div>
     </details>
 
-    ${tagsHTML ? `
+    ${(indicationsContent || tagsHTML) ? `
     <details class="card-section-accordion indications">
       <summary><span>🎯 ${t.indicationsTitle}</span></summary>
       <div class="card-section-accordion-content">
-        <div class="tag-list">${tagsHTML}</div>
+        ${indicationsContent ? `<p style="margin-bottom: 0.8rem; font-style: italic; line-height: 1.5; color: var(--text); opacity: 0.9;">${indicationsContent}</p>` : ''}
+        ${tagsHTML ? `<div class="tag-list" style="margin-top: 0.5rem;">${tagsHTML}</div>` : ''}
       </div>
     </details>` : ''}
   `;
@@ -667,6 +834,7 @@ window.addEventListener('appinstalled', () => {
 async function initApp() {
   updateUILanguage();
   await loadDatabase();
+  updateControlsVisibility(); // Cập nhật trạng thái hiển thị các nút điều khiển ban đầu
   
   // Gán các hàm sự kiện chính vào window scope để các thuộc tính inline onclick/onchange trong HTML hoạt động chính xác
   window.toggleLanguage = toggleLanguage;

@@ -8,6 +8,7 @@ def test_json_files():
     json_files = [
         "src/data/drugs_db.json",
         "src/data/diseases_index.json",
+        "src/data/disease_dictionary.json",
         "public/manifest.json"
     ]
     
