@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PharmaSearch - Tra cứu Y Khoa & Thuốc Song Ngữ</title>
+  <meta name="description" content="Ứng dụng PWA hỗ trợ tra cứu bệnh lý, hoạt chất, thuốc điều trị song ngữ ngoại tuyến và trực tuyến hoàn toàn miễn phí.">
+  
+  <!-- Cấu hình PWA -->
+  <link rel="manifest" href="../public/manifest.json">
+  <meta name="theme-color" content="#f6f8fc">
+  <link rel="apple-touch-icon" href="../public/icon.png">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Neural Expressive Dynamic Glow Background -->
+  <div class="neural-glow-container" aria-hidden="true">
+    <div class="glow-ball glow-purple"></div>
+    <div class="glow-ball glow-blue"></div>
+    <div class="glow-ball glow-pink"></div>
+  </div>
+
+  <div class="app-container">
+    <!-- Header -->
+    <header>
+      <div class="header-top">
+        <h1 id="app-title">PharmaSearch</h1>
+        <!-- Nút chuyển đổi ngôn ngữ -->
+        <button id="lang-switch-btn" class="lang-btn" onclick="toggleLanguage()" aria-label="Chuyển đổi ngôn ngữ / Switch Language">
+          <span class="lang-icon">🌐</span>
+          <span id="lang-text">EN</span>
+        </button>
+      </div>
+      <p id="app-subtitle">Tra cứu Thuốc & Bệnh lý ngoại tuyến</p>
+    </header>
+
+    <!-- Tab điều hướng tìm kiếm -->
+    <div class="tab-container" role="tablist">
+      <button id="tab-disease" class="tab-btn active" role="tab" aria-selected="true" onclick="switchTab('disease')">
+        Tìm theo Bệnh lý
+      </button>
+      <button id="tab-drug" class="tab-btn" role="tab" aria-selected="false" onclick="switchTab('drug')">
+        Tìm theo Tên Thuốc
+      </button>
+    </div>
+
+    <!-- Khung tìm kiếm -->
+    <div class="search-wrapper">
+      <div class="search-input-container">
+        <span class="search-icon" aria-hidden="true">🔍</span>
+        <input 
+          type="search" 
+          id="search-input" 
+          class="search-input" 
+          placeholder="Nhập tên bệnh hoặc triệu chứng..." 
+          autocomplete="off"
+          aria-label="Tìm kiếm thuốc hoặc bệnh lý"
+        >
+        <!-- Danh sách gợi ý tự động (Auto-suggest) -->
+        <ul id="suggestions-list" class="suggestions-list"></ul>
+      </div>
+
+      <!-- Tùy chọn tìm kiếm trực tuyến (OpenFDA) -->
+      <div class="search-options">
+        <label class="switch-container">
+          <input type="checkbox" id="online-mode-check" onchange="toggleOnlineMode()">
+          <span class="switch-slider"></span>
+          <span id="online-mode-label" class="switch-label">Tìm trực tuyến (OpenFDA)</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Nút cài đặt PWA (chỉ hiện khi trình duyệt hỗ trợ) -->
+    <button id="install-btn">📲 Cài đặt ứng dụng về điện thoại</button>
+
+    <!-- Khu vực hiển thị kết quả -->
+    <main id="main-content" class="results-container">
+      <div id="placeholder-box" class="placeholder-text">
+        <div class="placeholder-icon" aria-hidden="true">🩺</div>
+        <p id="placeholder-msg">Bắt đầu nhập từ khóa tìm kiếm để tra cứu thông tin y khoa.</p>
+      </div>
+      
+      <!-- Loading indicator -->
+      <div id="loading-spinner" class="loading-container" style="display: none;">
+        <div class="spinner"></div>
+        <p id="loading-text">Đang tải và dịch dữ liệu từ FDA...</p>
+      </div>
+
+      <div id="results-list"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p id="footer-copyright">&copy; 2026 PharmaSearch. Hoạt động ngoại tuyến & Miễn phí hoàn toàn.</p>
+      <p id="footer-source" style="margin-top: 4px; opacity: 0.7;">Dữ liệu chuẩn hóa từ DeepMind Science Skills</p>
+    </footer>
+  </div>
+
+  <!-- JS Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

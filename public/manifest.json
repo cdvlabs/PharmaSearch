@@ -1,0 +1,18 @@
+{
+  "name": "PharmaSearch - Tra Cứu Thuốc Ngoại Tuyến",
+  "short_name": "PharmaSearch",
+  "description": "Ứng dụng tra cứu hoạt chất, biệt dược và bệnh lý y khoa ngoại tuyến miễn phí.",
+  "start_url": "../src/index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f6f8fc",
+  "theme_color": "#f6f8fc",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

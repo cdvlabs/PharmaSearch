@@ -1,0 +1,5186 @@
+{
+  "paracetamol": [
+    {
+      "id": "paracetamol",
+      "name_en": "Paracetamol",
+      "name_vi": "Paracetamol",
+      "type_en": "Analgesic/Antipyretic",
+      "type_vi": "Giảm đau, hạ sốt"
+    }
+  ],
+  "nhức đầu": [
+    {
+      "id": "ibuprofen",
+      "name_en": "Ibuprofen (Ibuprofen Dye Free)",
+      "name_vi": "Ibuprofen (Ibuprofen Dye Free)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm không Steroid"
+    },
+    {
+      "id": "aspirin",
+      "name_en": "Aspirin (Low Dose Aspirin)",
+      "name_vi": "Aspirin (Low Dose Aspirin)",
+      "type_en": "Antiplatelet/NSAID",
+      "type_vi": "Kháng tiểu cầu, giảm đau, ngừa huyết khối"
+    }
+  ],
+  "giảm đau": [
+    {
+      "id": "ibuprofen",
+      "name_en": "Ibuprofen (Ibuprofen Dye Free)",
+      "name_vi": "Ibuprofen (Ibuprofen Dye Free)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm không Steroid"
+    },
+    {
+      "id": "aspirin",
+      "name_en": "Aspirin (Low Dose Aspirin)",
+      "name_vi": "Aspirin (Low Dose Aspirin)",
+      "type_en": "Antiplatelet/NSAID",
+      "type_vi": "Kháng tiểu cầu, giảm đau, ngừa huyết khối"
+    },
+    {
+      "id": "celecoxib",
+      "name_en": "Celecoxib (Celecoxib)",
+      "name_vi": "Celecoxib (Celecoxib)",
+      "type_en": "NSAID",
+      "type_vi": "Thuốc kháng viêm giảm đau ức chế COX-2"
+    },
+    {
+      "id": "diclofenac",
+      "name_en": "Diclofenac (Diclofenac Sodium)",
+      "name_vi": "Diclofenac (Diclofenac Sodium)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm giảm đau xương khớp mạnh"
+    },
+    {
+      "id": "naproxen",
+      "name_en": "Naproxen (Naproxen)",
+      "name_vi": "Naproxen (Naproxen)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm giảm đau mức độ vừa"
+    },
+    {
+      "id": "nifedipine",
+      "name_en": "Nifedipine (Nifedipine)",
+      "name_vi": "Nifedipine (Nifedipine)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc điều trị tăng huyết áp, đau thắt ngực"
+    },
+    {
+      "id": "pregabalin",
+      "name_en": "Pregabalin (Pregabalin)",
+      "name_vi": "Pregabalin (Pregabalin)",
+      "type_en": "Anticonvulsant/Anxiolytic",
+      "type_vi": "Thuốc trị đau dây thần kinh, lo âu"
+    },
+    {
+      "id": "carbamazepine",
+      "name_en": "Carbamazepine (Carbamazepine)",
+      "name_vi": "Carbamazepine (Carbamazepine)",
+      "type_en": "Anticonvulsant",
+      "type_vi": "Thuốc trị động kinh, đau dây thần kinh số V"
+    }
+  ],
+  "sốt": [
+    {
+      "id": "ibuprofen",
+      "name_en": "Ibuprofen (Ibuprofen Dye Free)",
+      "name_vi": "Ibuprofen (Ibuprofen Dye Free)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm không Steroid"
+    },
+    {
+      "id": "colchicine",
+      "name_en": "Colchicine (Colchicine)",
+      "name_vi": "Colchicine (Colchicine)",
+      "type_en": "Antigout agent",
+      "type_vi": "Thuốc trị Gút/Gout cấp"
+    },
+    {
+      "id": "cefixime",
+      "name_en": "Cefixime (Cefixime)",
+      "name_vi": "Cefixime (Cefixime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 3"
+    },
+    {
+      "id": "loratadine",
+      "name_en": "Loratadine (Allergy Relief)",
+      "name_vi": "Loratadine (Allergy Relief)",
+      "type_en": "Antihistamine",
+      "type_vi": "Kháng Histamine trị dị ứng"
+    },
+    {
+      "id": "cetirizine",
+      "name_en": "Cetirizine (Cetirizine Hcl)",
+      "name_vi": "Cetirizine (Cetirizine Hcl)",
+      "type_en": "Antihistamine",
+      "type_vi": "Kháng Histamine trị dị ứng"
+    },
+    {
+      "id": "budesonide",
+      "name_en": "Budesonide (Budesonide)",
+      "name_vi": "Budesonide (Budesonide)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Corticoid xịt, hít trị hen suyễn"
+    }
+  ],
+  "viêm khớp": [
+    {
+      "id": "ibuprofen",
+      "name_en": "Ibuprofen (Ibuprofen Dye Free)",
+      "name_vi": "Ibuprofen (Ibuprofen Dye Free)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm không Steroid"
+    },
+    {
+      "id": "meloxicam",
+      "name_en": "Meloxicam (Meloxicam)",
+      "name_vi": "Meloxicam (Meloxicam)",
+      "type_en": "NSAID",
+      "type_vi": "Thuốc kháng viêm giảm đau xương khớp"
+    },
+    {
+      "id": "celecoxib",
+      "name_en": "Celecoxib (Celecoxib)",
+      "name_vi": "Celecoxib (Celecoxib)",
+      "type_en": "NSAID",
+      "type_vi": "Thuốc kháng viêm giảm đau ức chế COX-2"
+    },
+    {
+      "id": "diclofenac",
+      "name_en": "Diclofenac (Diclofenac Sodium)",
+      "name_vi": "Diclofenac (Diclofenac Sodium)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm giảm đau xương khớp mạnh"
+    },
+    {
+      "id": "naproxen",
+      "name_en": "Naproxen (Naproxen)",
+      "name_vi": "Naproxen (Naproxen)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm giảm đau mức độ vừa"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "đau khớp": [
+    {
+      "id": "ibuprofen",
+      "name_en": "Ibuprofen (Ibuprofen Dye Free)",
+      "name_vi": "Ibuprofen (Ibuprofen Dye Free)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm không Steroid"
+    },
+    {
+      "id": "meloxicam",
+      "name_en": "Meloxicam (Meloxicam)",
+      "name_vi": "Meloxicam (Meloxicam)",
+      "type_en": "NSAID",
+      "type_vi": "Thuốc kháng viêm giảm đau xương khớp"
+    },
+    {
+      "id": "celecoxib",
+      "name_en": "Celecoxib (Celecoxib)",
+      "name_vi": "Celecoxib (Celecoxib)",
+      "type_en": "NSAID",
+      "type_vi": "Thuốc kháng viêm giảm đau ức chế COX-2"
+    },
+    {
+      "id": "diclofenac",
+      "name_en": "Diclofenac (Diclofenac Sodium)",
+      "name_vi": "Diclofenac (Diclofenac Sodium)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm giảm đau xương khớp mạnh"
+    },
+    {
+      "id": "naproxen",
+      "name_en": "Naproxen (Naproxen)",
+      "name_vi": "Naproxen (Naproxen)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm giảm đau mức độ vừa"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "đau lưng": [
+    {
+      "id": "ibuprofen",
+      "name_en": "Ibuprofen (Ibuprofen Dye Free)",
+      "name_vi": "Ibuprofen (Ibuprofen Dye Free)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm không Steroid"
+    }
+  ],
+  "headache": [
+    {
+      "id": "ibuprofen",
+      "name_en": "Ibuprofen (Ibuprofen Dye Free)",
+      "name_vi": "Ibuprofen (Ibuprofen Dye Free)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm không Steroid"
+    },
+    {
+      "id": "aspirin",
+      "name_en": "Aspirin (Low Dose Aspirin)",
+      "name_vi": "Aspirin (Low Dose Aspirin)",
+      "type_en": "Antiplatelet/NSAID",
+      "type_vi": "Kháng tiểu cầu, giảm đau, ngừa huyết khối"
+    }
+  ],
+  "đau nhức": [
+    {
+      "id": "ibuprofen",
+      "name_en": "Ibuprofen (Ibuprofen Dye Free)",
+      "name_vi": "Ibuprofen (Ibuprofen Dye Free)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm không Steroid"
+    },
+    {
+      "id": "aspirin",
+      "name_en": "Aspirin (Low Dose Aspirin)",
+      "name_vi": "Aspirin (Low Dose Aspirin)",
+      "type_en": "Antiplatelet/NSAID",
+      "type_vi": "Kháng tiểu cầu, giảm đau, ngừa huyết khối"
+    },
+    {
+      "id": "celecoxib",
+      "name_en": "Celecoxib (Celecoxib)",
+      "name_vi": "Celecoxib (Celecoxib)",
+      "type_en": "NSAID",
+      "type_vi": "Thuốc kháng viêm giảm đau ức chế COX-2"
+    },
+    {
+      "id": "diclofenac",
+      "name_en": "Diclofenac (Diclofenac Sodium)",
+      "name_vi": "Diclofenac (Diclofenac Sodium)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm giảm đau xương khớp mạnh"
+    },
+    {
+      "id": "naproxen",
+      "name_en": "Naproxen (Naproxen)",
+      "name_vi": "Naproxen (Naproxen)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm giảm đau mức độ vừa"
+    },
+    {
+      "id": "nifedipine",
+      "name_en": "Nifedipine (Nifedipine)",
+      "name_vi": "Nifedipine (Nifedipine)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc điều trị tăng huyết áp, đau thắt ngực"
+    },
+    {
+      "id": "pregabalin",
+      "name_en": "Pregabalin (Pregabalin)",
+      "name_vi": "Pregabalin (Pregabalin)",
+      "type_en": "Anticonvulsant/Anxiolytic",
+      "type_vi": "Thuốc trị đau dây thần kinh, lo âu"
+    },
+    {
+      "id": "carbamazepine",
+      "name_en": "Carbamazepine (Carbamazepine)",
+      "name_vi": "Carbamazepine (Carbamazepine)",
+      "type_en": "Anticonvulsant",
+      "type_vi": "Thuốc trị động kinh, đau dây thần kinh số V"
+    }
+  ],
+  "pain relief": [
+    {
+      "id": "ibuprofen",
+      "name_en": "Ibuprofen (Ibuprofen Dye Free)",
+      "name_vi": "Ibuprofen (Ibuprofen Dye Free)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm không Steroid"
+    },
+    {
+      "id": "aspirin",
+      "name_en": "Aspirin (Low Dose Aspirin)",
+      "name_vi": "Aspirin (Low Dose Aspirin)",
+      "type_en": "Antiplatelet/NSAID",
+      "type_vi": "Kháng tiểu cầu, giảm đau, ngừa huyết khối"
+    },
+    {
+      "id": "celecoxib",
+      "name_en": "Celecoxib (Celecoxib)",
+      "name_vi": "Celecoxib (Celecoxib)",
+      "type_en": "NSAID",
+      "type_vi": "Thuốc kháng viêm giảm đau ức chế COX-2"
+    },
+    {
+      "id": "diclofenac",
+      "name_en": "Diclofenac (Diclofenac Sodium)",
+      "name_vi": "Diclofenac (Diclofenac Sodium)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm giảm đau xương khớp mạnh"
+    },
+    {
+      "id": "naproxen",
+      "name_en": "Naproxen (Naproxen)",
+      "name_vi": "Naproxen (Naproxen)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm giảm đau mức độ vừa"
+    },
+    {
+      "id": "nifedipine",
+      "name_en": "Nifedipine (Nifedipine)",
+      "name_vi": "Nifedipine (Nifedipine)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc điều trị tăng huyết áp, đau thắt ngực"
+    },
+    {
+      "id": "pregabalin",
+      "name_en": "Pregabalin (Pregabalin)",
+      "name_vi": "Pregabalin (Pregabalin)",
+      "type_en": "Anticonvulsant/Anxiolytic",
+      "type_vi": "Thuốc trị đau dây thần kinh, lo âu"
+    },
+    {
+      "id": "carbamazepine",
+      "name_en": "Carbamazepine (Carbamazepine)",
+      "name_vi": "Carbamazepine (Carbamazepine)",
+      "type_en": "Anticonvulsant",
+      "type_vi": "Thuốc trị động kinh, đau dây thần kinh số V"
+    }
+  ],
+  "đau đầu": [
+    {
+      "id": "ibuprofen",
+      "name_en": "Ibuprofen (Ibuprofen Dye Free)",
+      "name_vi": "Ibuprofen (Ibuprofen Dye Free)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm không Steroid"
+    },
+    {
+      "id": "aspirin",
+      "name_en": "Aspirin (Low Dose Aspirin)",
+      "name_vi": "Aspirin (Low Dose Aspirin)",
+      "type_en": "Antiplatelet/NSAID",
+      "type_vi": "Kháng tiểu cầu, giảm đau, ngừa huyết khối"
+    }
+  ],
+  "đau cơ": [
+    {
+      "id": "ibuprofen",
+      "name_en": "Ibuprofen (Ibuprofen Dye Free)",
+      "name_vi": "Ibuprofen (Ibuprofen Dye Free)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm không Steroid"
+    },
+    {
+      "id": "aspirin",
+      "name_en": "Aspirin (Low Dose Aspirin)",
+      "name_vi": "Aspirin (Low Dose Aspirin)",
+      "type_en": "Antiplatelet/NSAID",
+      "type_vi": "Kháng tiểu cầu, giảm đau, ngừa huyết khối"
+    },
+    {
+      "id": "celecoxib",
+      "name_en": "Celecoxib (Celecoxib)",
+      "name_vi": "Celecoxib (Celecoxib)",
+      "type_en": "NSAID",
+      "type_vi": "Thuốc kháng viêm giảm đau ức chế COX-2"
+    },
+    {
+      "id": "diclofenac",
+      "name_en": "Diclofenac (Diclofenac Sodium)",
+      "name_vi": "Diclofenac (Diclofenac Sodium)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm giảm đau xương khớp mạnh"
+    },
+    {
+      "id": "naproxen",
+      "name_en": "Naproxen (Naproxen)",
+      "name_vi": "Naproxen (Naproxen)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm giảm đau mức độ vừa"
+    },
+    {
+      "id": "nifedipine",
+      "name_en": "Nifedipine (Nifedipine)",
+      "name_vi": "Nifedipine (Nifedipine)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc điều trị tăng huyết áp, đau thắt ngực"
+    },
+    {
+      "id": "pregabalin",
+      "name_en": "Pregabalin (Pregabalin)",
+      "name_vi": "Pregabalin (Pregabalin)",
+      "type_en": "Anticonvulsant/Anxiolytic",
+      "type_vi": "Thuốc trị đau dây thần kinh, lo âu"
+    },
+    {
+      "id": "carbamazepine",
+      "name_en": "Carbamazepine (Carbamazepine)",
+      "name_vi": "Carbamazepine (Carbamazepine)",
+      "type_en": "Anticonvulsant",
+      "type_vi": "Thuốc trị động kinh, đau dây thần kinh số V"
+    }
+  ],
+  "toothache": [
+    {
+      "id": "ibuprofen",
+      "name_en": "Ibuprofen (Ibuprofen Dye Free)",
+      "name_vi": "Ibuprofen (Ibuprofen Dye Free)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm không Steroid"
+    }
+  ],
+  "đau răng": [
+    {
+      "id": "ibuprofen",
+      "name_en": "Ibuprofen (Ibuprofen Dye Free)",
+      "name_vi": "Ibuprofen (Ibuprofen Dye Free)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm không Steroid"
+    }
+  ],
+  "hạ sốt": [
+    {
+      "id": "ibuprofen",
+      "name_en": "Ibuprofen (Ibuprofen Dye Free)",
+      "name_vi": "Ibuprofen (Ibuprofen Dye Free)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm không Steroid"
+    },
+    {
+      "id": "colchicine",
+      "name_en": "Colchicine (Colchicine)",
+      "name_vi": "Colchicine (Colchicine)",
+      "type_en": "Antigout agent",
+      "type_vi": "Thuốc trị Gút/Gout cấp"
+    },
+    {
+      "id": "cefixime",
+      "name_en": "Cefixime (Cefixime)",
+      "name_vi": "Cefixime (Cefixime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 3"
+    },
+    {
+      "id": "loratadine",
+      "name_en": "Loratadine (Allergy Relief)",
+      "name_vi": "Loratadine (Allergy Relief)",
+      "type_en": "Antihistamine",
+      "type_vi": "Kháng Histamine trị dị ứng"
+    },
+    {
+      "id": "cetirizine",
+      "name_en": "Cetirizine (Cetirizine Hcl)",
+      "name_vi": "Cetirizine (Cetirizine Hcl)",
+      "type_en": "Antihistamine",
+      "type_vi": "Kháng Histamine trị dị ứng"
+    },
+    {
+      "id": "budesonide",
+      "name_en": "Budesonide (Budesonide)",
+      "name_vi": "Budesonide (Budesonide)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Corticoid xịt, hít trị hen suyễn"
+    }
+  ],
+  "arthritis": [
+    {
+      "id": "ibuprofen",
+      "name_en": "Ibuprofen (Ibuprofen Dye Free)",
+      "name_vi": "Ibuprofen (Ibuprofen Dye Free)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm không Steroid"
+    },
+    {
+      "id": "meloxicam",
+      "name_en": "Meloxicam (Meloxicam)",
+      "name_vi": "Meloxicam (Meloxicam)",
+      "type_en": "NSAID",
+      "type_vi": "Thuốc kháng viêm giảm đau xương khớp"
+    },
+    {
+      "id": "celecoxib",
+      "name_en": "Celecoxib (Celecoxib)",
+      "name_vi": "Celecoxib (Celecoxib)",
+      "type_en": "NSAID",
+      "type_vi": "Thuốc kháng viêm giảm đau ức chế COX-2"
+    },
+    {
+      "id": "diclofenac",
+      "name_en": "Diclofenac (Diclofenac Sodium)",
+      "name_vi": "Diclofenac (Diclofenac Sodium)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm giảm đau xương khớp mạnh"
+    },
+    {
+      "id": "naproxen",
+      "name_en": "Naproxen (Naproxen)",
+      "name_vi": "Naproxen (Naproxen)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm giảm đau mức độ vừa"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "backache": [
+    {
+      "id": "ibuprofen",
+      "name_en": "Ibuprofen (Ibuprofen Dye Free)",
+      "name_vi": "Ibuprofen (Ibuprofen Dye Free)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm không Steroid"
+    }
+  ],
+  "fever": [
+    {
+      "id": "ibuprofen",
+      "name_en": "Ibuprofen (Ibuprofen Dye Free)",
+      "name_vi": "Ibuprofen (Ibuprofen Dye Free)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm không Steroid"
+    },
+    {
+      "id": "colchicine",
+      "name_en": "Colchicine (Colchicine)",
+      "name_vi": "Colchicine (Colchicine)",
+      "type_en": "Antigout agent",
+      "type_vi": "Thuốc trị Gút/Gout cấp"
+    },
+    {
+      "id": "cefixime",
+      "name_en": "Cefixime (Cefixime)",
+      "name_vi": "Cefixime (Cefixime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 3"
+    },
+    {
+      "id": "loratadine",
+      "name_en": "Loratadine (Allergy Relief)",
+      "name_vi": "Loratadine (Allergy Relief)",
+      "type_en": "Antihistamine",
+      "type_vi": "Kháng Histamine trị dị ứng"
+    },
+    {
+      "id": "cetirizine",
+      "name_en": "Cetirizine (Cetirizine Hcl)",
+      "name_vi": "Cetirizine (Cetirizine Hcl)",
+      "type_en": "Antihistamine",
+      "type_vi": "Kháng Histamine trị dị ứng"
+    },
+    {
+      "id": "budesonide",
+      "name_en": "Budesonide (Budesonide)",
+      "name_vi": "Budesonide (Budesonide)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Corticoid xịt, hít trị hen suyễn"
+    }
+  ],
+  "acid uric máu cao": [
+    {
+      "id": "colchicine",
+      "name_en": "Colchicine (Colchicine)",
+      "name_vi": "Colchicine (Colchicine)",
+      "type_en": "Antigout agent",
+      "type_vi": "Thuốc trị Gút/Gout cấp"
+    },
+    {
+      "id": "allopurinol",
+      "name_en": "Allopurinol (Allopurinol)",
+      "name_vi": "Allopurinol (Allopurinol)",
+      "type_en": "Antigout / Xanthine oxidase inhibitor",
+      "type_vi": "Thuốc hạ Acid Uric máu"
+    },
+    {
+      "id": "febuxostat",
+      "name_en": "Febuxostat (Febuxostat)",
+      "name_vi": "Febuxostat (Febuxostat)",
+      "type_en": "Xanthine oxidase inhibitor",
+      "type_vi": "Thuốc hạ Acid Uric máu thế hệ mới"
+    },
+    {
+      "id": "naproxen",
+      "name_en": "Naproxen (Naproxen)",
+      "name_vi": "Naproxen (Naproxen)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm giảm đau mức độ vừa"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "gout flare": [
+    {
+      "id": "colchicine",
+      "name_en": "Colchicine (Colchicine)",
+      "name_vi": "Colchicine (Colchicine)",
+      "type_en": "Antigout agent",
+      "type_vi": "Thuốc trị Gút/Gout cấp"
+    },
+    {
+      "id": "allopurinol",
+      "name_en": "Allopurinol (Allopurinol)",
+      "name_vi": "Allopurinol (Allopurinol)",
+      "type_en": "Antigout / Xanthine oxidase inhibitor",
+      "type_vi": "Thuốc hạ Acid Uric máu"
+    },
+    {
+      "id": "febuxostat",
+      "name_en": "Febuxostat (Febuxostat)",
+      "name_vi": "Febuxostat (Febuxostat)",
+      "type_en": "Xanthine oxidase inhibitor",
+      "type_vi": "Thuốc hạ Acid Uric máu thế hệ mới"
+    },
+    {
+      "id": "naproxen",
+      "name_en": "Naproxen (Naproxen)",
+      "name_vi": "Naproxen (Naproxen)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm giảm đau mức độ vừa"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "gout": [
+    {
+      "id": "colchicine",
+      "name_en": "Colchicine (Colchicine)",
+      "name_vi": "Colchicine (Colchicine)",
+      "type_en": "Antigout agent",
+      "type_vi": "Thuốc trị Gút/Gout cấp"
+    },
+    {
+      "id": "allopurinol",
+      "name_en": "Allopurinol (Allopurinol)",
+      "name_vi": "Allopurinol (Allopurinol)",
+      "type_en": "Antigout / Xanthine oxidase inhibitor",
+      "type_vi": "Thuốc hạ Acid Uric máu"
+    },
+    {
+      "id": "febuxostat",
+      "name_en": "Febuxostat (Febuxostat)",
+      "name_vi": "Febuxostat (Febuxostat)",
+      "type_en": "Xanthine oxidase inhibitor",
+      "type_vi": "Thuốc hạ Acid Uric máu thế hệ mới"
+    },
+    {
+      "id": "naproxen",
+      "name_en": "Naproxen (Naproxen)",
+      "name_vi": "Naproxen (Naproxen)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm giảm đau mức độ vừa"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "gút": [
+    {
+      "id": "colchicine",
+      "name_en": "Colchicine (Colchicine)",
+      "name_vi": "Colchicine (Colchicine)",
+      "type_en": "Antigout agent",
+      "type_vi": "Thuốc trị Gút/Gout cấp"
+    },
+    {
+      "id": "allopurinol",
+      "name_en": "Allopurinol (Allopurinol)",
+      "name_vi": "Allopurinol (Allopurinol)",
+      "type_en": "Antigout / Xanthine oxidase inhibitor",
+      "type_vi": "Thuốc hạ Acid Uric máu"
+    },
+    {
+      "id": "febuxostat",
+      "name_en": "Febuxostat (Febuxostat)",
+      "name_vi": "Febuxostat (Febuxostat)",
+      "type_en": "Xanthine oxidase inhibitor",
+      "type_vi": "Thuốc hạ Acid Uric máu thế hệ mới"
+    },
+    {
+      "id": "naproxen",
+      "name_en": "Naproxen (Naproxen)",
+      "name_vi": "Naproxen (Naproxen)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm giảm đau mức độ vừa"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "rheumatoid arthritis": [
+    {
+      "id": "meloxicam",
+      "name_en": "Meloxicam (Meloxicam)",
+      "name_vi": "Meloxicam (Meloxicam)",
+      "type_en": "NSAID",
+      "type_vi": "Thuốc kháng viêm giảm đau xương khớp"
+    },
+    {
+      "id": "celecoxib",
+      "name_en": "Celecoxib (Celecoxib)",
+      "name_vi": "Celecoxib (Celecoxib)",
+      "type_en": "NSAID",
+      "type_vi": "Thuốc kháng viêm giảm đau ức chế COX-2"
+    },
+    {
+      "id": "naproxen",
+      "name_en": "Naproxen (Naproxen)",
+      "name_vi": "Naproxen (Naproxen)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm giảm đau mức độ vừa"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "viêm khớp dạng thấp": [
+    {
+      "id": "meloxicam",
+      "name_en": "Meloxicam (Meloxicam)",
+      "name_vi": "Meloxicam (Meloxicam)",
+      "type_en": "NSAID",
+      "type_vi": "Thuốc kháng viêm giảm đau xương khớp"
+    },
+    {
+      "id": "celecoxib",
+      "name_en": "Celecoxib (Celecoxib)",
+      "name_vi": "Celecoxib (Celecoxib)",
+      "type_en": "NSAID",
+      "type_vi": "Thuốc kháng viêm giảm đau ức chế COX-2"
+    },
+    {
+      "id": "naproxen",
+      "name_en": "Naproxen (Naproxen)",
+      "name_vi": "Naproxen (Naproxen)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm giảm đau mức độ vừa"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "osteoarthritis": [
+    {
+      "id": "meloxicam",
+      "name_en": "Meloxicam (Meloxicam)",
+      "name_vi": "Meloxicam (Meloxicam)",
+      "type_en": "NSAID",
+      "type_vi": "Thuốc kháng viêm giảm đau xương khớp"
+    },
+    {
+      "id": "celecoxib",
+      "name_en": "Celecoxib (Celecoxib)",
+      "name_vi": "Celecoxib (Celecoxib)",
+      "type_en": "NSAID",
+      "type_vi": "Thuốc kháng viêm giảm đau ức chế COX-2"
+    },
+    {
+      "id": "naproxen",
+      "name_en": "Naproxen (Naproxen)",
+      "name_vi": "Naproxen (Naproxen)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm giảm đau mức độ vừa"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    }
+  ],
+  "thoái hóa khớp": [
+    {
+      "id": "meloxicam",
+      "name_en": "Meloxicam (Meloxicam)",
+      "name_vi": "Meloxicam (Meloxicam)",
+      "type_en": "NSAID",
+      "type_vi": "Thuốc kháng viêm giảm đau xương khớp"
+    },
+    {
+      "id": "celecoxib",
+      "name_en": "Celecoxib (Celecoxib)",
+      "name_vi": "Celecoxib (Celecoxib)",
+      "type_en": "NSAID",
+      "type_vi": "Thuốc kháng viêm giảm đau ức chế COX-2"
+    },
+    {
+      "id": "naproxen",
+      "name_en": "Naproxen (Naproxen)",
+      "name_vi": "Naproxen (Naproxen)",
+      "type_en": "NSAID",
+      "type_vi": "Kháng viêm giảm đau mức độ vừa"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    }
+  ],
+  "etoricoxib": [
+    {
+      "id": "etoricoxib",
+      "name_en": "Etoricoxib",
+      "name_vi": "Etoricoxib",
+      "type_en": "NSAID",
+      "type_vi": "Thuốc kháng viêm giảm đau ức chế COX-2 mạnh"
+    }
+  ],
+  "infection": [
+    {
+      "id": "amoxicillin",
+      "name_en": "Amoxicillin (Amoxicillin)",
+      "name_vi": "Amoxicillin (Amoxicillin)",
+      "type_en": "Beta-lactam antibiotic",
+      "type_vi": "Kháng sinh nhóm Penicillin"
+    },
+    {
+      "id": "ciprofloxacin",
+      "name_en": "Ciprofloxacin (Ciprofloxacin)",
+      "name_vi": "Ciprofloxacin (Ciprofloxacin)",
+      "type_en": "Fluoroquinolone antibiotic",
+      "type_vi": "Kháng sinh nhóm Quinolone"
+    },
+    {
+      "id": "cefuroxime",
+      "name_en": "Cefuroxime (Cefuroxime)",
+      "name_vi": "Cefuroxime (Cefuroxime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 2"
+    },
+    {
+      "id": "cefixime",
+      "name_en": "Cefixime (Cefixime)",
+      "name_vi": "Cefixime (Cefixime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 3"
+    },
+    {
+      "id": "cephalexin",
+      "name_en": "Cephalexin (Cephalexin)",
+      "name_vi": "Cephalexin (Cephalexin)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 1"
+    },
+    {
+      "id": "azithromycin",
+      "name_en": "Azithromycin (Azithromycin)",
+      "name_vi": "Azithromycin (Azithromycin)",
+      "type_en": "Macrolide antibiotic",
+      "type_vi": "Kháng sinh nhóm Macrolide"
+    },
+    {
+      "id": "clarithromycin",
+      "name_en": "Clarithromycin (Clarithromycin)",
+      "name_vi": "Clarithromycin (Clarithromycin)",
+      "type_en": "Macrolide",
+      "type_vi": "Kháng sinh nhóm Macrolide trị HP dạ dày"
+    },
+    {
+      "id": "metronidazole",
+      "name_en": "Metronidazole (Metronidazole)",
+      "name_vi": "Metronidazole (Metronidazole)",
+      "type_en": "Drug Information",
+      "type_vi": "Kháng khuẩn, trị nhiễm trùng kị khí và ký sinh trùng"
+    },
+    {
+      "id": "acyclovir",
+      "name_en": "Acyclovir (Acyclovir)",
+      "name_vi": "Acyclovir (Acyclovir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc kháng virus Herpes, Zona"
+    },
+    {
+      "id": "oseltamivir",
+      "name_en": "Oseltamivir (Oseltamivir)",
+      "name_vi": "Oseltamivir (Oseltamivir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc điều trị cúm A/B"
+    },
+    {
+      "id": "fluconazole",
+      "name_en": "Fluconazole (Fluconazole)",
+      "name_vi": "Fluconazole (Fluconazole)",
+      "type_en": "Antifungal",
+      "type_vi": "Thuốc kháng nấm đường uống"
+    },
+    {
+      "id": "ketoconazole",
+      "name_en": "Ketoconazole (Ketoconazole)",
+      "name_vi": "Ketoconazole (Ketoconazole)",
+      "type_en": "Antifungal",
+      "type_vi": "Thuốc trị nấm da, nấm tóc"
+    },
+    {
+      "id": "itraconazole",
+      "name_en": "Itraconazole (Itraconazole)",
+      "name_vi": "Itraconazole (Itraconazole)",
+      "type_en": "Antifungal",
+      "type_vi": "Thuốc trị nấm móng, nấm toàn thân"
+    },
+    {
+      "id": "entecavir",
+      "name_en": "Entecavir (Entecavir)",
+      "name_vi": "Entecavir (Entecavir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc điều trị viêm gan B mạn tính"
+    },
+    {
+      "id": "rabeprazole",
+      "name_en": "Rabeprazole (Rabeprazole Sodium)",
+      "name_vi": "Rabeprazole (Rabeprazole Sodium)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton điều trị dạ dày"
+    },
+    {
+      "id": "lansoprazole",
+      "name_en": "Lansoprazole (Lansoprazole)",
+      "name_vi": "Lansoprazole (Lansoprazole)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton trị trào ngược dạ dày"
+    }
+  ],
+  "cúm b": [
+    {
+      "id": "amoxicillin",
+      "name_en": "Amoxicillin (Amoxicillin)",
+      "name_vi": "Amoxicillin (Amoxicillin)",
+      "type_en": "Beta-lactam antibiotic",
+      "type_vi": "Kháng sinh nhóm Penicillin"
+    },
+    {
+      "id": "ciprofloxacin",
+      "name_en": "Ciprofloxacin (Ciprofloxacin)",
+      "name_vi": "Ciprofloxacin (Ciprofloxacin)",
+      "type_en": "Fluoroquinolone antibiotic",
+      "type_vi": "Kháng sinh nhóm Quinolone"
+    },
+    {
+      "id": "cefuroxime",
+      "name_en": "Cefuroxime (Cefuroxime)",
+      "name_vi": "Cefuroxime (Cefuroxime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 2"
+    },
+    {
+      "id": "cefixime",
+      "name_en": "Cefixime (Cefixime)",
+      "name_vi": "Cefixime (Cefixime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 3"
+    },
+    {
+      "id": "cephalexin",
+      "name_en": "Cephalexin (Cephalexin)",
+      "name_vi": "Cephalexin (Cephalexin)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 1"
+    },
+    {
+      "id": "azithromycin",
+      "name_en": "Azithromycin (Azithromycin)",
+      "name_vi": "Azithromycin (Azithromycin)",
+      "type_en": "Macrolide antibiotic",
+      "type_vi": "Kháng sinh nhóm Macrolide"
+    },
+    {
+      "id": "clarithromycin",
+      "name_en": "Clarithromycin (Clarithromycin)",
+      "name_vi": "Clarithromycin (Clarithromycin)",
+      "type_en": "Macrolide",
+      "type_vi": "Kháng sinh nhóm Macrolide trị HP dạ dày"
+    },
+    {
+      "id": "oseltamivir",
+      "name_en": "Oseltamivir (Oseltamivir)",
+      "name_vi": "Oseltamivir (Oseltamivir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc điều trị cúm A/B"
+    }
+  ],
+  "cúm a": [
+    {
+      "id": "amoxicillin",
+      "name_en": "Amoxicillin (Amoxicillin)",
+      "name_vi": "Amoxicillin (Amoxicillin)",
+      "type_en": "Beta-lactam antibiotic",
+      "type_vi": "Kháng sinh nhóm Penicillin"
+    },
+    {
+      "id": "ciprofloxacin",
+      "name_en": "Ciprofloxacin (Ciprofloxacin)",
+      "name_vi": "Ciprofloxacin (Ciprofloxacin)",
+      "type_en": "Fluoroquinolone antibiotic",
+      "type_vi": "Kháng sinh nhóm Quinolone"
+    },
+    {
+      "id": "cefuroxime",
+      "name_en": "Cefuroxime (Cefuroxime)",
+      "name_vi": "Cefuroxime (Cefuroxime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 2"
+    },
+    {
+      "id": "cefixime",
+      "name_en": "Cefixime (Cefixime)",
+      "name_vi": "Cefixime (Cefixime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 3"
+    },
+    {
+      "id": "cephalexin",
+      "name_en": "Cephalexin (Cephalexin)",
+      "name_vi": "Cephalexin (Cephalexin)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 1"
+    },
+    {
+      "id": "azithromycin",
+      "name_en": "Azithromycin (Azithromycin)",
+      "name_vi": "Azithromycin (Azithromycin)",
+      "type_en": "Macrolide antibiotic",
+      "type_vi": "Kháng sinh nhóm Macrolide"
+    },
+    {
+      "id": "clarithromycin",
+      "name_en": "Clarithromycin (Clarithromycin)",
+      "name_vi": "Clarithromycin (Clarithromycin)",
+      "type_en": "Macrolide",
+      "type_vi": "Kháng sinh nhóm Macrolide trị HP dạ dày"
+    },
+    {
+      "id": "oseltamivir",
+      "name_en": "Oseltamivir (Oseltamivir)",
+      "name_vi": "Oseltamivir (Oseltamivir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc điều trị cúm A/B"
+    }
+  ],
+  "peptic ulcer": [
+    {
+      "id": "amoxicillin",
+      "name_en": "Amoxicillin (Amoxicillin)",
+      "name_vi": "Amoxicillin (Amoxicillin)",
+      "type_en": "Beta-lactam antibiotic",
+      "type_vi": "Kháng sinh nhóm Penicillin"
+    },
+    {
+      "id": "ciprofloxacin",
+      "name_en": "Ciprofloxacin (Ciprofloxacin)",
+      "name_vi": "Ciprofloxacin (Ciprofloxacin)",
+      "type_en": "Fluoroquinolone antibiotic",
+      "type_vi": "Kháng sinh nhóm Quinolone"
+    },
+    {
+      "id": "azithromycin",
+      "name_en": "Azithromycin (Azithromycin)",
+      "name_vi": "Azithromycin (Azithromycin)",
+      "type_en": "Macrolide antibiotic",
+      "type_vi": "Kháng sinh nhóm Macrolide"
+    },
+    {
+      "id": "clarithromycin",
+      "name_en": "Clarithromycin (Clarithromycin)",
+      "name_vi": "Clarithromycin (Clarithromycin)",
+      "type_en": "Macrolide",
+      "type_vi": "Kháng sinh nhóm Macrolide trị HP dạ dày"
+    },
+    {
+      "id": "rabeprazole",
+      "name_en": "Rabeprazole (Rabeprazole Sodium)",
+      "name_vi": "Rabeprazole (Rabeprazole Sodium)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton điều trị dạ dày"
+    },
+    {
+      "id": "lansoprazole",
+      "name_en": "Lansoprazole (Lansoprazole)",
+      "name_vi": "Lansoprazole (Lansoprazole)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton trị trào ngược dạ dày"
+    },
+    {
+      "id": "famotidine",
+      "name_en": "Famotidine (Famotidine)",
+      "name_vi": "Famotidine (Famotidine)",
+      "type_en": "H2 blocker",
+      "type_vi": "Thuốc kháng H2 trị đau dạ dày"
+    },
+    {
+      "id": "metoclopramide",
+      "name_en": "Metoclopramide (Metoclopramide)",
+      "name_vi": "Metoclopramide (Metoclopramide)",
+      "type_en": "Antiemetic",
+      "type_vi": "Thuốc chống nôn, kích thích nhu động dạ dày"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "gastric ulcer": [
+    {
+      "id": "amoxicillin",
+      "name_en": "Amoxicillin (Amoxicillin)",
+      "name_vi": "Amoxicillin (Amoxicillin)",
+      "type_en": "Beta-lactam antibiotic",
+      "type_vi": "Kháng sinh nhóm Penicillin"
+    },
+    {
+      "id": "ciprofloxacin",
+      "name_en": "Ciprofloxacin (Ciprofloxacin)",
+      "name_vi": "Ciprofloxacin (Ciprofloxacin)",
+      "type_en": "Fluoroquinolone antibiotic",
+      "type_vi": "Kháng sinh nhóm Quinolone"
+    },
+    {
+      "id": "azithromycin",
+      "name_en": "Azithromycin (Azithromycin)",
+      "name_vi": "Azithromycin (Azithromycin)",
+      "type_en": "Macrolide antibiotic",
+      "type_vi": "Kháng sinh nhóm Macrolide"
+    },
+    {
+      "id": "clarithromycin",
+      "name_en": "Clarithromycin (Clarithromycin)",
+      "name_vi": "Clarithromycin (Clarithromycin)",
+      "type_en": "Macrolide",
+      "type_vi": "Kháng sinh nhóm Macrolide trị HP dạ dày"
+    },
+    {
+      "id": "rabeprazole",
+      "name_en": "Rabeprazole (Rabeprazole Sodium)",
+      "name_vi": "Rabeprazole (Rabeprazole Sodium)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton điều trị dạ dày"
+    },
+    {
+      "id": "lansoprazole",
+      "name_en": "Lansoprazole (Lansoprazole)",
+      "name_vi": "Lansoprazole (Lansoprazole)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton trị trào ngược dạ dày"
+    },
+    {
+      "id": "famotidine",
+      "name_en": "Famotidine (Famotidine)",
+      "name_vi": "Famotidine (Famotidine)",
+      "type_en": "H2 blocker",
+      "type_vi": "Thuốc kháng H2 trị đau dạ dày"
+    },
+    {
+      "id": "metoclopramide",
+      "name_en": "Metoclopramide (Metoclopramide)",
+      "name_vi": "Metoclopramide (Metoclopramide)",
+      "type_en": "Antiemetic",
+      "type_vi": "Thuốc chống nôn, kích thích nhu động dạ dày"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "cúm": [
+    {
+      "id": "amoxicillin",
+      "name_en": "Amoxicillin (Amoxicillin)",
+      "name_vi": "Amoxicillin (Amoxicillin)",
+      "type_en": "Beta-lactam antibiotic",
+      "type_vi": "Kháng sinh nhóm Penicillin"
+    },
+    {
+      "id": "ciprofloxacin",
+      "name_en": "Ciprofloxacin (Ciprofloxacin)",
+      "name_vi": "Ciprofloxacin (Ciprofloxacin)",
+      "type_en": "Fluoroquinolone antibiotic",
+      "type_vi": "Kháng sinh nhóm Quinolone"
+    },
+    {
+      "id": "cefuroxime",
+      "name_en": "Cefuroxime (Cefuroxime)",
+      "name_vi": "Cefuroxime (Cefuroxime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 2"
+    },
+    {
+      "id": "cefixime",
+      "name_en": "Cefixime (Cefixime)",
+      "name_vi": "Cefixime (Cefixime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 3"
+    },
+    {
+      "id": "cephalexin",
+      "name_en": "Cephalexin (Cephalexin)",
+      "name_vi": "Cephalexin (Cephalexin)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 1"
+    },
+    {
+      "id": "azithromycin",
+      "name_en": "Azithromycin (Azithromycin)",
+      "name_vi": "Azithromycin (Azithromycin)",
+      "type_en": "Macrolide antibiotic",
+      "type_vi": "Kháng sinh nhóm Macrolide"
+    },
+    {
+      "id": "clarithromycin",
+      "name_en": "Clarithromycin (Clarithromycin)",
+      "name_vi": "Clarithromycin (Clarithromycin)",
+      "type_en": "Macrolide",
+      "type_vi": "Kháng sinh nhóm Macrolide trị HP dạ dày"
+    },
+    {
+      "id": "oseltamivir",
+      "name_en": "Oseltamivir (Oseltamivir)",
+      "name_vi": "Oseltamivir (Oseltamivir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc điều trị cúm A/B"
+    }
+  ],
+  "nhiễm trùng": [
+    {
+      "id": "amoxicillin",
+      "name_en": "Amoxicillin (Amoxicillin)",
+      "name_vi": "Amoxicillin (Amoxicillin)",
+      "type_en": "Beta-lactam antibiotic",
+      "type_vi": "Kháng sinh nhóm Penicillin"
+    },
+    {
+      "id": "ciprofloxacin",
+      "name_en": "Ciprofloxacin (Ciprofloxacin)",
+      "name_vi": "Ciprofloxacin (Ciprofloxacin)",
+      "type_en": "Fluoroquinolone antibiotic",
+      "type_vi": "Kháng sinh nhóm Quinolone"
+    },
+    {
+      "id": "cefuroxime",
+      "name_en": "Cefuroxime (Cefuroxime)",
+      "name_vi": "Cefuroxime (Cefuroxime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 2"
+    },
+    {
+      "id": "cefixime",
+      "name_en": "Cefixime (Cefixime)",
+      "name_vi": "Cefixime (Cefixime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 3"
+    },
+    {
+      "id": "cephalexin",
+      "name_en": "Cephalexin (Cephalexin)",
+      "name_vi": "Cephalexin (Cephalexin)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 1"
+    },
+    {
+      "id": "azithromycin",
+      "name_en": "Azithromycin (Azithromycin)",
+      "name_vi": "Azithromycin (Azithromycin)",
+      "type_en": "Macrolide antibiotic",
+      "type_vi": "Kháng sinh nhóm Macrolide"
+    },
+    {
+      "id": "clarithromycin",
+      "name_en": "Clarithromycin (Clarithromycin)",
+      "name_vi": "Clarithromycin (Clarithromycin)",
+      "type_en": "Macrolide",
+      "type_vi": "Kháng sinh nhóm Macrolide trị HP dạ dày"
+    },
+    {
+      "id": "metronidazole",
+      "name_en": "Metronidazole (Metronidazole)",
+      "name_vi": "Metronidazole (Metronidazole)",
+      "type_en": "Drug Information",
+      "type_vi": "Kháng khuẩn, trị nhiễm trùng kị khí và ký sinh trùng"
+    },
+    {
+      "id": "acyclovir",
+      "name_en": "Acyclovir (Acyclovir)",
+      "name_vi": "Acyclovir (Acyclovir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc kháng virus Herpes, Zona"
+    },
+    {
+      "id": "oseltamivir",
+      "name_en": "Oseltamivir (Oseltamivir)",
+      "name_vi": "Oseltamivir (Oseltamivir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc điều trị cúm A/B"
+    },
+    {
+      "id": "fluconazole",
+      "name_en": "Fluconazole (Fluconazole)",
+      "name_vi": "Fluconazole (Fluconazole)",
+      "type_en": "Antifungal",
+      "type_vi": "Thuốc kháng nấm đường uống"
+    },
+    {
+      "id": "ketoconazole",
+      "name_en": "Ketoconazole (Ketoconazole)",
+      "name_vi": "Ketoconazole (Ketoconazole)",
+      "type_en": "Antifungal",
+      "type_vi": "Thuốc trị nấm da, nấm tóc"
+    },
+    {
+      "id": "itraconazole",
+      "name_en": "Itraconazole (Itraconazole)",
+      "name_vi": "Itraconazole (Itraconazole)",
+      "type_en": "Antifungal",
+      "type_vi": "Thuốc trị nấm móng, nấm toàn thân"
+    },
+    {
+      "id": "entecavir",
+      "name_en": "Entecavir (Entecavir)",
+      "name_vi": "Entecavir (Entecavir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc điều trị viêm gan B mạn tính"
+    },
+    {
+      "id": "rabeprazole",
+      "name_en": "Rabeprazole (Rabeprazole Sodium)",
+      "name_vi": "Rabeprazole (Rabeprazole Sodium)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton điều trị dạ dày"
+    },
+    {
+      "id": "lansoprazole",
+      "name_en": "Lansoprazole (Lansoprazole)",
+      "name_vi": "Lansoprazole (Lansoprazole)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton trị trào ngược dạ dày"
+    }
+  ],
+  "loét dạ dày tá tràng": [
+    {
+      "id": "amoxicillin",
+      "name_en": "Amoxicillin (Amoxicillin)",
+      "name_vi": "Amoxicillin (Amoxicillin)",
+      "type_en": "Beta-lactam antibiotic",
+      "type_vi": "Kháng sinh nhóm Penicillin"
+    },
+    {
+      "id": "ciprofloxacin",
+      "name_en": "Ciprofloxacin (Ciprofloxacin)",
+      "name_vi": "Ciprofloxacin (Ciprofloxacin)",
+      "type_en": "Fluoroquinolone antibiotic",
+      "type_vi": "Kháng sinh nhóm Quinolone"
+    },
+    {
+      "id": "azithromycin",
+      "name_en": "Azithromycin (Azithromycin)",
+      "name_vi": "Azithromycin (Azithromycin)",
+      "type_en": "Macrolide antibiotic",
+      "type_vi": "Kháng sinh nhóm Macrolide"
+    },
+    {
+      "id": "clarithromycin",
+      "name_en": "Clarithromycin (Clarithromycin)",
+      "name_vi": "Clarithromycin (Clarithromycin)",
+      "type_en": "Macrolide",
+      "type_vi": "Kháng sinh nhóm Macrolide trị HP dạ dày"
+    },
+    {
+      "id": "rabeprazole",
+      "name_en": "Rabeprazole (Rabeprazole Sodium)",
+      "name_vi": "Rabeprazole (Rabeprazole Sodium)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton điều trị dạ dày"
+    },
+    {
+      "id": "lansoprazole",
+      "name_en": "Lansoprazole (Lansoprazole)",
+      "name_vi": "Lansoprazole (Lansoprazole)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton trị trào ngược dạ dày"
+    },
+    {
+      "id": "famotidine",
+      "name_en": "Famotidine (Famotidine)",
+      "name_vi": "Famotidine (Famotidine)",
+      "type_en": "H2 blocker",
+      "type_vi": "Thuốc kháng H2 trị đau dạ dày"
+    },
+    {
+      "id": "metoclopramide",
+      "name_en": "Metoclopramide (Metoclopramide)",
+      "name_vi": "Metoclopramide (Metoclopramide)",
+      "type_en": "Antiemetic",
+      "type_vi": "Thuốc chống nôn, kích thích nhu động dạ dày"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "đau dạ dày": [
+    {
+      "id": "amoxicillin",
+      "name_en": "Amoxicillin (Amoxicillin)",
+      "name_vi": "Amoxicillin (Amoxicillin)",
+      "type_en": "Beta-lactam antibiotic",
+      "type_vi": "Kháng sinh nhóm Penicillin"
+    },
+    {
+      "id": "ciprofloxacin",
+      "name_en": "Ciprofloxacin (Ciprofloxacin)",
+      "name_vi": "Ciprofloxacin (Ciprofloxacin)",
+      "type_en": "Fluoroquinolone antibiotic",
+      "type_vi": "Kháng sinh nhóm Quinolone"
+    },
+    {
+      "id": "azithromycin",
+      "name_en": "Azithromycin (Azithromycin)",
+      "name_vi": "Azithromycin (Azithromycin)",
+      "type_en": "Macrolide antibiotic",
+      "type_vi": "Kháng sinh nhóm Macrolide"
+    },
+    {
+      "id": "clarithromycin",
+      "name_en": "Clarithromycin (Clarithromycin)",
+      "name_vi": "Clarithromycin (Clarithromycin)",
+      "type_en": "Macrolide",
+      "type_vi": "Kháng sinh nhóm Macrolide trị HP dạ dày"
+    },
+    {
+      "id": "rabeprazole",
+      "name_en": "Rabeprazole (Rabeprazole Sodium)",
+      "name_vi": "Rabeprazole (Rabeprazole Sodium)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton điều trị dạ dày"
+    },
+    {
+      "id": "lansoprazole",
+      "name_en": "Lansoprazole (Lansoprazole)",
+      "name_vi": "Lansoprazole (Lansoprazole)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton trị trào ngược dạ dày"
+    },
+    {
+      "id": "famotidine",
+      "name_en": "Famotidine (Famotidine)",
+      "name_vi": "Famotidine (Famotidine)",
+      "type_en": "H2 blocker",
+      "type_vi": "Thuốc kháng H2 trị đau dạ dày"
+    },
+    {
+      "id": "metoclopramide",
+      "name_en": "Metoclopramide (Metoclopramide)",
+      "name_vi": "Metoclopramide (Metoclopramide)",
+      "type_en": "Antiemetic",
+      "type_vi": "Thuốc chống nôn, kích thích nhu động dạ dày"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "pneumonia": [
+    {
+      "id": "amoxicillin",
+      "name_en": "Amoxicillin (Amoxicillin)",
+      "name_vi": "Amoxicillin (Amoxicillin)",
+      "type_en": "Beta-lactam antibiotic",
+      "type_vi": "Kháng sinh nhóm Penicillin"
+    },
+    {
+      "id": "ciprofloxacin",
+      "name_en": "Ciprofloxacin (Ciprofloxacin)",
+      "name_vi": "Ciprofloxacin (Ciprofloxacin)",
+      "type_en": "Fluoroquinolone antibiotic",
+      "type_vi": "Kháng sinh nhóm Quinolone"
+    },
+    {
+      "id": "cefuroxime",
+      "name_en": "Cefuroxime (Cefuroxime)",
+      "name_vi": "Cefuroxime (Cefuroxime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 2"
+    },
+    {
+      "id": "cefixime",
+      "name_en": "Cefixime (Cefixime)",
+      "name_vi": "Cefixime (Cefixime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 3"
+    },
+    {
+      "id": "cephalexin",
+      "name_en": "Cephalexin (Cephalexin)",
+      "name_vi": "Cephalexin (Cephalexin)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 1"
+    },
+    {
+      "id": "azithromycin",
+      "name_en": "Azithromycin (Azithromycin)",
+      "name_vi": "Azithromycin (Azithromycin)",
+      "type_en": "Macrolide antibiotic",
+      "type_vi": "Kháng sinh nhóm Macrolide"
+    },
+    {
+      "id": "clarithromycin",
+      "name_en": "Clarithromycin (Clarithromycin)",
+      "name_vi": "Clarithromycin (Clarithromycin)",
+      "type_en": "Macrolide",
+      "type_vi": "Kháng sinh nhóm Macrolide trị HP dạ dày"
+    },
+    {
+      "id": "metronidazole",
+      "name_en": "Metronidazole (Metronidazole)",
+      "name_vi": "Metronidazole (Metronidazole)",
+      "type_en": "Drug Information",
+      "type_vi": "Kháng khuẩn, trị nhiễm trùng kị khí và ký sinh trùng"
+    },
+    {
+      "id": "fluconazole",
+      "name_en": "Fluconazole (Fluconazole)",
+      "name_vi": "Fluconazole (Fluconazole)",
+      "type_en": "Antifungal",
+      "type_vi": "Thuốc kháng nấm đường uống"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "kháng sinh": [
+    {
+      "id": "amoxicillin",
+      "name_en": "Amoxicillin (Amoxicillin)",
+      "name_vi": "Amoxicillin (Amoxicillin)",
+      "type_en": "Beta-lactam antibiotic",
+      "type_vi": "Kháng sinh nhóm Penicillin"
+    },
+    {
+      "id": "ciprofloxacin",
+      "name_en": "Ciprofloxacin (Ciprofloxacin)",
+      "name_vi": "Ciprofloxacin (Ciprofloxacin)",
+      "type_en": "Fluoroquinolone antibiotic",
+      "type_vi": "Kháng sinh nhóm Quinolone"
+    },
+    {
+      "id": "cefuroxime",
+      "name_en": "Cefuroxime (Cefuroxime)",
+      "name_vi": "Cefuroxime (Cefuroxime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 2"
+    },
+    {
+      "id": "cefixime",
+      "name_en": "Cefixime (Cefixime)",
+      "name_vi": "Cefixime (Cefixime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 3"
+    },
+    {
+      "id": "cephalexin",
+      "name_en": "Cephalexin (Cephalexin)",
+      "name_vi": "Cephalexin (Cephalexin)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 1"
+    },
+    {
+      "id": "azithromycin",
+      "name_en": "Azithromycin (Azithromycin)",
+      "name_vi": "Azithromycin (Azithromycin)",
+      "type_en": "Macrolide antibiotic",
+      "type_vi": "Kháng sinh nhóm Macrolide"
+    },
+    {
+      "id": "clarithromycin",
+      "name_en": "Clarithromycin (Clarithromycin)",
+      "name_vi": "Clarithromycin (Clarithromycin)",
+      "type_en": "Macrolide",
+      "type_vi": "Kháng sinh nhóm Macrolide trị HP dạ dày"
+    },
+    {
+      "id": "metronidazole",
+      "name_en": "Metronidazole (Metronidazole)",
+      "name_vi": "Metronidazole (Metronidazole)",
+      "type_en": "Drug Information",
+      "type_vi": "Kháng khuẩn, trị nhiễm trùng kị khí và ký sinh trùng"
+    },
+    {
+      "id": "acyclovir",
+      "name_en": "Acyclovir (Acyclovir)",
+      "name_vi": "Acyclovir (Acyclovir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc kháng virus Herpes, Zona"
+    },
+    {
+      "id": "oseltamivir",
+      "name_en": "Oseltamivir (Oseltamivir)",
+      "name_vi": "Oseltamivir (Oseltamivir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc điều trị cúm A/B"
+    },
+    {
+      "id": "fluconazole",
+      "name_en": "Fluconazole (Fluconazole)",
+      "name_vi": "Fluconazole (Fluconazole)",
+      "type_en": "Antifungal",
+      "type_vi": "Thuốc kháng nấm đường uống"
+    },
+    {
+      "id": "ketoconazole",
+      "name_en": "Ketoconazole (Ketoconazole)",
+      "name_vi": "Ketoconazole (Ketoconazole)",
+      "type_en": "Antifungal",
+      "type_vi": "Thuốc trị nấm da, nấm tóc"
+    },
+    {
+      "id": "itraconazole",
+      "name_en": "Itraconazole (Itraconazole)",
+      "name_vi": "Itraconazole (Itraconazole)",
+      "type_en": "Antifungal",
+      "type_vi": "Thuốc trị nấm móng, nấm toàn thân"
+    },
+    {
+      "id": "entecavir",
+      "name_en": "Entecavir (Entecavir)",
+      "name_vi": "Entecavir (Entecavir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc điều trị viêm gan B mạn tính"
+    },
+    {
+      "id": "rabeprazole",
+      "name_en": "Rabeprazole (Rabeprazole Sodium)",
+      "name_vi": "Rabeprazole (Rabeprazole Sodium)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton điều trị dạ dày"
+    },
+    {
+      "id": "lansoprazole",
+      "name_en": "Lansoprazole (Lansoprazole)",
+      "name_vi": "Lansoprazole (Lansoprazole)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton trị trào ngược dạ dày"
+    }
+  ],
+  "viêm phổi": [
+    {
+      "id": "amoxicillin",
+      "name_en": "Amoxicillin (Amoxicillin)",
+      "name_vi": "Amoxicillin (Amoxicillin)",
+      "type_en": "Beta-lactam antibiotic",
+      "type_vi": "Kháng sinh nhóm Penicillin"
+    },
+    {
+      "id": "ciprofloxacin",
+      "name_en": "Ciprofloxacin (Ciprofloxacin)",
+      "name_vi": "Ciprofloxacin (Ciprofloxacin)",
+      "type_en": "Fluoroquinolone antibiotic",
+      "type_vi": "Kháng sinh nhóm Quinolone"
+    },
+    {
+      "id": "cefuroxime",
+      "name_en": "Cefuroxime (Cefuroxime)",
+      "name_vi": "Cefuroxime (Cefuroxime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 2"
+    },
+    {
+      "id": "cefixime",
+      "name_en": "Cefixime (Cefixime)",
+      "name_vi": "Cefixime (Cefixime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 3"
+    },
+    {
+      "id": "cephalexin",
+      "name_en": "Cephalexin (Cephalexin)",
+      "name_vi": "Cephalexin (Cephalexin)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 1"
+    },
+    {
+      "id": "azithromycin",
+      "name_en": "Azithromycin (Azithromycin)",
+      "name_vi": "Azithromycin (Azithromycin)",
+      "type_en": "Macrolide antibiotic",
+      "type_vi": "Kháng sinh nhóm Macrolide"
+    },
+    {
+      "id": "clarithromycin",
+      "name_en": "Clarithromycin (Clarithromycin)",
+      "name_vi": "Clarithromycin (Clarithromycin)",
+      "type_en": "Macrolide",
+      "type_vi": "Kháng sinh nhóm Macrolide trị HP dạ dày"
+    },
+    {
+      "id": "metronidazole",
+      "name_en": "Metronidazole (Metronidazole)",
+      "name_vi": "Metronidazole (Metronidazole)",
+      "type_en": "Drug Information",
+      "type_vi": "Kháng khuẩn, trị nhiễm trùng kị khí và ký sinh trùng"
+    },
+    {
+      "id": "fluconazole",
+      "name_en": "Fluconazole (Fluconazole)",
+      "name_vi": "Fluconazole (Fluconazole)",
+      "type_en": "Antifungal",
+      "type_vi": "Thuốc kháng nấm đường uống"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "influenza": [
+    {
+      "id": "amoxicillin",
+      "name_en": "Amoxicillin (Amoxicillin)",
+      "name_vi": "Amoxicillin (Amoxicillin)",
+      "type_en": "Beta-lactam antibiotic",
+      "type_vi": "Kháng sinh nhóm Penicillin"
+    },
+    {
+      "id": "ciprofloxacin",
+      "name_en": "Ciprofloxacin (Ciprofloxacin)",
+      "name_vi": "Ciprofloxacin (Ciprofloxacin)",
+      "type_en": "Fluoroquinolone antibiotic",
+      "type_vi": "Kháng sinh nhóm Quinolone"
+    },
+    {
+      "id": "cefuroxime",
+      "name_en": "Cefuroxime (Cefuroxime)",
+      "name_vi": "Cefuroxime (Cefuroxime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 2"
+    },
+    {
+      "id": "cefixime",
+      "name_en": "Cefixime (Cefixime)",
+      "name_vi": "Cefixime (Cefixime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 3"
+    },
+    {
+      "id": "cephalexin",
+      "name_en": "Cephalexin (Cephalexin)",
+      "name_vi": "Cephalexin (Cephalexin)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 1"
+    },
+    {
+      "id": "azithromycin",
+      "name_en": "Azithromycin (Azithromycin)",
+      "name_vi": "Azithromycin (Azithromycin)",
+      "type_en": "Macrolide antibiotic",
+      "type_vi": "Kháng sinh nhóm Macrolide"
+    },
+    {
+      "id": "clarithromycin",
+      "name_en": "Clarithromycin (Clarithromycin)",
+      "name_vi": "Clarithromycin (Clarithromycin)",
+      "type_en": "Macrolide",
+      "type_vi": "Kháng sinh nhóm Macrolide trị HP dạ dày"
+    },
+    {
+      "id": "oseltamivir",
+      "name_en": "Oseltamivir (Oseltamivir)",
+      "name_vi": "Oseltamivir (Oseltamivir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc điều trị cúm A/B"
+    }
+  ],
+  "nhiễm khuẩn": [
+    {
+      "id": "amoxicillin",
+      "name_en": "Amoxicillin (Amoxicillin)",
+      "name_vi": "Amoxicillin (Amoxicillin)",
+      "type_en": "Beta-lactam antibiotic",
+      "type_vi": "Kháng sinh nhóm Penicillin"
+    },
+    {
+      "id": "ciprofloxacin",
+      "name_en": "Ciprofloxacin (Ciprofloxacin)",
+      "name_vi": "Ciprofloxacin (Ciprofloxacin)",
+      "type_en": "Fluoroquinolone antibiotic",
+      "type_vi": "Kháng sinh nhóm Quinolone"
+    },
+    {
+      "id": "cefuroxime",
+      "name_en": "Cefuroxime (Cefuroxime)",
+      "name_vi": "Cefuroxime (Cefuroxime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 2"
+    },
+    {
+      "id": "cefixime",
+      "name_en": "Cefixime (Cefixime)",
+      "name_vi": "Cefixime (Cefixime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 3"
+    },
+    {
+      "id": "cephalexin",
+      "name_en": "Cephalexin (Cephalexin)",
+      "name_vi": "Cephalexin (Cephalexin)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 1"
+    },
+    {
+      "id": "azithromycin",
+      "name_en": "Azithromycin (Azithromycin)",
+      "name_vi": "Azithromycin (Azithromycin)",
+      "type_en": "Macrolide antibiotic",
+      "type_vi": "Kháng sinh nhóm Macrolide"
+    },
+    {
+      "id": "clarithromycin",
+      "name_en": "Clarithromycin (Clarithromycin)",
+      "name_vi": "Clarithromycin (Clarithromycin)",
+      "type_en": "Macrolide",
+      "type_vi": "Kháng sinh nhóm Macrolide trị HP dạ dày"
+    },
+    {
+      "id": "metronidazole",
+      "name_en": "Metronidazole (Metronidazole)",
+      "name_vi": "Metronidazole (Metronidazole)",
+      "type_en": "Drug Information",
+      "type_vi": "Kháng khuẩn, trị nhiễm trùng kị khí và ký sinh trùng"
+    },
+    {
+      "id": "acyclovir",
+      "name_en": "Acyclovir (Acyclovir)",
+      "name_vi": "Acyclovir (Acyclovir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc kháng virus Herpes, Zona"
+    },
+    {
+      "id": "oseltamivir",
+      "name_en": "Oseltamivir (Oseltamivir)",
+      "name_vi": "Oseltamivir (Oseltamivir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc điều trị cúm A/B"
+    },
+    {
+      "id": "fluconazole",
+      "name_en": "Fluconazole (Fluconazole)",
+      "name_vi": "Fluconazole (Fluconazole)",
+      "type_en": "Antifungal",
+      "type_vi": "Thuốc kháng nấm đường uống"
+    },
+    {
+      "id": "ketoconazole",
+      "name_en": "Ketoconazole (Ketoconazole)",
+      "name_vi": "Ketoconazole (Ketoconazole)",
+      "type_en": "Antifungal",
+      "type_vi": "Thuốc trị nấm da, nấm tóc"
+    },
+    {
+      "id": "itraconazole",
+      "name_en": "Itraconazole (Itraconazole)",
+      "name_vi": "Itraconazole (Itraconazole)",
+      "type_en": "Antifungal",
+      "type_vi": "Thuốc trị nấm móng, nấm toàn thân"
+    },
+    {
+      "id": "entecavir",
+      "name_en": "Entecavir (Entecavir)",
+      "name_vi": "Entecavir (Entecavir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc điều trị viêm gan B mạn tính"
+    },
+    {
+      "id": "rabeprazole",
+      "name_en": "Rabeprazole (Rabeprazole Sodium)",
+      "name_vi": "Rabeprazole (Rabeprazole Sodium)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton điều trị dạ dày"
+    },
+    {
+      "id": "lansoprazole",
+      "name_en": "Lansoprazole (Lansoprazole)",
+      "name_vi": "Lansoprazole (Lansoprazole)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton trị trào ngược dạ dày"
+    }
+  ],
+  "conjunctivitis": [
+    {
+      "id": "ciprofloxacin",
+      "name_en": "Ciprofloxacin (Ciprofloxacin)",
+      "name_vi": "Ciprofloxacin (Ciprofloxacin)",
+      "type_en": "Fluoroquinolone antibiotic",
+      "type_vi": "Kháng sinh nhóm Quinolone"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    }
+  ],
+  "viêm kết mạc": [
+    {
+      "id": "ciprofloxacin",
+      "name_en": "Ciprofloxacin (Ciprofloxacin)",
+      "name_vi": "Ciprofloxacin (Ciprofloxacin)",
+      "type_en": "Fluoroquinolone antibiotic",
+      "type_vi": "Kháng sinh nhóm Quinolone"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    }
+  ],
+  "đau mắt đỏ": [
+    {
+      "id": "ciprofloxacin",
+      "name_en": "Ciprofloxacin (Ciprofloxacin)",
+      "name_vi": "Ciprofloxacin (Ciprofloxacin)",
+      "type_en": "Fluoroquinolone antibiotic",
+      "type_vi": "Kháng sinh nhóm Quinolone"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    }
+  ],
+  "pharyngitis": [
+    {
+      "id": "cefixime",
+      "name_en": "Cefixime (Cefixime)",
+      "name_vi": "Cefixime (Cefixime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 3"
+    },
+    {
+      "id": "azithromycin",
+      "name_en": "Azithromycin (Azithromycin)",
+      "name_vi": "Azithromycin (Azithromycin)",
+      "type_en": "Macrolide antibiotic",
+      "type_vi": "Kháng sinh nhóm Macrolide"
+    },
+    {
+      "id": "clarithromycin",
+      "name_en": "Clarithromycin (Clarithromycin)",
+      "name_vi": "Clarithromycin (Clarithromycin)",
+      "type_en": "Macrolide",
+      "type_vi": "Kháng sinh nhóm Macrolide trị HP dạ dày"
+    }
+  ],
+  "bronchitis": [
+    {
+      "id": "cefixime",
+      "name_en": "Cefixime (Cefixime)",
+      "name_vi": "Cefixime (Cefixime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 3"
+    },
+    {
+      "id": "azithromycin",
+      "name_en": "Azithromycin (Azithromycin)",
+      "name_vi": "Azithromycin (Azithromycin)",
+      "type_en": "Macrolide antibiotic",
+      "type_vi": "Kháng sinh nhóm Macrolide"
+    },
+    {
+      "id": "clarithromycin",
+      "name_en": "Clarithromycin (Clarithromycin)",
+      "name_vi": "Clarithromycin (Clarithromycin)",
+      "type_en": "Macrolide",
+      "type_vi": "Kháng sinh nhóm Macrolide trị HP dạ dày"
+    }
+  ],
+  "viêm họng": [
+    {
+      "id": "cefixime",
+      "name_en": "Cefixime (Cefixime)",
+      "name_vi": "Cefixime (Cefixime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 3"
+    },
+    {
+      "id": "azithromycin",
+      "name_en": "Azithromycin (Azithromycin)",
+      "name_vi": "Azithromycin (Azithromycin)",
+      "type_en": "Macrolide antibiotic",
+      "type_vi": "Kháng sinh nhóm Macrolide"
+    },
+    {
+      "id": "clarithromycin",
+      "name_en": "Clarithromycin (Clarithromycin)",
+      "name_vi": "Clarithromycin (Clarithromycin)",
+      "type_en": "Macrolide",
+      "type_vi": "Kháng sinh nhóm Macrolide trị HP dạ dày"
+    }
+  ],
+  "viêm phế quản": [
+    {
+      "id": "cefixime",
+      "name_en": "Cefixime (Cefixime)",
+      "name_vi": "Cefixime (Cefixime)",
+      "type_en": "Cephalosporin",
+      "type_vi": "Kháng sinh Cephalosporin thế hệ 3"
+    },
+    {
+      "id": "azithromycin",
+      "name_en": "Azithromycin (Azithromycin)",
+      "name_vi": "Azithromycin (Azithromycin)",
+      "type_en": "Macrolide antibiotic",
+      "type_vi": "Kháng sinh nhóm Macrolide"
+    },
+    {
+      "id": "clarithromycin",
+      "name_en": "Clarithromycin (Clarithromycin)",
+      "name_vi": "Clarithromycin (Clarithromycin)",
+      "type_en": "Macrolide",
+      "type_vi": "Kháng sinh nhóm Macrolide trị HP dạ dày"
+    }
+  ],
+  "viêm xoang": [
+    {
+      "id": "azithromycin",
+      "name_en": "Azithromycin (Azithromycin)",
+      "name_vi": "Azithromycin (Azithromycin)",
+      "type_en": "Macrolide antibiotic",
+      "type_vi": "Kháng sinh nhóm Macrolide"
+    },
+    {
+      "id": "clarithromycin",
+      "name_en": "Clarithromycin (Clarithromycin)",
+      "name_vi": "Clarithromycin (Clarithromycin)",
+      "type_en": "Macrolide",
+      "type_vi": "Kháng sinh nhóm Macrolide trị HP dạ dày"
+    }
+  ],
+  "sinusitis": [
+    {
+      "id": "azithromycin",
+      "name_en": "Azithromycin (Azithromycin)",
+      "name_vi": "Azithromycin (Azithromycin)",
+      "type_en": "Macrolide antibiotic",
+      "type_vi": "Kháng sinh nhóm Macrolide"
+    },
+    {
+      "id": "clarithromycin",
+      "name_en": "Clarithromycin (Clarithromycin)",
+      "name_vi": "Clarithromycin (Clarithromycin)",
+      "type_en": "Macrolide",
+      "type_vi": "Kháng sinh nhóm Macrolide trị HP dạ dày"
+    }
+  ],
+  "zona thần kinh": [
+    {
+      "id": "acyclovir",
+      "name_en": "Acyclovir (Acyclovir)",
+      "name_vi": "Acyclovir (Acyclovir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc kháng virus Herpes, Zona"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    }
+  ],
+  "nhiễm virus herpes": [
+    {
+      "id": "acyclovir",
+      "name_en": "Acyclovir (Acyclovir)",
+      "name_vi": "Acyclovir (Acyclovir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc kháng virus Herpes, Zona"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    }
+  ],
+  "thủy đậu": [
+    {
+      "id": "acyclovir",
+      "name_en": "Acyclovir (Acyclovir)",
+      "name_vi": "Acyclovir (Acyclovir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc kháng virus Herpes, Zona"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    }
+  ],
+  "herpes": [
+    {
+      "id": "acyclovir",
+      "name_en": "Acyclovir (Acyclovir)",
+      "name_vi": "Acyclovir (Acyclovir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc kháng virus Herpes, Zona"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    }
+  ],
+  "kháng virus": [
+    {
+      "id": "oseltamivir",
+      "name_en": "Oseltamivir (Oseltamivir)",
+      "name_vi": "Oseltamivir (Oseltamivir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc điều trị cúm A/B"
+    },
+    {
+      "id": "entecavir",
+      "name_en": "Entecavir (Entecavir)",
+      "name_vi": "Entecavir (Entecavir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc điều trị viêm gan B mạn tính"
+    }
+  ],
+  "nhiễm virus": [
+    {
+      "id": "oseltamivir",
+      "name_en": "Oseltamivir (Oseltamivir)",
+      "name_vi": "Oseltamivir (Oseltamivir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc điều trị cúm A/B"
+    },
+    {
+      "id": "entecavir",
+      "name_en": "Entecavir (Entecavir)",
+      "name_vi": "Entecavir (Entecavir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc điều trị viêm gan B mạn tính"
+    }
+  ],
+  "viral infection": [
+    {
+      "id": "oseltamivir",
+      "name_en": "Oseltamivir (Oseltamivir)",
+      "name_vi": "Oseltamivir (Oseltamivir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc điều trị cúm A/B"
+    },
+    {
+      "id": "entecavir",
+      "name_en": "Entecavir (Entecavir)",
+      "name_vi": "Entecavir (Entecavir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc điều trị viêm gan B mạn tính"
+    }
+  ],
+  "nấm kẽ": [
+    {
+      "id": "fluconazole",
+      "name_en": "Fluconazole (Fluconazole)",
+      "name_vi": "Fluconazole (Fluconazole)",
+      "type_en": "Antifungal",
+      "type_vi": "Thuốc kháng nấm đường uống"
+    },
+    {
+      "id": "itraconazole",
+      "name_en": "Itraconazole (Itraconazole)",
+      "name_vi": "Itraconazole (Itraconazole)",
+      "type_en": "Antifungal",
+      "type_vi": "Thuốc trị nấm móng, nấm toàn thân"
+    }
+  ],
+  "nhiễm nấm": [
+    {
+      "id": "fluconazole",
+      "name_en": "Fluconazole (Fluconazole)",
+      "name_vi": "Fluconazole (Fluconazole)",
+      "type_en": "Antifungal",
+      "type_vi": "Thuốc kháng nấm đường uống"
+    },
+    {
+      "id": "itraconazole",
+      "name_en": "Itraconazole (Itraconazole)",
+      "name_vi": "Itraconazole (Itraconazole)",
+      "type_en": "Antifungal",
+      "type_vi": "Thuốc trị nấm móng, nấm toàn thân"
+    }
+  ],
+  "nấm da": [
+    {
+      "id": "fluconazole",
+      "name_en": "Fluconazole (Fluconazole)",
+      "name_vi": "Fluconazole (Fluconazole)",
+      "type_en": "Antifungal",
+      "type_vi": "Thuốc kháng nấm đường uống"
+    },
+    {
+      "id": "itraconazole",
+      "name_en": "Itraconazole (Itraconazole)",
+      "name_vi": "Itraconazole (Itraconazole)",
+      "type_en": "Antifungal",
+      "type_vi": "Thuốc trị nấm móng, nấm toàn thân"
+    }
+  ],
+  "fungal": [
+    {
+      "id": "fluconazole",
+      "name_en": "Fluconazole (Fluconazole)",
+      "name_vi": "Fluconazole (Fluconazole)",
+      "type_en": "Antifungal",
+      "type_vi": "Thuốc kháng nấm đường uống"
+    },
+    {
+      "id": "itraconazole",
+      "name_en": "Itraconazole (Itraconazole)",
+      "name_vi": "Itraconazole (Itraconazole)",
+      "type_en": "Antifungal",
+      "type_vi": "Thuốc trị nấm móng, nấm toàn thân"
+    }
+  ],
+  "tenofovir": [
+    {
+      "id": "tenofovir",
+      "name_en": "Tenofovir",
+      "name_vi": "Tenofovir",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc điều trị viêm gan B và HIV"
+    }
+  ],
+  "viêm gan b": [
+    {
+      "id": "entecavir",
+      "name_en": "Entecavir (Entecavir)",
+      "name_vi": "Entecavir (Entecavir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc điều trị viêm gan B mạn tính"
+    }
+  ],
+  "hepatitis": [
+    {
+      "id": "entecavir",
+      "name_en": "Entecavir (Entecavir)",
+      "name_vi": "Entecavir (Entecavir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc điều trị viêm gan B mạn tính"
+    }
+  ],
+  "men gan cao": [
+    {
+      "id": "entecavir",
+      "name_en": "Entecavir (Entecavir)",
+      "name_vi": "Entecavir (Entecavir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc điều trị viêm gan B mạn tính"
+    }
+  ],
+  "viêm gan c": [
+    {
+      "id": "entecavir",
+      "name_en": "Entecavir (Entecavir)",
+      "name_vi": "Entecavir (Entecavir)",
+      "type_en": "Antiviral",
+      "type_vi": "Thuốc điều trị viêm gan B mạn tính"
+    }
+  ],
+  "omeprazole": [
+    {
+      "id": "omeprazole",
+      "name_en": "Omeprazole (Omeprazole)",
+      "name_vi": "Omeprazole (Omeprazole)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton trị dạ dày"
+    }
+  ],
+  "reflux": [
+    {
+      "id": "pantoprazole",
+      "name_en": "Pantoprazole (Pantoprazole)",
+      "name_vi": "Pantoprazole (Pantoprazole)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton thế hệ mới trị dạ dày"
+    },
+    {
+      "id": "rabeprazole",
+      "name_en": "Rabeprazole (Rabeprazole Sodium)",
+      "name_vi": "Rabeprazole (Rabeprazole Sodium)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton điều trị dạ dày"
+    },
+    {
+      "id": "lansoprazole",
+      "name_en": "Lansoprazole (Lansoprazole)",
+      "name_vi": "Lansoprazole (Lansoprazole)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton trị trào ngược dạ dày"
+    },
+    {
+      "id": "famotidine",
+      "name_en": "Famotidine (Famotidine)",
+      "name_vi": "Famotidine (Famotidine)",
+      "type_en": "H2 blocker",
+      "type_vi": "Thuốc kháng H2 trị đau dạ dày"
+    },
+    {
+      "id": "metoclopramide",
+      "name_en": "Metoclopramide (Metoclopramide)",
+      "name_vi": "Metoclopramide (Metoclopramide)",
+      "type_en": "Antiemetic",
+      "type_vi": "Thuốc chống nôn, kích thích nhu động dạ dày"
+    }
+  ],
+  "gerd": [
+    {
+      "id": "pantoprazole",
+      "name_en": "Pantoprazole (Pantoprazole)",
+      "name_vi": "Pantoprazole (Pantoprazole)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton thế hệ mới trị dạ dày"
+    },
+    {
+      "id": "rabeprazole",
+      "name_en": "Rabeprazole (Rabeprazole Sodium)",
+      "name_vi": "Rabeprazole (Rabeprazole Sodium)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton điều trị dạ dày"
+    },
+    {
+      "id": "lansoprazole",
+      "name_en": "Lansoprazole (Lansoprazole)",
+      "name_vi": "Lansoprazole (Lansoprazole)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton trị trào ngược dạ dày"
+    },
+    {
+      "id": "famotidine",
+      "name_en": "Famotidine (Famotidine)",
+      "name_vi": "Famotidine (Famotidine)",
+      "type_en": "H2 blocker",
+      "type_vi": "Thuốc kháng H2 trị đau dạ dày"
+    }
+  ],
+  "trào ngược dạ dày thực quản": [
+    {
+      "id": "pantoprazole",
+      "name_en": "Pantoprazole (Pantoprazole)",
+      "name_vi": "Pantoprazole (Pantoprazole)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton thế hệ mới trị dạ dày"
+    },
+    {
+      "id": "rabeprazole",
+      "name_en": "Rabeprazole (Rabeprazole Sodium)",
+      "name_vi": "Rabeprazole (Rabeprazole Sodium)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton điều trị dạ dày"
+    },
+    {
+      "id": "lansoprazole",
+      "name_en": "Lansoprazole (Lansoprazole)",
+      "name_vi": "Lansoprazole (Lansoprazole)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton trị trào ngược dạ dày"
+    },
+    {
+      "id": "famotidine",
+      "name_en": "Famotidine (Famotidine)",
+      "name_vi": "Famotidine (Famotidine)",
+      "type_en": "H2 blocker",
+      "type_vi": "Thuốc kháng H2 trị đau dạ dày"
+    }
+  ],
+  "trào ngược dạ dày": [
+    {
+      "id": "pantoprazole",
+      "name_en": "Pantoprazole (Pantoprazole)",
+      "name_vi": "Pantoprazole (Pantoprazole)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton thế hệ mới trị dạ dày"
+    },
+    {
+      "id": "rabeprazole",
+      "name_en": "Rabeprazole (Rabeprazole Sodium)",
+      "name_vi": "Rabeprazole (Rabeprazole Sodium)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton điều trị dạ dày"
+    },
+    {
+      "id": "lansoprazole",
+      "name_en": "Lansoprazole (Lansoprazole)",
+      "name_vi": "Lansoprazole (Lansoprazole)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton trị trào ngược dạ dày"
+    },
+    {
+      "id": "famotidine",
+      "name_en": "Famotidine (Famotidine)",
+      "name_vi": "Famotidine (Famotidine)",
+      "type_en": "H2 blocker",
+      "type_vi": "Thuốc kháng H2 trị đau dạ dày"
+    },
+    {
+      "id": "metoclopramide",
+      "name_en": "Metoclopramide (Metoclopramide)",
+      "name_vi": "Metoclopramide (Metoclopramide)",
+      "type_en": "Antiemetic",
+      "type_vi": "Thuốc chống nôn, kích thích nhu động dạ dày"
+    }
+  ],
+  "esomeprazole": [
+    {
+      "id": "esomeprazole",
+      "name_en": "Esomeprazole (Basic Care Esomeprazole Magnesium)",
+      "name_vi": "Esomeprazole (Basic Care Esomeprazole Magnesium)",
+      "type_en": "PPI",
+      "type_vi": "Ức chế bơm Proton thế hệ mới trị dạ dày"
+    }
+  ],
+  "ranitidine": [
+    {
+      "id": "ranitidine",
+      "name_en": "Ranitidine (Ranitidine)",
+      "name_vi": "Ranitidine (Ranitidine)",
+      "type_en": "H2 blocker",
+      "type_vi": "Thuốc kháng H2 trị đau dạ dày"
+    }
+  ],
+  "loperamide": [
+    {
+      "id": "loperamide",
+      "name_en": "Loperamide",
+      "name_vi": "Loperamide",
+      "type_en": "Antidiarrheal",
+      "type_vi": "Thuốc cầm tiêu chảy"
+    }
+  ],
+  "nhuận tràng": [
+    {
+      "id": "bisacodyl",
+      "name_en": "Bisacodyl (Dulcolax Laxative)",
+      "name_vi": "Bisacodyl (Dulcolax Laxative)",
+      "type_en": "Laxative",
+      "type_vi": "Thuốc nhuận tràng trị táo bón"
+    }
+  ],
+  "táo bón": [
+    {
+      "id": "bisacodyl",
+      "name_en": "Bisacodyl (Dulcolax Laxative)",
+      "name_vi": "Bisacodyl (Dulcolax Laxative)",
+      "type_en": "Laxative",
+      "type_vi": "Thuốc nhuận tràng trị táo bón"
+    }
+  ],
+  "constipation": [
+    {
+      "id": "bisacodyl",
+      "name_en": "Bisacodyl (Dulcolax Laxative)",
+      "name_vi": "Bisacodyl (Dulcolax Laxative)",
+      "type_en": "Laxative",
+      "type_vi": "Thuốc nhuận tràng trị táo bón"
+    }
+  ],
+  "domperidone": [
+    {
+      "id": "domperidone",
+      "name_en": "Domperidone",
+      "name_vi": "Domperidone",
+      "type_en": "Antiemetic",
+      "type_vi": "Thuốc chống nôn, điều hòa nhu động ruột"
+    }
+  ],
+  "vomiting": [
+    {
+      "id": "metoclopramide",
+      "name_en": "Metoclopramide (Metoclopramide)",
+      "name_vi": "Metoclopramide (Metoclopramide)",
+      "type_en": "Antiemetic",
+      "type_vi": "Thuốc chống nôn, kích thích nhu động dạ dày"
+    },
+    {
+      "id": "fluoxetine",
+      "name_en": "Fluoxetine (Fluoxetine)",
+      "name_vi": "Fluoxetine (Fluoxetine)",
+      "type_en": "SSRI",
+      "type_vi": "Thuốc chống trầm cảm, rối loạn lo âu"
+    }
+  ],
+  "buồn nôn": [
+    {
+      "id": "metoclopramide",
+      "name_en": "Metoclopramide (Metoclopramide)",
+      "name_vi": "Metoclopramide (Metoclopramide)",
+      "type_en": "Antiemetic",
+      "type_vi": "Thuốc chống nôn, kích thích nhu động dạ dày"
+    }
+  ],
+  "nausea": [
+    {
+      "id": "metoclopramide",
+      "name_en": "Metoclopramide (Metoclopramide)",
+      "name_vi": "Metoclopramide (Metoclopramide)",
+      "type_en": "Antiemetic",
+      "type_vi": "Thuốc chống nôn, kích thích nhu động dạ dày"
+    }
+  ],
+  "nôn mửa": [
+    {
+      "id": "metoclopramide",
+      "name_en": "Metoclopramide (Metoclopramide)",
+      "name_vi": "Metoclopramide (Metoclopramide)",
+      "type_en": "Antiemetic",
+      "type_vi": "Thuốc chống nôn, kích thích nhu động dạ dày"
+    },
+    {
+      "id": "fluoxetine",
+      "name_en": "Fluoxetine (Fluoxetine)",
+      "name_vi": "Fluoxetine (Fluoxetine)",
+      "type_en": "SSRI",
+      "type_vi": "Thuốc chống trầm cảm, rối loạn lo âu"
+    }
+  ],
+  "simethicone": [
+    {
+      "id": "simethicone",
+      "name_en": "Simethicone (Gas Relief Ultra Strength)",
+      "name_vi": "Simethicone (Gas Relief Ultra Strength)",
+      "type_en": "Antiflatulent",
+      "type_vi": "Thuốc trị đầy hơi, chướng bụng"
+    }
+  ],
+  "salbutamol": [
+    {
+      "id": "salbutamol",
+      "name_en": "Salbutamol",
+      "name_vi": "Salbutamol",
+      "type_en": "Bronchodilator",
+      "type_vi": "Thuốc giãn phế quản trị hen"
+    }
+  ],
+  "acetylcysteine": [
+    {
+      "id": "acetylcysteine",
+      "name_en": "Acetylcysteine (Acetylcysteine)",
+      "name_vi": "Acetylcysteine (Acetylcysteine)",
+      "type_en": "Mucolytic",
+      "type_vi": "Thuốc long đờm"
+    }
+  ],
+  "fexofenadine": [
+    {
+      "id": "fexofenadine",
+      "name_en": "Fexofenadine",
+      "name_vi": "Fexofenadine",
+      "type_en": "Antihistamine",
+      "type_vi": "Kháng Histamine trị dị ứng thế hệ mới"
+    }
+  ],
+  "hen suyễn": [
+    {
+      "id": "montelukast",
+      "name_en": "Montelukast (Montelukast)",
+      "name_vi": "Montelukast (Montelukast)",
+      "type_en": "Leukotriene receptor antagonist",
+      "type_vi": "Thuốc dự phòng hen suyễn, viêm mũi dị ứng"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "allergic rhinitis": [
+    {
+      "id": "montelukast",
+      "name_en": "Montelukast (Montelukast)",
+      "name_vi": "Montelukast (Montelukast)",
+      "type_en": "Leukotriene receptor antagonist",
+      "type_vi": "Thuốc dự phòng hen suyễn, viêm mũi dị ứng"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "khó thở": [
+    {
+      "id": "montelukast",
+      "name_en": "Montelukast (Montelukast)",
+      "name_vi": "Montelukast (Montelukast)",
+      "type_en": "Leukotriene receptor antagonist",
+      "type_vi": "Thuốc dự phòng hen suyễn, viêm mũi dị ứng"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "viêm mũi dị ứng": [
+    {
+      "id": "montelukast",
+      "name_en": "Montelukast (Montelukast)",
+      "name_vi": "Montelukast (Montelukast)",
+      "type_en": "Leukotriene receptor antagonist",
+      "type_vi": "Thuốc dự phòng hen suyễn, viêm mũi dị ứng"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "asthma": [
+    {
+      "id": "montelukast",
+      "name_en": "Montelukast (Montelukast)",
+      "name_vi": "Montelukast (Montelukast)",
+      "type_en": "Leukotriene receptor antagonist",
+      "type_vi": "Thuốc dự phòng hen suyễn, viêm mũi dị ứng"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "mũi dị ứng": [
+    {
+      "id": "montelukast",
+      "name_en": "Montelukast (Montelukast)",
+      "name_vi": "Montelukast (Montelukast)",
+      "type_en": "Leukotriene receptor antagonist",
+      "type_vi": "Thuốc dự phòng hen suyễn, viêm mũi dị ứng"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "fluticasone": [
+    {
+      "id": "fluticasone",
+      "name_en": "Fluticasone",
+      "name_vi": "Fluticasone",
+      "type_en": "Corticosteroid",
+      "type_vi": "Corticoid xịt mũi trị viêm mũi dị ứng"
+    }
+  ],
+  "nghẹt mũi": [
+    {
+      "id": "budesonide",
+      "name_en": "Budesonide (Budesonide)",
+      "name_vi": "Budesonide (Budesonide)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Corticoid xịt, hít trị hen suyễn"
+    }
+  ],
+  "sổ mũi": [
+    {
+      "id": "budesonide",
+      "name_en": "Budesonide (Budesonide)",
+      "name_vi": "Budesonide (Budesonide)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Corticoid xịt, hít trị hen suyễn"
+    }
+  ],
+  "nasal congestion": [
+    {
+      "id": "budesonide",
+      "name_en": "Budesonide (Budesonide)",
+      "name_vi": "Budesonide (Budesonide)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Corticoid xịt, hít trị hen suyễn"
+    }
+  ],
+  "chlorpheniramine": [
+    {
+      "id": "chlorpheniramine",
+      "name_en": "Chlorpheniramine",
+      "name_vi": "Chlorpheniramine",
+      "type_en": "Antihistamine",
+      "type_vi": "Thuốc dị ứng gây buồn ngủ thế hệ cũ"
+    }
+  ],
+  "ambroxol": [
+    {
+      "id": "ambroxol",
+      "name_en": "Ambroxol",
+      "name_vi": "Ambroxol",
+      "type_en": "Mucolytic",
+      "type_vi": "Thuốc tiêu nhầy đờm đường hô hấp"
+    }
+  ],
+  "đái tháo đường": [
+    {
+      "id": "amlodipine",
+      "name_en": "Amlodipine (Norliqva)",
+      "name_vi": "Amlodipine (Norliqva)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc hạ huyết áp chẹn kênh Canxi"
+    },
+    {
+      "id": "captopril",
+      "name_en": "Captopril (Captopril)",
+      "name_vi": "Captopril (Captopril)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc hạ huyết áp ức chế men chuyển"
+    },
+    {
+      "id": "losartan",
+      "name_en": "Losartan (Losartan Potassium)",
+      "name_vi": "Losartan (Losartan Potassium)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc hạ huyết áp chẹn thụ thể Angiotensin II"
+    },
+    {
+      "id": "valsartan",
+      "name_en": "Valsartan (Valsartan)",
+      "name_vi": "Valsartan (Valsartan)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "enalapril",
+      "name_en": "Enalapril (Enalapril Maleate)",
+      "name_vi": "Enalapril (Enalapril Maleate)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "nifedipine",
+      "name_en": "Nifedipine (Nifedipine)",
+      "name_vi": "Nifedipine (Nifedipine)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc điều trị tăng huyết áp, đau thắt ngực"
+    },
+    {
+      "id": "metoprolol",
+      "name_en": "Metoprolol (Metoprolol Tartrate)",
+      "name_vi": "Metoprolol (Metoprolol Tartrate)",
+      "type_en": "Beta-blocker",
+      "type_vi": "Thuốc chẹn beta trị tăng huyết áp, loạn nhịp tim"
+    },
+    {
+      "id": "simvastatin",
+      "name_en": "Simvastatin (Simvastatin)",
+      "name_vi": "Simvastatin (Simvastatin)",
+      "type_en": "Statin",
+      "type_vi": "Thuốc hạ lipid máu"
+    },
+    {
+      "id": "fenofibrate",
+      "name_en": "Fenofibrate (Fenofibrate)",
+      "name_vi": "Fenofibrate (Fenofibrate)",
+      "type_en": "Fibrate",
+      "type_vi": "Thuốc điều trị tăng triglyceride máu"
+    },
+    {
+      "id": "metformin",
+      "name_en": "Metformin (Metformin)",
+      "name_vi": "Metformin (Metformin)",
+      "type_en": "Antidiabetic",
+      "type_vi": "Thuốc trị tiểu đường nhóm Biguanide"
+    },
+    {
+      "id": "glimepiride",
+      "name_en": "Glimepiride (Glimepiride)",
+      "name_vi": "Glimepiride (Glimepiride)",
+      "type_en": "Antidiabetic",
+      "type_vi": "Thuốc trị tiểu đường nhóm Sulfonylurea thế hệ mới"
+    },
+    {
+      "id": "sitagliptin",
+      "name_en": "Sitagliptin (Januvia)",
+      "name_vi": "Sitagliptin (Januvia)",
+      "type_en": "Antidiabetic",
+      "type_vi": "Thuốc trị tiểu đường ức chế DPP-4"
+    },
+    {
+      "id": "dapagliflozin",
+      "name_en": "Dapagliflozin (Farxiga)",
+      "name_vi": "Dapagliflozin (Farxiga)",
+      "type_en": "SGLT2 inhibitor",
+      "type_vi": "Thuốc trị tiểu đường thải đường qua nước tiểu"
+    }
+  ],
+  "heart failure": [
+    {
+      "id": "amlodipine",
+      "name_en": "Amlodipine (Norliqva)",
+      "name_vi": "Amlodipine (Norliqva)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc hạ huyết áp chẹn kênh Canxi"
+    },
+    {
+      "id": "captopril",
+      "name_en": "Captopril (Captopril)",
+      "name_vi": "Captopril (Captopril)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc hạ huyết áp ức chế men chuyển"
+    },
+    {
+      "id": "losartan",
+      "name_en": "Losartan (Losartan Potassium)",
+      "name_vi": "Losartan (Losartan Potassium)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc hạ huyết áp chẹn thụ thể Angiotensin II"
+    },
+    {
+      "id": "valsartan",
+      "name_en": "Valsartan (Valsartan)",
+      "name_vi": "Valsartan (Valsartan)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "enalapril",
+      "name_en": "Enalapril (Enalapril Maleate)",
+      "name_vi": "Enalapril (Enalapril Maleate)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "nifedipine",
+      "name_en": "Nifedipine (Nifedipine)",
+      "name_vi": "Nifedipine (Nifedipine)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc điều trị tăng huyết áp, đau thắt ngực"
+    },
+    {
+      "id": "metoprolol",
+      "name_en": "Metoprolol (Metoprolol Tartrate)",
+      "name_vi": "Metoprolol (Metoprolol Tartrate)",
+      "type_en": "Beta-blocker",
+      "type_vi": "Thuốc chẹn beta trị tăng huyết áp, loạn nhịp tim"
+    },
+    {
+      "id": "dapagliflozin",
+      "name_en": "Dapagliflozin (Farxiga)",
+      "name_vi": "Dapagliflozin (Farxiga)",
+      "type_en": "SGLT2 inhibitor",
+      "type_vi": "Thuốc trị tiểu đường thải đường qua nước tiểu"
+    }
+  ],
+  "rối loạn lipid máu": [
+    {
+      "id": "amlodipine",
+      "name_en": "Amlodipine (Norliqva)",
+      "name_vi": "Amlodipine (Norliqva)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc hạ huyết áp chẹn kênh Canxi"
+    },
+    {
+      "id": "losartan",
+      "name_en": "Losartan (Losartan Potassium)",
+      "name_vi": "Losartan (Losartan Potassium)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc hạ huyết áp chẹn thụ thể Angiotensin II"
+    },
+    {
+      "id": "valsartan",
+      "name_en": "Valsartan (Valsartan)",
+      "name_vi": "Valsartan (Valsartan)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "enalapril",
+      "name_en": "Enalapril (Enalapril Maleate)",
+      "name_vi": "Enalapril (Enalapril Maleate)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "nifedipine",
+      "name_en": "Nifedipine (Nifedipine)",
+      "name_vi": "Nifedipine (Nifedipine)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc điều trị tăng huyết áp, đau thắt ngực"
+    },
+    {
+      "id": "metoprolol",
+      "name_en": "Metoprolol (Metoprolol Tartrate)",
+      "name_vi": "Metoprolol (Metoprolol Tartrate)",
+      "type_en": "Beta-blocker",
+      "type_vi": "Thuốc chẹn beta trị tăng huyết áp, loạn nhịp tim"
+    },
+    {
+      "id": "rosuvastatin",
+      "name_en": "Rosuvastatin (Rosuvastatin)",
+      "name_vi": "Rosuvastatin (Rosuvastatin)",
+      "type_en": "Statin",
+      "type_vi": "Thuốc hạ mỡ máu mạnh"
+    },
+    {
+      "id": "simvastatin",
+      "name_en": "Simvastatin (Simvastatin)",
+      "name_vi": "Simvastatin (Simvastatin)",
+      "type_en": "Statin",
+      "type_vi": "Thuốc hạ lipid máu"
+    },
+    {
+      "id": "fenofibrate",
+      "name_en": "Fenofibrate (Fenofibrate)",
+      "name_vi": "Fenofibrate (Fenofibrate)",
+      "type_en": "Fibrate",
+      "type_vi": "Thuốc điều trị tăng triglyceride máu"
+    }
+  ],
+  "tiểu đường": [
+    {
+      "id": "amlodipine",
+      "name_en": "Amlodipine (Norliqva)",
+      "name_vi": "Amlodipine (Norliqva)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc hạ huyết áp chẹn kênh Canxi"
+    },
+    {
+      "id": "captopril",
+      "name_en": "Captopril (Captopril)",
+      "name_vi": "Captopril (Captopril)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc hạ huyết áp ức chế men chuyển"
+    },
+    {
+      "id": "losartan",
+      "name_en": "Losartan (Losartan Potassium)",
+      "name_vi": "Losartan (Losartan Potassium)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc hạ huyết áp chẹn thụ thể Angiotensin II"
+    },
+    {
+      "id": "valsartan",
+      "name_en": "Valsartan (Valsartan)",
+      "name_vi": "Valsartan (Valsartan)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "enalapril",
+      "name_en": "Enalapril (Enalapril Maleate)",
+      "name_vi": "Enalapril (Enalapril Maleate)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "nifedipine",
+      "name_en": "Nifedipine (Nifedipine)",
+      "name_vi": "Nifedipine (Nifedipine)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc điều trị tăng huyết áp, đau thắt ngực"
+    },
+    {
+      "id": "metoprolol",
+      "name_en": "Metoprolol (Metoprolol Tartrate)",
+      "name_vi": "Metoprolol (Metoprolol Tartrate)",
+      "type_en": "Beta-blocker",
+      "type_vi": "Thuốc chẹn beta trị tăng huyết áp, loạn nhịp tim"
+    },
+    {
+      "id": "simvastatin",
+      "name_en": "Simvastatin (Simvastatin)",
+      "name_vi": "Simvastatin (Simvastatin)",
+      "type_en": "Statin",
+      "type_vi": "Thuốc hạ lipid máu"
+    },
+    {
+      "id": "fenofibrate",
+      "name_en": "Fenofibrate (Fenofibrate)",
+      "name_vi": "Fenofibrate (Fenofibrate)",
+      "type_en": "Fibrate",
+      "type_vi": "Thuốc điều trị tăng triglyceride máu"
+    },
+    {
+      "id": "metformin",
+      "name_en": "Metformin (Metformin)",
+      "name_vi": "Metformin (Metformin)",
+      "type_en": "Antidiabetic",
+      "type_vi": "Thuốc trị tiểu đường nhóm Biguanide"
+    },
+    {
+      "id": "glimepiride",
+      "name_en": "Glimepiride (Glimepiride)",
+      "name_vi": "Glimepiride (Glimepiride)",
+      "type_en": "Antidiabetic",
+      "type_vi": "Thuốc trị tiểu đường nhóm Sulfonylurea thế hệ mới"
+    },
+    {
+      "id": "sitagliptin",
+      "name_en": "Sitagliptin (Januvia)",
+      "name_vi": "Sitagliptin (Januvia)",
+      "type_en": "Antidiabetic",
+      "type_vi": "Thuốc trị tiểu đường ức chế DPP-4"
+    },
+    {
+      "id": "dapagliflozin",
+      "name_en": "Dapagliflozin (Farxiga)",
+      "name_vi": "Dapagliflozin (Farxiga)",
+      "type_en": "SGLT2 inhibitor",
+      "type_vi": "Thuốc trị tiểu đường thải đường qua nước tiểu"
+    }
+  ],
+  "suy tim": [
+    {
+      "id": "amlodipine",
+      "name_en": "Amlodipine (Norliqva)",
+      "name_vi": "Amlodipine (Norliqva)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc hạ huyết áp chẹn kênh Canxi"
+    },
+    {
+      "id": "captopril",
+      "name_en": "Captopril (Captopril)",
+      "name_vi": "Captopril (Captopril)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc hạ huyết áp ức chế men chuyển"
+    },
+    {
+      "id": "losartan",
+      "name_en": "Losartan (Losartan Potassium)",
+      "name_vi": "Losartan (Losartan Potassium)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc hạ huyết áp chẹn thụ thể Angiotensin II"
+    },
+    {
+      "id": "valsartan",
+      "name_en": "Valsartan (Valsartan)",
+      "name_vi": "Valsartan (Valsartan)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "enalapril",
+      "name_en": "Enalapril (Enalapril Maleate)",
+      "name_vi": "Enalapril (Enalapril Maleate)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "nifedipine",
+      "name_en": "Nifedipine (Nifedipine)",
+      "name_vi": "Nifedipine (Nifedipine)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc điều trị tăng huyết áp, đau thắt ngực"
+    },
+    {
+      "id": "metoprolol",
+      "name_en": "Metoprolol (Metoprolol Tartrate)",
+      "name_vi": "Metoprolol (Metoprolol Tartrate)",
+      "type_en": "Beta-blocker",
+      "type_vi": "Thuốc chẹn beta trị tăng huyết áp, loạn nhịp tim"
+    },
+    {
+      "id": "dapagliflozin",
+      "name_en": "Dapagliflozin (Farxiga)",
+      "name_vi": "Dapagliflozin (Farxiga)",
+      "type_en": "SGLT2 inhibitor",
+      "type_vi": "Thuốc trị tiểu đường thải đường qua nước tiểu"
+    }
+  ],
+  "thiếu máu cơ tim": [
+    {
+      "id": "amlodipine",
+      "name_en": "Amlodipine (Norliqva)",
+      "name_vi": "Amlodipine (Norliqva)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc hạ huyết áp chẹn kênh Canxi"
+    },
+    {
+      "id": "losartan",
+      "name_en": "Losartan (Losartan Potassium)",
+      "name_vi": "Losartan (Losartan Potassium)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc hạ huyết áp chẹn thụ thể Angiotensin II"
+    },
+    {
+      "id": "valsartan",
+      "name_en": "Valsartan (Valsartan)",
+      "name_vi": "Valsartan (Valsartan)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "enalapril",
+      "name_en": "Enalapril (Enalapril Maleate)",
+      "name_vi": "Enalapril (Enalapril Maleate)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "nifedipine",
+      "name_en": "Nifedipine (Nifedipine)",
+      "name_vi": "Nifedipine (Nifedipine)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc điều trị tăng huyết áp, đau thắt ngực"
+    },
+    {
+      "id": "metoprolol",
+      "name_en": "Metoprolol (Metoprolol Tartrate)",
+      "name_vi": "Metoprolol (Metoprolol Tartrate)",
+      "type_en": "Beta-blocker",
+      "type_vi": "Thuốc chẹn beta trị tăng huyết áp, loạn nhịp tim"
+    },
+    {
+      "id": "clopidogrel",
+      "name_en": "Clopidogrel (Clopidogrel)",
+      "name_vi": "Clopidogrel (Clopidogrel)",
+      "type_en": "Antiplatelet",
+      "type_vi": "Thuốc chống kết tập tiểu cầu ngừa đột quỵ"
+    }
+  ],
+  "angina": [
+    {
+      "id": "amlodipine",
+      "name_en": "Amlodipine (Norliqva)",
+      "name_vi": "Amlodipine (Norliqva)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc hạ huyết áp chẹn kênh Canxi"
+    },
+    {
+      "id": "losartan",
+      "name_en": "Losartan (Losartan Potassium)",
+      "name_vi": "Losartan (Losartan Potassium)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc hạ huyết áp chẹn thụ thể Angiotensin II"
+    },
+    {
+      "id": "valsartan",
+      "name_en": "Valsartan (Valsartan)",
+      "name_vi": "Valsartan (Valsartan)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "enalapril",
+      "name_en": "Enalapril (Enalapril Maleate)",
+      "name_vi": "Enalapril (Enalapril Maleate)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "nifedipine",
+      "name_en": "Nifedipine (Nifedipine)",
+      "name_vi": "Nifedipine (Nifedipine)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc điều trị tăng huyết áp, đau thắt ngực"
+    },
+    {
+      "id": "metoprolol",
+      "name_en": "Metoprolol (Metoprolol Tartrate)",
+      "name_vi": "Metoprolol (Metoprolol Tartrate)",
+      "type_en": "Beta-blocker",
+      "type_vi": "Thuốc chẹn beta trị tăng huyết áp, loạn nhịp tim"
+    },
+    {
+      "id": "clopidogrel",
+      "name_en": "Clopidogrel (Clopidogrel)",
+      "name_vi": "Clopidogrel (Clopidogrel)",
+      "type_en": "Antiplatelet",
+      "type_vi": "Thuốc chống kết tập tiểu cầu ngừa đột quỵ"
+    }
+  ],
+  "đột quỵ": [
+    {
+      "id": "amlodipine",
+      "name_en": "Amlodipine (Norliqva)",
+      "name_vi": "Amlodipine (Norliqva)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc hạ huyết áp chẹn kênh Canxi"
+    },
+    {
+      "id": "losartan",
+      "name_en": "Losartan (Losartan Potassium)",
+      "name_vi": "Losartan (Losartan Potassium)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc hạ huyết áp chẹn thụ thể Angiotensin II"
+    },
+    {
+      "id": "valsartan",
+      "name_en": "Valsartan (Valsartan)",
+      "name_vi": "Valsartan (Valsartan)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "enalapril",
+      "name_en": "Enalapril (Enalapril Maleate)",
+      "name_vi": "Enalapril (Enalapril Maleate)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "nifedipine",
+      "name_en": "Nifedipine (Nifedipine)",
+      "name_vi": "Nifedipine (Nifedipine)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc điều trị tăng huyết áp, đau thắt ngực"
+    },
+    {
+      "id": "metoprolol",
+      "name_en": "Metoprolol (Metoprolol Tartrate)",
+      "name_vi": "Metoprolol (Metoprolol Tartrate)",
+      "type_en": "Beta-blocker",
+      "type_vi": "Thuốc chẹn beta trị tăng huyết áp, loạn nhịp tim"
+    },
+    {
+      "id": "simvastatin",
+      "name_en": "Simvastatin (Simvastatin)",
+      "name_vi": "Simvastatin (Simvastatin)",
+      "type_en": "Statin",
+      "type_vi": "Thuốc hạ lipid máu"
+    },
+    {
+      "id": "clopidogrel",
+      "name_en": "Clopidogrel (Clopidogrel)",
+      "name_vi": "Clopidogrel (Clopidogrel)",
+      "type_en": "Antiplatelet",
+      "type_vi": "Thuốc chống kết tập tiểu cầu ngừa đột quỵ"
+    }
+  ],
+  "diabetes": [
+    {
+      "id": "amlodipine",
+      "name_en": "Amlodipine (Norliqva)",
+      "name_vi": "Amlodipine (Norliqva)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc hạ huyết áp chẹn kênh Canxi"
+    },
+    {
+      "id": "captopril",
+      "name_en": "Captopril (Captopril)",
+      "name_vi": "Captopril (Captopril)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc hạ huyết áp ức chế men chuyển"
+    },
+    {
+      "id": "losartan",
+      "name_en": "Losartan (Losartan Potassium)",
+      "name_vi": "Losartan (Losartan Potassium)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc hạ huyết áp chẹn thụ thể Angiotensin II"
+    },
+    {
+      "id": "valsartan",
+      "name_en": "Valsartan (Valsartan)",
+      "name_vi": "Valsartan (Valsartan)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "enalapril",
+      "name_en": "Enalapril (Enalapril Maleate)",
+      "name_vi": "Enalapril (Enalapril Maleate)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "nifedipine",
+      "name_en": "Nifedipine (Nifedipine)",
+      "name_vi": "Nifedipine (Nifedipine)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc điều trị tăng huyết áp, đau thắt ngực"
+    },
+    {
+      "id": "metoprolol",
+      "name_en": "Metoprolol (Metoprolol Tartrate)",
+      "name_vi": "Metoprolol (Metoprolol Tartrate)",
+      "type_en": "Beta-blocker",
+      "type_vi": "Thuốc chẹn beta trị tăng huyết áp, loạn nhịp tim"
+    },
+    {
+      "id": "simvastatin",
+      "name_en": "Simvastatin (Simvastatin)",
+      "name_vi": "Simvastatin (Simvastatin)",
+      "type_en": "Statin",
+      "type_vi": "Thuốc hạ lipid máu"
+    },
+    {
+      "id": "fenofibrate",
+      "name_en": "Fenofibrate (Fenofibrate)",
+      "name_vi": "Fenofibrate (Fenofibrate)",
+      "type_en": "Fibrate",
+      "type_vi": "Thuốc điều trị tăng triglyceride máu"
+    },
+    {
+      "id": "metformin",
+      "name_en": "Metformin (Metformin)",
+      "name_vi": "Metformin (Metformin)",
+      "type_en": "Antidiabetic",
+      "type_vi": "Thuốc trị tiểu đường nhóm Biguanide"
+    },
+    {
+      "id": "glimepiride",
+      "name_en": "Glimepiride (Glimepiride)",
+      "name_vi": "Glimepiride (Glimepiride)",
+      "type_en": "Antidiabetic",
+      "type_vi": "Thuốc trị tiểu đường nhóm Sulfonylurea thế hệ mới"
+    },
+    {
+      "id": "sitagliptin",
+      "name_en": "Sitagliptin (Januvia)",
+      "name_vi": "Sitagliptin (Januvia)",
+      "type_en": "Antidiabetic",
+      "type_vi": "Thuốc trị tiểu đường ức chế DPP-4"
+    },
+    {
+      "id": "dapagliflozin",
+      "name_en": "Dapagliflozin (Farxiga)",
+      "name_vi": "Dapagliflozin (Farxiga)",
+      "type_en": "SGLT2 inhibitor",
+      "type_vi": "Thuốc trị tiểu đường thải đường qua nước tiểu"
+    }
+  ],
+  "đau thắt ngực": [
+    {
+      "id": "amlodipine",
+      "name_en": "Amlodipine (Norliqva)",
+      "name_vi": "Amlodipine (Norliqva)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc hạ huyết áp chẹn kênh Canxi"
+    },
+    {
+      "id": "losartan",
+      "name_en": "Losartan (Losartan Potassium)",
+      "name_vi": "Losartan (Losartan Potassium)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc hạ huyết áp chẹn thụ thể Angiotensin II"
+    },
+    {
+      "id": "valsartan",
+      "name_en": "Valsartan (Valsartan)",
+      "name_vi": "Valsartan (Valsartan)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "enalapril",
+      "name_en": "Enalapril (Enalapril Maleate)",
+      "name_vi": "Enalapril (Enalapril Maleate)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "nifedipine",
+      "name_en": "Nifedipine (Nifedipine)",
+      "name_vi": "Nifedipine (Nifedipine)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc điều trị tăng huyết áp, đau thắt ngực"
+    },
+    {
+      "id": "metoprolol",
+      "name_en": "Metoprolol (Metoprolol Tartrate)",
+      "name_vi": "Metoprolol (Metoprolol Tartrate)",
+      "type_en": "Beta-blocker",
+      "type_vi": "Thuốc chẹn beta trị tăng huyết áp, loạn nhịp tim"
+    },
+    {
+      "id": "clopidogrel",
+      "name_en": "Clopidogrel (Clopidogrel)",
+      "name_vi": "Clopidogrel (Clopidogrel)",
+      "type_en": "Antiplatelet",
+      "type_vi": "Thuốc chống kết tập tiểu cầu ngừa đột quỵ"
+    }
+  ],
+  "tai biến mạch máu não": [
+    {
+      "id": "amlodipine",
+      "name_en": "Amlodipine (Norliqva)",
+      "name_vi": "Amlodipine (Norliqva)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc hạ huyết áp chẹn kênh Canxi"
+    },
+    {
+      "id": "losartan",
+      "name_en": "Losartan (Losartan Potassium)",
+      "name_vi": "Losartan (Losartan Potassium)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc hạ huyết áp chẹn thụ thể Angiotensin II"
+    },
+    {
+      "id": "valsartan",
+      "name_en": "Valsartan (Valsartan)",
+      "name_vi": "Valsartan (Valsartan)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "enalapril",
+      "name_en": "Enalapril (Enalapril Maleate)",
+      "name_vi": "Enalapril (Enalapril Maleate)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "nifedipine",
+      "name_en": "Nifedipine (Nifedipine)",
+      "name_vi": "Nifedipine (Nifedipine)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc điều trị tăng huyết áp, đau thắt ngực"
+    },
+    {
+      "id": "metoprolol",
+      "name_en": "Metoprolol (Metoprolol Tartrate)",
+      "name_vi": "Metoprolol (Metoprolol Tartrate)",
+      "type_en": "Beta-blocker",
+      "type_vi": "Thuốc chẹn beta trị tăng huyết áp, loạn nhịp tim"
+    },
+    {
+      "id": "simvastatin",
+      "name_en": "Simvastatin (Simvastatin)",
+      "name_vi": "Simvastatin (Simvastatin)",
+      "type_en": "Statin",
+      "type_vi": "Thuốc hạ lipid máu"
+    },
+    {
+      "id": "clopidogrel",
+      "name_en": "Clopidogrel (Clopidogrel)",
+      "name_vi": "Clopidogrel (Clopidogrel)",
+      "type_en": "Antiplatelet",
+      "type_vi": "Thuốc chống kết tập tiểu cầu ngừa đột quỵ"
+    }
+  ],
+  "stroke": [
+    {
+      "id": "amlodipine",
+      "name_en": "Amlodipine (Norliqva)",
+      "name_vi": "Amlodipine (Norliqva)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc hạ huyết áp chẹn kênh Canxi"
+    },
+    {
+      "id": "losartan",
+      "name_en": "Losartan (Losartan Potassium)",
+      "name_vi": "Losartan (Losartan Potassium)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc hạ huyết áp chẹn thụ thể Angiotensin II"
+    },
+    {
+      "id": "valsartan",
+      "name_en": "Valsartan (Valsartan)",
+      "name_vi": "Valsartan (Valsartan)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "enalapril",
+      "name_en": "Enalapril (Enalapril Maleate)",
+      "name_vi": "Enalapril (Enalapril Maleate)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "nifedipine",
+      "name_en": "Nifedipine (Nifedipine)",
+      "name_vi": "Nifedipine (Nifedipine)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc điều trị tăng huyết áp, đau thắt ngực"
+    },
+    {
+      "id": "metoprolol",
+      "name_en": "Metoprolol (Metoprolol Tartrate)",
+      "name_vi": "Metoprolol (Metoprolol Tartrate)",
+      "type_en": "Beta-blocker",
+      "type_vi": "Thuốc chẹn beta trị tăng huyết áp, loạn nhịp tim"
+    },
+    {
+      "id": "simvastatin",
+      "name_en": "Simvastatin (Simvastatin)",
+      "name_vi": "Simvastatin (Simvastatin)",
+      "type_en": "Statin",
+      "type_vi": "Thuốc hạ lipid máu"
+    },
+    {
+      "id": "clopidogrel",
+      "name_en": "Clopidogrel (Clopidogrel)",
+      "name_vi": "Clopidogrel (Clopidogrel)",
+      "type_en": "Antiplatelet",
+      "type_vi": "Thuốc chống kết tập tiểu cầu ngừa đột quỵ"
+    }
+  ],
+  "cao huyết áp": [
+    {
+      "id": "amlodipine",
+      "name_en": "Amlodipine (Norliqva)",
+      "name_vi": "Amlodipine (Norliqva)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc hạ huyết áp chẹn kênh Canxi"
+    },
+    {
+      "id": "captopril",
+      "name_en": "Captopril (Captopril)",
+      "name_vi": "Captopril (Captopril)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc hạ huyết áp ức chế men chuyển"
+    },
+    {
+      "id": "losartan",
+      "name_en": "Losartan (Losartan Potassium)",
+      "name_vi": "Losartan (Losartan Potassium)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc hạ huyết áp chẹn thụ thể Angiotensin II"
+    },
+    {
+      "id": "valsartan",
+      "name_en": "Valsartan (Valsartan)",
+      "name_vi": "Valsartan (Valsartan)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "enalapril",
+      "name_en": "Enalapril (Enalapril Maleate)",
+      "name_vi": "Enalapril (Enalapril Maleate)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "nifedipine",
+      "name_en": "Nifedipine (Nifedipine)",
+      "name_vi": "Nifedipine (Nifedipine)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc điều trị tăng huyết áp, đau thắt ngực"
+    },
+    {
+      "id": "metoprolol",
+      "name_en": "Metoprolol (Metoprolol Tartrate)",
+      "name_vi": "Metoprolol (Metoprolol Tartrate)",
+      "type_en": "Beta-blocker",
+      "type_vi": "Thuốc chẹn beta trị tăng huyết áp, loạn nhịp tim"
+    }
+  ],
+  "đường huyết cao": [
+    {
+      "id": "amlodipine",
+      "name_en": "Amlodipine (Norliqva)",
+      "name_vi": "Amlodipine (Norliqva)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc hạ huyết áp chẹn kênh Canxi"
+    },
+    {
+      "id": "captopril",
+      "name_en": "Captopril (Captopril)",
+      "name_vi": "Captopril (Captopril)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc hạ huyết áp ức chế men chuyển"
+    },
+    {
+      "id": "losartan",
+      "name_en": "Losartan (Losartan Potassium)",
+      "name_vi": "Losartan (Losartan Potassium)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc hạ huyết áp chẹn thụ thể Angiotensin II"
+    },
+    {
+      "id": "valsartan",
+      "name_en": "Valsartan (Valsartan)",
+      "name_vi": "Valsartan (Valsartan)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "enalapril",
+      "name_en": "Enalapril (Enalapril Maleate)",
+      "name_vi": "Enalapril (Enalapril Maleate)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "nifedipine",
+      "name_en": "Nifedipine (Nifedipine)",
+      "name_vi": "Nifedipine (Nifedipine)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc điều trị tăng huyết áp, đau thắt ngực"
+    },
+    {
+      "id": "metoprolol",
+      "name_en": "Metoprolol (Metoprolol Tartrate)",
+      "name_vi": "Metoprolol (Metoprolol Tartrate)",
+      "type_en": "Beta-blocker",
+      "type_vi": "Thuốc chẹn beta trị tăng huyết áp, loạn nhịp tim"
+    },
+    {
+      "id": "simvastatin",
+      "name_en": "Simvastatin (Simvastatin)",
+      "name_vi": "Simvastatin (Simvastatin)",
+      "type_en": "Statin",
+      "type_vi": "Thuốc hạ lipid máu"
+    },
+    {
+      "id": "fenofibrate",
+      "name_en": "Fenofibrate (Fenofibrate)",
+      "name_vi": "Fenofibrate (Fenofibrate)",
+      "type_en": "Fibrate",
+      "type_vi": "Thuốc điều trị tăng triglyceride máu"
+    },
+    {
+      "id": "metformin",
+      "name_en": "Metformin (Metformin)",
+      "name_vi": "Metformin (Metformin)",
+      "type_en": "Antidiabetic",
+      "type_vi": "Thuốc trị tiểu đường nhóm Biguanide"
+    },
+    {
+      "id": "glimepiride",
+      "name_en": "Glimepiride (Glimepiride)",
+      "name_vi": "Glimepiride (Glimepiride)",
+      "type_en": "Antidiabetic",
+      "type_vi": "Thuốc trị tiểu đường nhóm Sulfonylurea thế hệ mới"
+    },
+    {
+      "id": "sitagliptin",
+      "name_en": "Sitagliptin (Januvia)",
+      "name_vi": "Sitagliptin (Januvia)",
+      "type_en": "Antidiabetic",
+      "type_vi": "Thuốc trị tiểu đường ức chế DPP-4"
+    },
+    {
+      "id": "dapagliflozin",
+      "name_en": "Dapagliflozin (Farxiga)",
+      "name_vi": "Dapagliflozin (Farxiga)",
+      "type_en": "SGLT2 inhibitor",
+      "type_vi": "Thuốc trị tiểu đường thải đường qua nước tiểu"
+    }
+  ],
+  "tăng huyết áp": [
+    {
+      "id": "amlodipine",
+      "name_en": "Amlodipine (Norliqva)",
+      "name_vi": "Amlodipine (Norliqva)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc hạ huyết áp chẹn kênh Canxi"
+    },
+    {
+      "id": "captopril",
+      "name_en": "Captopril (Captopril)",
+      "name_vi": "Captopril (Captopril)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc hạ huyết áp ức chế men chuyển"
+    },
+    {
+      "id": "losartan",
+      "name_en": "Losartan (Losartan Potassium)",
+      "name_vi": "Losartan (Losartan Potassium)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc hạ huyết áp chẹn thụ thể Angiotensin II"
+    },
+    {
+      "id": "valsartan",
+      "name_en": "Valsartan (Valsartan)",
+      "name_vi": "Valsartan (Valsartan)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "enalapril",
+      "name_en": "Enalapril (Enalapril Maleate)",
+      "name_vi": "Enalapril (Enalapril Maleate)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "nifedipine",
+      "name_en": "Nifedipine (Nifedipine)",
+      "name_vi": "Nifedipine (Nifedipine)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc điều trị tăng huyết áp, đau thắt ngực"
+    },
+    {
+      "id": "metoprolol",
+      "name_en": "Metoprolol (Metoprolol Tartrate)",
+      "name_vi": "Metoprolol (Metoprolol Tartrate)",
+      "type_en": "Beta-blocker",
+      "type_vi": "Thuốc chẹn beta trị tăng huyết áp, loạn nhịp tim"
+    }
+  ],
+  "dyslipidemia": [
+    {
+      "id": "amlodipine",
+      "name_en": "Amlodipine (Norliqva)",
+      "name_vi": "Amlodipine (Norliqva)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc hạ huyết áp chẹn kênh Canxi"
+    },
+    {
+      "id": "losartan",
+      "name_en": "Losartan (Losartan Potassium)",
+      "name_vi": "Losartan (Losartan Potassium)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc hạ huyết áp chẹn thụ thể Angiotensin II"
+    },
+    {
+      "id": "valsartan",
+      "name_en": "Valsartan (Valsartan)",
+      "name_vi": "Valsartan (Valsartan)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "enalapril",
+      "name_en": "Enalapril (Enalapril Maleate)",
+      "name_vi": "Enalapril (Enalapril Maleate)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "nifedipine",
+      "name_en": "Nifedipine (Nifedipine)",
+      "name_vi": "Nifedipine (Nifedipine)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc điều trị tăng huyết áp, đau thắt ngực"
+    },
+    {
+      "id": "metoprolol",
+      "name_en": "Metoprolol (Metoprolol Tartrate)",
+      "name_vi": "Metoprolol (Metoprolol Tartrate)",
+      "type_en": "Beta-blocker",
+      "type_vi": "Thuốc chẹn beta trị tăng huyết áp, loạn nhịp tim"
+    },
+    {
+      "id": "rosuvastatin",
+      "name_en": "Rosuvastatin (Rosuvastatin)",
+      "name_vi": "Rosuvastatin (Rosuvastatin)",
+      "type_en": "Statin",
+      "type_vi": "Thuốc hạ mỡ máu mạnh"
+    },
+    {
+      "id": "simvastatin",
+      "name_en": "Simvastatin (Simvastatin)",
+      "name_vi": "Simvastatin (Simvastatin)",
+      "type_en": "Statin",
+      "type_vi": "Thuốc hạ lipid máu"
+    },
+    {
+      "id": "fenofibrate",
+      "name_en": "Fenofibrate (Fenofibrate)",
+      "name_vi": "Fenofibrate (Fenofibrate)",
+      "type_en": "Fibrate",
+      "type_vi": "Thuốc điều trị tăng triglyceride máu"
+    }
+  ],
+  "hypertension": [
+    {
+      "id": "amlodipine",
+      "name_en": "Amlodipine (Norliqva)",
+      "name_vi": "Amlodipine (Norliqva)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc hạ huyết áp chẹn kênh Canxi"
+    },
+    {
+      "id": "captopril",
+      "name_en": "Captopril (Captopril)",
+      "name_vi": "Captopril (Captopril)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc hạ huyết áp ức chế men chuyển"
+    },
+    {
+      "id": "losartan",
+      "name_en": "Losartan (Losartan Potassium)",
+      "name_vi": "Losartan (Losartan Potassium)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc hạ huyết áp chẹn thụ thể Angiotensin II"
+    },
+    {
+      "id": "valsartan",
+      "name_en": "Valsartan (Valsartan)",
+      "name_vi": "Valsartan (Valsartan)",
+      "type_en": "ARB",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "enalapril",
+      "name_en": "Enalapril (Enalapril Maleate)",
+      "name_vi": "Enalapril (Enalapril Maleate)",
+      "type_en": "ACE inhibitor",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    },
+    {
+      "id": "nifedipine",
+      "name_en": "Nifedipine (Nifedipine)",
+      "name_vi": "Nifedipine (Nifedipine)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc điều trị tăng huyết áp, đau thắt ngực"
+    },
+    {
+      "id": "metoprolol",
+      "name_en": "Metoprolol (Metoprolol Tartrate)",
+      "name_vi": "Metoprolol (Metoprolol Tartrate)",
+      "type_en": "Beta-blocker",
+      "type_vi": "Thuốc chẹn beta trị tăng huyết áp, loạn nhịp tim"
+    }
+  ],
+  "co thắt dạ dày": [
+    {
+      "id": "nifedipine",
+      "name_en": "Nifedipine (Nifedipine)",
+      "name_vi": "Nifedipine (Nifedipine)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc điều trị tăng huyết áp, đau thắt ngực"
+    },
+    {
+      "id": "diazepam",
+      "name_en": "Diazepam (Diazepam)",
+      "name_vi": "Diazepam (Diazepam)",
+      "type_en": "Sedative/Anxiolytic",
+      "type_vi": "Thuốc hướng thần an thần, trị mất ngủ"
+    }
+  ],
+  "co thắt cơ trơn": [
+    {
+      "id": "nifedipine",
+      "name_en": "Nifedipine (Nifedipine)",
+      "name_vi": "Nifedipine (Nifedipine)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc điều trị tăng huyết áp, đau thắt ngực"
+    },
+    {
+      "id": "diazepam",
+      "name_en": "Diazepam (Diazepam)",
+      "name_vi": "Diazepam (Diazepam)",
+      "type_en": "Sedative/Anxiolytic",
+      "type_vi": "Thuốc hướng thần an thần, trị mất ngủ"
+    }
+  ],
+  "spasm": [
+    {
+      "id": "nifedipine",
+      "name_en": "Nifedipine (Nifedipine)",
+      "name_vi": "Nifedipine (Nifedipine)",
+      "type_en": "Calcium channel blocker",
+      "type_vi": "Thuốc điều trị tăng huyết áp, đau thắt ngực"
+    },
+    {
+      "id": "diazepam",
+      "name_en": "Diazepam (Diazepam)",
+      "name_vi": "Diazepam (Diazepam)",
+      "type_en": "Sedative/Anxiolytic",
+      "type_vi": "Thuốc hướng thần an thần, trị mất ngủ"
+    }
+  ],
+  "bisoprolol": [
+    {
+      "id": "bisoprolol",
+      "name_en": "Bisoprolol",
+      "name_vi": "Bisoprolol",
+      "type_en": "Beta-blocker",
+      "type_vi": "Thuốc điều trị tăng huyết áp, suy tim"
+    }
+  ],
+  "atorvastatin": [
+    {
+      "id": "atorvastatin",
+      "name_en": "Atorvastatin",
+      "name_vi": "Atorvastatin",
+      "type_en": "Statin",
+      "type_vi": "Thuốc hạ mỡ máu"
+    }
+  ],
+  "high cholesterol": [
+    {
+      "id": "rosuvastatin",
+      "name_en": "Rosuvastatin (Rosuvastatin)",
+      "name_vi": "Rosuvastatin (Rosuvastatin)",
+      "type_en": "Statin",
+      "type_vi": "Thuốc hạ mỡ máu mạnh"
+    },
+    {
+      "id": "simvastatin",
+      "name_en": "Simvastatin (Simvastatin)",
+      "name_vi": "Simvastatin (Simvastatin)",
+      "type_en": "Statin",
+      "type_vi": "Thuốc hạ lipid máu"
+    },
+    {
+      "id": "fenofibrate",
+      "name_en": "Fenofibrate (Fenofibrate)",
+      "name_vi": "Fenofibrate (Fenofibrate)",
+      "type_en": "Fibrate",
+      "type_vi": "Thuốc điều trị tăng triglyceride máu"
+    }
+  ],
+  "rối loạn mỡ máu": [
+    {
+      "id": "rosuvastatin",
+      "name_en": "Rosuvastatin (Rosuvastatin)",
+      "name_vi": "Rosuvastatin (Rosuvastatin)",
+      "type_en": "Statin",
+      "type_vi": "Thuốc hạ mỡ máu mạnh"
+    },
+    {
+      "id": "simvastatin",
+      "name_en": "Simvastatin (Simvastatin)",
+      "name_vi": "Simvastatin (Simvastatin)",
+      "type_en": "Statin",
+      "type_vi": "Thuốc hạ lipid máu"
+    },
+    {
+      "id": "fenofibrate",
+      "name_en": "Fenofibrate (Fenofibrate)",
+      "name_vi": "Fenofibrate (Fenofibrate)",
+      "type_en": "Fibrate",
+      "type_vi": "Thuốc điều trị tăng triglyceride máu"
+    }
+  ],
+  "mỡ máu cao": [
+    {
+      "id": "rosuvastatin",
+      "name_en": "Rosuvastatin (Rosuvastatin)",
+      "name_vi": "Rosuvastatin (Rosuvastatin)",
+      "type_en": "Statin",
+      "type_vi": "Thuốc hạ mỡ máu mạnh"
+    },
+    {
+      "id": "simvastatin",
+      "name_en": "Simvastatin (Simvastatin)",
+      "name_vi": "Simvastatin (Simvastatin)",
+      "type_en": "Statin",
+      "type_vi": "Thuốc hạ lipid máu"
+    },
+    {
+      "id": "fenofibrate",
+      "name_en": "Fenofibrate (Fenofibrate)",
+      "name_vi": "Fenofibrate (Fenofibrate)",
+      "type_en": "Fibrate",
+      "type_vi": "Thuốc điều trị tăng triglyceride máu"
+    }
+  ],
+  "hạ cholesterol": [
+    {
+      "id": "rosuvastatin",
+      "name_en": "Rosuvastatin (Rosuvastatin)",
+      "name_vi": "Rosuvastatin (Rosuvastatin)",
+      "type_en": "Statin",
+      "type_vi": "Thuốc hạ mỡ máu mạnh"
+    },
+    {
+      "id": "simvastatin",
+      "name_en": "Simvastatin (Simvastatin)",
+      "name_vi": "Simvastatin (Simvastatin)",
+      "type_en": "Statin",
+      "type_vi": "Thuốc hạ lipid máu"
+    },
+    {
+      "id": "fenofibrate",
+      "name_en": "Fenofibrate (Fenofibrate)",
+      "name_vi": "Fenofibrate (Fenofibrate)",
+      "type_en": "Fibrate",
+      "type_vi": "Thuốc điều trị tăng triglyceride máu"
+    }
+  ],
+  "gliclazide": [
+    {
+      "id": "gliclazide",
+      "name_en": "Gliclazide",
+      "name_vi": "Gliclazide",
+      "type_en": "Antidiabetic",
+      "type_vi": "Thuốc trị tiểu đường nhóm Sulfonylurea"
+    }
+  ],
+  "anxiety": [
+    {
+      "id": "diazepam",
+      "name_en": "Diazepam (Diazepam)",
+      "name_vi": "Diazepam (Diazepam)",
+      "type_en": "Sedative/Anxiolytic",
+      "type_vi": "Thuốc hướng thần an thần, trị mất ngủ"
+    },
+    {
+      "id": "sertraline",
+      "name_en": "Sertraline (Sertraline)",
+      "name_vi": "Sertraline (Sertraline)",
+      "type_en": "SSRI",
+      "type_vi": "Thuốc điều trị trầm cảm, lo âu"
+    }
+  ],
+  "inflammation": [
+    {
+      "id": "diazepam",
+      "name_en": "Diazepam (Diazepam)",
+      "name_vi": "Diazepam (Diazepam)",
+      "type_en": "Sedative/Anxiolytic",
+      "type_vi": "Thuốc hướng thần an thần, trị mất ngủ"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    }
+  ],
+  "căng thẳng": [
+    {
+      "id": "diazepam",
+      "name_en": "Diazepam (Diazepam)",
+      "name_vi": "Diazepam (Diazepam)",
+      "type_en": "Sedative/Anxiolytic",
+      "type_vi": "Thuốc hướng thần an thần, trị mất ngủ"
+    },
+    {
+      "id": "sertraline",
+      "name_en": "Sertraline (Sertraline)",
+      "name_vi": "Sertraline (Sertraline)",
+      "type_en": "SSRI",
+      "type_vi": "Thuốc điều trị trầm cảm, lo âu"
+    }
+  ],
+  "chống viêm": [
+    {
+      "id": "diazepam",
+      "name_en": "Diazepam (Diazepam)",
+      "name_vi": "Diazepam (Diazepam)",
+      "type_en": "Sedative/Anxiolytic",
+      "type_vi": "Thuốc hướng thần an thần, trị mất ngủ"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    }
+  ],
+  "lo âu": [
+    {
+      "id": "diazepam",
+      "name_en": "Diazepam (Diazepam)",
+      "name_vi": "Diazepam (Diazepam)",
+      "type_en": "Sedative/Anxiolytic",
+      "type_vi": "Thuốc hướng thần an thần, trị mất ngủ"
+    },
+    {
+      "id": "sertraline",
+      "name_en": "Sertraline (Sertraline)",
+      "name_vi": "Sertraline (Sertraline)",
+      "type_en": "SSRI",
+      "type_vi": "Thuốc điều trị trầm cảm, lo âu"
+    }
+  ],
+  "kháng viêm": [
+    {
+      "id": "diazepam",
+      "name_en": "Diazepam (Diazepam)",
+      "name_vi": "Diazepam (Diazepam)",
+      "type_en": "Sedative/Anxiolytic",
+      "type_vi": "Thuốc hướng thần an thần, trị mất ngủ"
+    },
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    }
+  ],
+  "zolpidem": [
+    {
+      "id": "zolpidem",
+      "name_en": "Zolpidem",
+      "name_vi": "Zolpidem",
+      "type_en": "Sedative-hypnotic",
+      "type_vi": "Thuốc ngủ điều trị mất ngủ ngắn hạn"
+    }
+  ],
+  "co giật": [
+    {
+      "id": "gabapentin",
+      "name_en": "Gabapentin (Gabapentin)",
+      "name_vi": "Gabapentin (Gabapentin)",
+      "type_en": "Anticonvulsant",
+      "type_vi": "Thuốc trị đau dây thần kinh, động kinh"
+    },
+    {
+      "id": "carbamazepine",
+      "name_en": "Carbamazepine (Carbamazepine)",
+      "name_vi": "Carbamazepine (Carbamazepine)",
+      "type_en": "Anticonvulsant",
+      "type_vi": "Thuốc trị động kinh, đau dây thần kinh số V"
+    }
+  ],
+  "epilepsy": [
+    {
+      "id": "gabapentin",
+      "name_en": "Gabapentin (Gabapentin)",
+      "name_vi": "Gabapentin (Gabapentin)",
+      "type_en": "Anticonvulsant",
+      "type_vi": "Thuốc trị đau dây thần kinh, động kinh"
+    },
+    {
+      "id": "carbamazepine",
+      "name_en": "Carbamazepine (Carbamazepine)",
+      "name_vi": "Carbamazepine (Carbamazepine)",
+      "type_en": "Anticonvulsant",
+      "type_vi": "Thuốc trị động kinh, đau dây thần kinh số V"
+    }
+  ],
+  "động kinh": [
+    {
+      "id": "gabapentin",
+      "name_en": "Gabapentin (Gabapentin)",
+      "name_vi": "Gabapentin (Gabapentin)",
+      "type_en": "Anticonvulsant",
+      "type_vi": "Thuốc trị đau dây thần kinh, động kinh"
+    },
+    {
+      "id": "carbamazepine",
+      "name_en": "Carbamazepine (Carbamazepine)",
+      "name_vi": "Carbamazepine (Carbamazepine)",
+      "type_en": "Anticonvulsant",
+      "type_vi": "Thuốc trị động kinh, đau dây thần kinh số V"
+    }
+  ],
+  "bệnh thần kinh ngoại biên": [
+    {
+      "id": "pregabalin",
+      "name_en": "Pregabalin (Pregabalin)",
+      "name_vi": "Pregabalin (Pregabalin)",
+      "type_en": "Anticonvulsant/Anxiolytic",
+      "type_vi": "Thuốc trị đau dây thần kinh, lo âu"
+    }
+  ],
+  "neuropathy": [
+    {
+      "id": "pregabalin",
+      "name_en": "Pregabalin (Pregabalin)",
+      "name_vi": "Pregabalin (Pregabalin)",
+      "type_en": "Anticonvulsant/Anxiolytic",
+      "type_vi": "Thuốc trị đau dây thần kinh, lo âu"
+    }
+  ],
+  "đau dây thần kinh": [
+    {
+      "id": "pregabalin",
+      "name_en": "Pregabalin (Pregabalin)",
+      "name_vi": "Pregabalin (Pregabalin)",
+      "type_en": "Anticonvulsant/Anxiolytic",
+      "type_vi": "Thuốc trị đau dây thần kinh, lo âu"
+    }
+  ],
+  "depression": [
+    {
+      "id": "fluoxetine",
+      "name_en": "Fluoxetine (Fluoxetine)",
+      "name_vi": "Fluoxetine (Fluoxetine)",
+      "type_en": "SSRI",
+      "type_vi": "Thuốc chống trầm cảm, rối loạn lo âu"
+    }
+  ],
+  "trầm cảm": [
+    {
+      "id": "fluoxetine",
+      "name_en": "Fluoxetine (Fluoxetine)",
+      "name_vi": "Fluoxetine (Fluoxetine)",
+      "type_en": "SSRI",
+      "type_vi": "Thuốc chống trầm cảm, rối loạn lo âu"
+    }
+  ],
+  "amitriptyline": [
+    {
+      "id": "amitriptyline",
+      "name_en": "Amitriptyline",
+      "name_vi": "Amitriptyline",
+      "type_en": "Antidepressant",
+      "type_vi": "Thuốc chống trầm cảm 3 vòng, trị đau dây thần kinh"
+    }
+  ],
+  "valproate": [
+    {
+      "id": "valproate",
+      "name_en": "Valproate",
+      "name_vi": "Valproate",
+      "type_en": "Anticonvulsant",
+      "type_vi": "Thuốc trị động kinh, dự phòng đau nửa đầu"
+    }
+  ],
+  "cường giáp": [
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "thyroid": [
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "tuberculosis": [
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "tuyến giáp": [
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "suy giáp": [
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "psoriasis": [
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    }
+  ],
+  "dermatitis": [
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "vảy nến": [
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    }
+  ],
+  "viêm da": [
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "lao phổi": [
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "bệnh lao": [
+    {
+      "id": "prednisolone",
+      "name_en": "Prednisolone (Prednisolone)",
+      "name_vi": "Prednisolone (Prednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid"
+    },
+    {
+      "id": "methylprednisolone",
+      "name_en": "Methylprednisolone (Methylprednisolone)",
+      "name_vi": "Methylprednisolone (Methylprednisolone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Glucocorticoid mạnh"
+    },
+    {
+      "id": "prednisone",
+      "name_en": "Prednisone (Prednisone)",
+      "name_vi": "Prednisone (Prednisone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm, ức chế miễn dịch"
+    },
+    {
+      "id": "dexamethasone",
+      "name_en": "Dexamethasone (Dexamethasone)",
+      "name_vi": "Dexamethasone (Dexamethasone)",
+      "type_en": "Corticosteroid",
+      "type_vi": "Kháng viêm Corticosteroid cực mạnh"
+    }
+  ],
+  "levothyroxine": [
+    {
+      "id": "levothyroxine",
+      "name_en": "Levothyroxine",
+      "name_vi": "Levothyroxine",
+      "type_en": "Thyroid hormone",
+      "type_vi": "Hormone tuyến giáp điều trị suy giáp"
+    }
+  ],
+  "glucosamine": [
+    {
+      "id": "glucosamine",
+      "name_en": "Glucosamine",
+      "name_vi": "Glucosamine",
+      "type_en": "Anti-osteoarthritis agent",
+      "type_vi": "Thuốc hỗ trợ tái tạo sụn khớp"
+    }
+  ],
+  "alendronate": [
+    {
+      "id": "alendronate",
+      "name_en": "Alendronate",
+      "name_vi": "Alendronate",
+      "type_en": "Bisphosphonate",
+      "type_vi": "Thuốc chống hủy xương điều trị loãng xương"
+    }
+  ]
+}
