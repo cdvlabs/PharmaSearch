@@ -9,9 +9,9 @@ PharmaSearch là một ứng dụng web dạng Progressive Web App (PWA) đượ
 1. **Giao diện hiện đại & Premium**: 
    - Thiết kế theo ngôn ngữ **Material Design 3** của Google kết hợp hiệu ứng chuyển màu sinh động **Neural Expressive Glow**.
    - Mặc định chạy ở **Chủ đề sáng (Light Mode)** sang trọng, tinh tế, độ tương phản cao, tối ưu cho trải nghiệm đọc tài liệu y khoa.
-2. **Khả năng hoạt động Ngoại tuyến (Offline First)**:
-   - Tích hợp sẵn cơ sở dữ liệu 82 hoạt chất và bệnh lý đã chuẩn hóa và dịch song ngữ Anh - Việt.
-   - Tích hợp **Service Worker Cache-First** giúp ứng dụng tải ngay lập tức và chạy ngoại tuyến 100% sau lần truy cập đầu tiên.
+2. **Tải trang nhanh & Lưu trữ ngoại tuyến (PWA Offline Cache)**:
+   - Tích hợp **Service Worker Cache-First** giúp lưu bộ nhớ đệm toàn bộ giao diện và từ điển bệnh lý tĩnh Anh-Việt, giúp tải ứng dụng tức thì sau lần truy cập đầu tiên.
+   - Việc tra cứu thông tin chi tiết thuốc được thực hiện trực tuyến thời gian thực với API OpenFDA để đảm bảo dữ liệu luôn cập nhật mới nhất.
 3. **Tra cứu Trực tuyến Thời gian thực (Online Mode)**:
    - Tích hợp trực tiếp với API **OpenFDA** từ Cục quản lý Thực phẩm và Dược phẩm Hoa Kỳ khi có kết nối Internet.
    - Tự động dịch động kết quả tìm kiếm trực tuyến sang tiếng Việt ngay tại thiết bị của người dùng.
@@ -24,9 +24,7 @@ PharmaSearch là một ứng dụng web dạng Progressive Web App (PWA) đượ
 
 ```text
 PharmaSearch/
-├── data/                       # Bộ công cụ ETL & xử lý dữ liệu Python
-│   ├── process_data.py         # Script tải dữ liệu OpenFDA, chuẩn hóa & dịch tự động
-│   └── translation_cache.json  # Bộ nhớ cache bản dịch giúp tối ưu hóa chi phí API dịch thuật
+├── drugs/                      # Thư mục chứa 13 file JSON nhãn thuốc FDA (.gitignore)
 ├── public/                     # Tài nguyên tĩnh phục vụ cho PWA
 │   ├── icon.png                # Biểu tượng ứng dụng (512x512)
 │   └── manifest.json           # File cấu hình PWA (chủ đề, start URL, biểu tượng)
@@ -36,9 +34,11 @@ PharmaSearch/
 │   ├── app.js                  # Logic tìm kiếm, tương tác API, chuyển ngữ & Service Worker
 │   ├── index.html              # Giao diện HTML5 cấu trúc Semantic
 │   └── style.css               # Thiết kế CSS Material Design 3 & hiệu ứng Neural Glow
-├── extract_and_translate_diseases.py # Script trích xuất và dịch tự động các từ khóa bệnh lý mới
+├── tests/                      # Thư mục kiểm thử chất lượng
+│   └── test_assets.py          # Script python chạy kiểm thử
+├── extract_and_translate_diseases.py # Script trích xuất và dịch tự động các từ khóa bệnh lý từ drugs/
 ├── sw.js                       # Service Worker cấu hình lưu bộ nhớ đệm (Cache)
-├── DEPLOYMENT.md               # Hướng dẫn triển khai dự án lên Vercel & GitHub Pages
+├── run_tests.bat               # File chạy kiểm thử nhanh trên Windows
 └── README.md                   # Tài liệu giới thiệu dự án (File này)
 ```
 
@@ -67,13 +67,7 @@ Khi cơ sở dữ liệu y khoa từ OpenFDA được cập nhật mới hoặc 
    python extract_and_translate_diseases.py
    ```
    *Lưu ý: Script sẽ tự động stream dữ liệu qua từng dòng để tối ưu RAM (chỉ tốn vài MB thay vì load toàn bộ file 8.5 GB), lọc bỏ các từ khóa rác và dịch tự động các bệnh lý phổ biến chưa có trong từ điển.*
-3. Mở file [sw.js](file:///d:/python/science_skills_drug_lookup/sw.js) và tăng số phiên bản `CACHE_NAME` (ví dụ từ `pharmasearch-v5` lên `pharmasearch-v6`) để kích hoạt quá trình cập nhật bộ nhớ cache trên trình duyệt người dùng.
-
----
-
-## 🛠️ Triển khai ứng dụng (Deployment)
-
-Vui lòng xem hướng dẫn chi tiết từng bước triển khai ứng dụng miễn phí lên **Vercel** hoặc **GitHub Pages** trong tệp [DEPLOYMENT.md](file:///d:/python/science_skills_drug_lookup/DEPLOYMENT.md).
+3. Mở file [sw.js](file:///d:/python/science_skills_drug_lookup/sw.js) và tăng số phiên bản `CACHE_NAME` (ví dụ từ `pharmasearch-v12` lên `pharmasearch-v13`) để kích hoạt quá trình cập nhật bộ nhớ cache trên trình duyệt người dùng.
 
 ---
 *Phát triển và phân phối dưới dạng mã nguồn mở phi thương mại.*
