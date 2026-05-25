@@ -746,6 +746,17 @@ async function executeSearch(query) {
 
 
 /**
+ * Loại bỏ các chữ số và tiêu đề in hoa thừa ở đầu văn bản (ví dụ "11 MÔ TẢ", "2 DOSAGE AND ADMINISTRATION")
+ * @param {string} text - Văn bản cần làm sạch
+ * @returns {string} - Văn bản đã làm sạch
+ */
+function cleanSectionText(text) {
+  if (!text) return "";
+  // Khớp số + khoảng trắng + các từ viết hoa (kể cả có dấu tiếng Việt) ở đầu chuỗi
+  return text.replace(/^\s*\d+\s+[A-ZÁÀẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬÉÈẺẼẸÊẾỀỂỄỆÍÌỈĨỊÓÒỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÚÙỦŨỤƯỨỪỬỮỰÝỲỶỸỴ\s&,-]+(?:\.|\s-\s|\s|(?=\n)|$)/, '').trim();
+}
+
+/**
  * Tạo Card hiển thị thông tin thuốc song ngữ
  * @param {Object} drug - Đối tượng dữ liệu thuốc
  * @returns {HTMLElement} - Thẻ card HTML
@@ -759,9 +770,11 @@ function createDrugCard(drug) {
   // Lấy các giá trị hiển thị theo ngôn ngữ hiện tại, tự động fallback nếu tiếng Việt trống
   const name = currentLang === 'vi' ? (drug.name_vi || drug.name_en) : (drug.name_en || drug.name_vi);
   const type = currentLang === 'vi' ? (drug.type_vi || drug.type_en) : (drug.type_en || drug.type_vi);
-  const desc = currentLang === 'vi' ? (drug.description_vi || drug.description_en) : (drug.description_en || drug.description_vi);
-  const usage = currentLang === 'vi' ? (drug.usage_vi || drug.usage_en || t.defaultUsage) : (drug.usage_en || drug.usage_vi || t.defaultUsage);
-  const warnings = currentLang === 'vi' ? (drug.warnings_vi || drug.warnings_en || t.defaultWarning) : (drug.warnings_en || drug.warnings_vi || t.defaultWarning);
+  
+  // Dọn dẹp tiêu đề phần in hoa ở đầu văn bản
+  const desc = cleanSectionText(currentLang === 'vi' ? (drug.description_vi || drug.description_en) : (drug.description_en || drug.description_vi));
+  const usage = cleanSectionText(currentLang === 'vi' ? (drug.usage_vi || drug.usage_en || t.defaultUsage) : (drug.usage_en || drug.usage_vi || t.defaultUsage));
+  const warnings = cleanSectionText(currentLang === 'vi' ? (drug.warnings_vi || drug.warnings_en || t.defaultWarning) : (drug.warnings_en || drug.warnings_vi || t.defaultWarning));
   
   const diseases = currentLang === 'vi' ? (drug.diseases_vi || drug.diseases_en || []) : (drug.diseases_en || drug.diseases_vi || []);
 
@@ -772,8 +785,8 @@ function createDrugCard(drug) {
     .map(dis => `<span class="tag-item" onclick="triggerTagSearch('${dis}')">${dis}</span>`)
     .join('');
 
-  // Lấy chi tiết chỉ định y khoa (FDA indications)
-  const indicationsContent = currentLang === 'vi' ? (drug.indications_vi || drug.indications_en || "") : (drug.indications_en || drug.indications_vi || "");
+  // Lấy chi tiết chỉ định y khoa (FDA indications) và làm sạch
+  const indicationsContent = cleanSectionText(currentLang === 'vi' ? (drug.indications_vi || drug.indications_en || "") : (drug.indications_en || drug.indications_vi || ""));
 
   card.innerHTML = `
     <div class="card-title-container">
@@ -787,18 +800,18 @@ function createDrugCard(drug) {
       <div class="card-section-accordion-content">${desc}</div>
     </details>
     
-    <details class="card-section-accordion usage">
+    <details class="card-section-accordion usage" open>
       <summary><span>💊 ${t.usageTitle}</span></summary>
       <div class="card-section-accordion-content">${usage}</div>
     </details>
     
-    <details class="card-section-accordion warning">
+    <details class="card-section-accordion warning" open>
       <summary><span>⚠️ ${t.warningsTitle}</span></summary>
       <div class="card-section-accordion-content">${warnings}</div>
     </details>
 
     ${(indicationsContent || tagsHTML) ? `
-    <details class="card-section-accordion indications">
+    <details class="card-section-accordion indications" open>
       <summary><span>🎯 ${t.indicationsTitle}</span></summary>
       <div class="card-section-accordion-content">
         ${indicationsContent ? `<p style="margin-bottom: 0.8rem; font-style: italic; line-height: 1.5; color: var(--text); opacity: 0.9;">${indicationsContent}</p>` : ''}

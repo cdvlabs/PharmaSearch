@@ -31,3 +31,9 @@ desktop.ini
 
 # Deployment
 DEPLOYMENT.md
+drugs
+
+# Temporary files & logs
+temp_*.json
+*.log
+.pytest_cache/

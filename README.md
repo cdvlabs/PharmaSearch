@@ -36,6 +36,7 @@ PharmaSearch/
 │   ├── app.js                  # Logic tìm kiếm, tương tác API, chuyển ngữ & Service Worker
 │   ├── index.html              # Giao diện HTML5 cấu trúc Semantic
 │   └── style.css               # Thiết kế CSS Material Design 3 & hiệu ứng Neural Glow
+├── extract_and_translate_diseases.py # Script trích xuất và dịch tự động các từ khóa bệnh lý mới
 ├── sw.js                       # Service Worker cấu hình lưu bộ nhớ đệm (Cache)
 ├── DEPLOYMENT.md               # Hướng dẫn triển khai dự án lên Vercel & GitHub Pages
 └── README.md                   # Tài liệu giới thiệu dự án (File này)
@@ -61,12 +62,12 @@ PharmaSearch/
 Khi cơ sở dữ liệu y khoa từ OpenFDA được cập nhật mới hoặc bạn muốn bổ sung dữ liệu:
 
 1. Đảm bảo bạn đã cài đặt Python 3 và các thư viện cần thiết.
-2. Chạy script xử lý dữ liệu để cập nhật tệp dữ liệu tĩnh mới:
+2. Bạn có thể sử dụng công cụ trích xuất bệnh tự động từ 13 file JSON nhãn thuốc trong thư mục `drugs/` và tự động dịch qua Google Translate để cập nhật vào từ điển bệnh lý:
    ```bash
-   python data/process_data.py
+   python extract_and_translate_diseases.py
    ```
-3. Đẩy (push) tệp tin `src/data/disease_dictionary.json` vừa được tạo lại lên GitHub.
-4. Mở file [sw.js](file:///d:/python/science_skills_drug_lookup/sw.js) và tăng số phiên bản `CACHE_NAME` (ví dụ từ `pharmasearch-v5` lên `pharmasearch-v6`) để kích hoạt quá trình cập nhật bộ nhớ cache trên trình duyệt người dùng.
+   *Lưu ý: Script sẽ tự động stream dữ liệu qua từng dòng để tối ưu RAM (chỉ tốn vài MB thay vì load toàn bộ file 8.5 GB), lọc bỏ các từ khóa rác và dịch tự động các bệnh lý phổ biến chưa có trong từ điển.*
+3. Mở file [sw.js](file:///d:/python/science_skills_drug_lookup/sw.js) và tăng số phiên bản `CACHE_NAME` (ví dụ từ `pharmasearch-v5` lên `pharmasearch-v6`) để kích hoạt quá trình cập nhật bộ nhớ cache trên trình duyệt người dùng.
 
 ---
 

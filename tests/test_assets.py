@@ -68,6 +68,28 @@ def test_relative_paths():
         print(f"[THANH CONG] File hop le (khong chua duong dan tuyet doi goc): {file_path}")
     return True
 
+def test_extract_and_translate_script():
+    """Kiểm tra cú pháp và chức năng cơ bản của script extract_and_translate_diseases.py."""
+    sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    try:
+        from extract_and_translate_diseases import clean_phrase
+        
+        # Test một số ca dọn dẹp cụm từ bệnh thực tế
+        assert clean_phrase("hypertension") == "hypertension"
+        assert clean_phrase("seasonal allergic rhinitis") == "seasonal allergic rhinitis"
+        assert clean_phrase("type 2 diabetes") == ""  # Chứa số 2 -> trả về rỗng
+        assert clean_phrase("tablets") == ""  # Từ khóa không hợp lệ -> trả về rỗng
+        assert clean_phrase("asthma") == "asthma"
+        assert clean_phrase("treatment of asthma") == "asthma"  # treatment, of là stop words -> bị loại bỏ ở đầu
+        
+        print("[THANH CONG] Script extract_and_translate_diseases.py hoat dong chinh xac!")
+        return True
+    except Exception as e:
+        import traceback
+        print(f"[THAT BAI] Loi kiem thu script: {e}")
+        traceback.print_exc()
+        return False
+
 if __name__ == "__main__":
     success = True
     if not test_json_files():
@@ -75,6 +97,8 @@ if __name__ == "__main__":
     if not test_essential_assets():
         success = False
     if not test_relative_paths():
+        success = False
+    if not test_extract_and_translate_script():
         success = False
         
     print("\n=== KET QUA KIEM THU ===")
